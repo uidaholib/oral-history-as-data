@@ -14,8 +14,6 @@ baseurl: /libstatic-oral-history
 github_username: uidaholib
 
 
-google-cse-id: "002151703305773322890:1pu3smhw1t8"
-
 collections:
   transcripts:
       output: true

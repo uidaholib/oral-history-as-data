@@ -1,0 +1,41 @@
+<footer class="site-footer">
+
+  <div class="container-fluid">
+
+    
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="footer-heading pink-neon"><a href="{{ site.baseurl }}/" style="Color:white !important;font-size:23px;">{{ site.title }}</a></h2>
+       <p>{{ site.description }}</p>
+         
+          <p>>Questions: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+       
+      </div>
+
+      <div class="col-md-2">
+        <br class="hide-palm;" /> <br class="hide-palm;" />
+        <ul class="social-media-list">
+         
+          <li>
+            {% include icon-github.html  %}
+          </li>
+       
+         
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+            <br class="hide-palm;" /> <br class="hide-palm;" />
+        <p>Created by: Lib-Static </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{ "/assets/js/jquery-3.3.1.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/bootstrap.bundle.min.js" | relative_url }}"></script>
+<!-- load other js -->
+{% if page.layout == "search" %}{% include js/lunr-js.html %}{% endif %}

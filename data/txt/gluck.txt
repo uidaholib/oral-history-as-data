@@ -1,0 +1,19 @@
+---
+object-id: gluck    
+first-name: Louise
+last-name: Glück
+date-interviewed: May 15, 2014
+location: Cambridge, MA
+options: 
+url: https://en.wikipedia.org/wiki/Louise_Gl%C3%BCck
+youtube: kx0Q_SAaT1E
+---
+{% assign items = site.data.transcripts[page.object-id] %}
+Interview with {{page.first-name}} {{page.last-name}}
+{{page.date-interviewed }}
+{{page.location}}
+Interviewer: Devin Becker
+
+{% for item in items %}
+   {% if item.speaker %}{{item.speaker | remove: ":"}}: {%else%}{%endif%}{{item.words}}
+{% endfor %}

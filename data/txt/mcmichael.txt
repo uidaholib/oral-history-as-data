@@ -1,0 +1,20 @@
+---
+object-id: mcmichael    
+transcript: transcript-mcmichael
+first-name: James
+last-name: McMichael
+date-interviewed: March 17, 2014
+location: Long Beach, CA
+options: video genpoem
+url: https://en.wikipedia.org/wiki/James_L._McMichael
+youtube: VpCEAVJOFYc
+---
+{% assign items = site.data.transcripts[page.object-id] %}
+Interview with {{page.first-name}} {{page.last-name}}
+{{page.date-interviewed }}
+{{page.location}}
+Interviewer: Devin Becker
+
+{% for item in items %}
+   {% if item.speaker %}{{item.speaker | remove: ":"}}: {%else%}{%endif%}{{item.words}}
+{% endfor %}

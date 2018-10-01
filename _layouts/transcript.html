@@ -1,0 +1,180 @@
+---
+layout: default
+---
+{% assign items = site.data.transcripts[page.object-id] %}
+{% assign notes = site.data.notes[page.object-id] %}
+
+{%- comment -%} find all words used in the subject metadata {%- endcomment -%}
+{%- assign min-count = 1 -%}
+{%- assign raw-subjects = items | map: "tags" | compact | join: ";" | split: ";" -%}
+{%- capture subjects -%}{% for s in raw-subjects %}{% if s != "" %}{{- s | strip | downcase -}};{% endif %}{%- endfor -%}{%- endcapture -%}
+{%- assign subjects = subjects | split: ";" -%}
+{%- assign uniqueSubjects = subjects | uniq | sort -%}
+
+  <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-3">
+    <img src="{{site.baseurl}}/images/portraits/{{ page.object-id}}.png">
+<ul id="notes-container">
+    {% for note in notes %}
+<li class="hidden-all {{note.tag | replace: ";"," "}}"><a class="filter" href="#{{note.quote | truncatewords: 5,""}}" onclick="highlight('{{note.quote}}')" data-filter="{{note.quote | truncatewords: 5,""}}">{{note.detail}}</a></li>
+   {% endfor %}
+  </ul>
+</div>
+       <div class="col-md-9">
+       <header><h2 class="poet-name">Interview with {{ page.first-name }} {{ page.last-name }}</h2>
+    <p>{{page.location}} on {{page.date-interviewed}} | Interviewer: {{page.interviewer}}</p>
+  </header> 
+  <div class="filteroptions">
+   <h2><select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">
+      <option value="#" selected="selected">On All Topics</option>
+             {% assign filters = site.data.filters %}
+             {% for filter in filters %}
+     {%if uniqueSubjects contains filter.shortfilter %}<option value="{{ filter.shortfilter }}" >On {{filter.text}}</option>{%endif%}
+               {% endfor %}
+              <br/> <hr/><br/>
+     <option value="highlight">Interview Highlights</option>
+               </select></h2>
+<h3 class="text-center">
+    <form class="form-inline my-2 my-lg-0" >
+  <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2" > 
+  <input class="searchinput mx-2 btn btn-lg btn-success" title="Search" type="submit" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
+<button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
+    </form>
+<h4><span class="info2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} rows</span> (click a missing row to make it appear)</h4>
+</div>
+          <table id="contents-container">
+    {% for item in items %}
+   <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
+      <a target="_blank" href="https://youtu.be/{{ page.youtube }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
+{% endfor %}
+</table>
+
+<script type="text/javascript">
+   $("select#filters").on('change', function() {
+   var myClass = this.value;
+    $("tr").removeClass("featured"); 
+
+   $("tr").addClass("grey"); 
+   $("li").addClass("hidden-all"); 
+     $('tr.'+myClass).removeClass("grey").addClass("featured"); 
+     $('li.'+myClass).removeClass("hidden-all").addClass("featured"); 
+     console.log("filter");
+     $("input#quicksearch").val(""); 
+     var numberofint = $('tr.featured').length;
+    $("#numberof").html(numberofint);
+  });
+    $("button.reset").click(function() {
+   $("tr").removeClass("grey"); 
+   $("li").addClass("hidden-all"); 
+     $("tr").removeClass("featured"); 
+     $("input#quicksearch").val(""); 
+     $("#filters").val($("#filters option:first").val());
+     var numberofint = $('tr').length;
+    $("#numberof").html(numberofint);
+  });
+
+$("tr").click(function() {
+  if ($(this).hasClass('grey')) {
+    $(this).removeClass("grey"); 
+   $(this).addClass("featured"); 
+     console.log("show");}
+     else{}
+  });
+
+    </script>
+  <script>
+    function filterItems() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("quicksearch");
+      filter = input.value.toUpperCase();
+      itemcontainer = document.getElementById("contents-container");
+      item = itemcontainer.getElementsByTagName("tr");
+      for (i = 0; i < item.length; i++) {
+        itemcontents = item[i].getElementsByTagName("div")[0];
+        if (itemcontents) {
+          if (itemcontents.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            item[i].classList.add("featured");
+            item[i].classList.remove("grey");
+
+          } else {
+            item[i].classList.remove("featured");
+            item[i].classList.add("grey");
+          }
+        }       
+      }
+      var numberofint = $('tr.featured').length;
+    $("#numberof").html(numberofint);
+    $("#filters").val($("#filters option:first").val("search filtering"));
+    }
+    function filterNotes() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("quicksearch");
+      filter = input.value.toUpperCase();
+      notecontainer = document.getElementById("notes-container");
+      note = notecontainer.getElementsByTagName("li");
+      for (i = 0; i < item.length; i++) {
+        notecontents = note[i].getElementsByTagName("a")[0];
+        if (itemcontents) {
+          if (itemcontents.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            item[i].classList.remove("hidden-all");
+          } else {
+            item[i].classList.add("hidden-all");
+          }
+        }       
+      }
+    }
+    </script>
+<script>
+// fiter items by entering value of button or link pushed into quicksearch box
+var filterit = function() {
+ $('#quicksearch').val('');
+  var filterValue = $(this).attr('data-filter');
+  var filterClass = $(this).attr('data-filter').replace(" ","-").replace(" ","-");
+ $('#quicksearch').val($('#quicksearch').val() + filterValue);
+  $('#goButton').click();
+    window.location.hash = filterValue; 
+   var filterValueclass = "." + filterClass;
+$(filterValueclass).addClass('active');
+};
+// run filterit function when link/button with class filter clicked
+ $('a.filter').click(filterit);
+
+   // click goButton to search if return pressed in search box
+   $('#quicksearch').keypress(function(e){
+        if(e.which == 13){//Enter key pressed
+            $('#goButton').click();
+            //Trigger search button click event
+         }
+    });
+// get hash from url
+var hashfilter = location.hash.substr(1).replace(/%20/g, " ");
+var hashfilterclass = "." + location.hash.substr(1).replace("%20","-").replace("%20","-").replace("%20","-").replace(" ","-").replace(" ","-").replace(" ","-");
+
+$(document).ready(function() {
+$("#quicksearch").focus();
+if(window.location.hash) {
+	// code to be executed if a hash is contained in the url
+ $('#quicksearch').val($('#quicksearch').val() + hashfilter);
+$('#goButton').click();
+$(hashfilterclass).addClass('active');
+}
+else{
+}});
+
+function highlight(text) {
+  var inputText = document.getElementById("spoken");
+  var innerHTML = inputText.innerHTML;
+  var index = innerHTML.indexOf(text);
+  if (index >= 0) { 
+   innerHTML = innerHTML.substring(0,index) + "<span class='hilite'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+   inputText.innerHTML = innerHTML;
+  }
+}
+</script>
+
+        </div>
+
+</div>
+</div>

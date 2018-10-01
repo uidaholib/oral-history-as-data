@@ -1,0 +1,3 @@
+for creating seconds
+
+=B2*86400

@@ -1,0 +1,25 @@
+---
+---
+timestamp,speaker,words,tags,highlight,timelink
+{%assign itemsgluck = site.data.transcripts.gluck %}  {% for itemgluck in itemsgluck%} {{itemgluck.timestamp}},{{itemgluck.speaker}},"{{itemgluck.words | replace: '"','&quot;'}}",{{itemgluck.tags}},{{itemgluck.timelink}}
+{%endfor%}
+{%assign itemspinsky = site.data.transcripts.pinsky %}  {% for itempinsky in itemspinsky%} {{itempinsky.timestamp}},{{itempinsky.speaker}},"{{itempinsky.words | replace: '"','&quot;'}}",{{itempinsky.tags}},{{itempinsky.timelink}}
+{%endfor%}
+{%assign itemsbeasley = site.data.transcripts.beasley %}  {% for itembeasley in itemsbeasley%} {{itembeasley.timestamp}},{{itembeasley.speaker}},"{{itembeasley.words | replace: '"','&quot;'}}",{{itembeasley.tags}},{{itembeasley.timelink}}
+{%endfor%}
+{%assign itemsmcmichael = site.data.transcripts.mcmichael %}  {% for itemmcmichael in itemsmcmichael%} {{itemmcmichael.timestamp}},{{itemmcmichael.speaker}},"{{itemmcmichael.words | replace: '"','&quot;'}}",{{itemmcmichael.tags}},{{itemmcmichael.timelink}}
+{%endfor%}
+{%assign itemsvanwinckel = site.data.transcripts.vanwinckel %}  {% for itemvanwinckel in itemsvanwinckel%} {{itemvanwinckel.timestamp}},{{itemvanwinckel.speaker}},"{{itemvanwinckel.words | replace: '"','&quot;'}}",{{itemvanwinckel.tags}},{{itemvanwinckel.timelink}}
+{%endfor%}
+{%assign itemsmohammad = site.data.transcripts.mohammad %}  {% for itemmohammad in itemsmohammad%} {{itemmohammad.timestamp}},{{itemmohammad.speaker}},"{{itemmohammad.words | replace: '"','&quot;'}}",{{itemmohammad.tags}},{{itemmohammad.timelink}}
+{%endfor%}
+{%assign itemsryan = site.data.transcripts.ryan %}  {% for itemryan in itemsryan%} {{itemryan.timestamp}},{{itemryan.speaker}},"{{itemryan.words | replace: '"','&quot;'}}",{{itemryan.tags}},{{itemryan.timelink}}
+{%endfor%}
+{%assign itemswrigley = site.data.transcripts.wrigley %}  {% for itemwrigley in itemswrigley%} {{itemwrigley.timestamp}},{{itemwrigley.speaker}},"{{itemwrigley.words | replace: '"','&quot;'}}",{{itemwrigley.tags}},{{itemwrigley.timelink}}
+{%endfor%}
+{%assign itemsgerstler = site.data.transcripts.gerstler %}  {% for itemgerstler in itemsgerstler%} {{itemgerstler.timestamp}},{{itemgerstler.speaker}},"{{itemgerstler.words | replace: '"','&quot;'}}",{{itemgerstler.tags}},{{itemgerstler.timelink}}
+{%endfor%}
+{%assign itemsarmantrout = site.data.transcripts.armantrout %}  {% for itemarmantrout in itemsarmantrout%} {{itemarmantrout.timestamp}},{{itemarmantrout.speaker}},"{{itemarmantrout.words | replace: '"','&quot;'}}",{{itemarmantrout.tags}},{{itemarmantrout.timelink}}
+{%endfor%}
+{%assign itemsstrickland = site.data.transcripts.strickland %}  {% for itemstrickland in itemsstrickland%} {{itemstrickland.timestamp}},{{itemstrickland.speaker}},"{{itemstrickland.words | replace: '"','&quot;'}}",{{itemstrickland.tags}},{{itemstrickland.timelink}}
+{%endfor%}

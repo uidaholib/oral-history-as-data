@@ -1,0 +1,20 @@
+---
+object-id: vanwinckel    
+transcript: transcript-vanwinckel  
+first-name: Nance
+last-name: Van Winckel
+date-interviewed: October 30, 2013
+location: Liberty Lake, WA
+options: video genpoem
+url: http://www.nancevanwinckel.com/
+youtube: nYnm_gDVa1I
+---
+{% assign items = site.data.transcripts[page.object-id] %}
+Interview with {{page.first-name}} {{page.last-name}}
+{{page.date-interviewed }}
+{{page.location}}
+Interviewer: Devin Becker
+
+{% for item in items %}
+   {% if item.speaker %}{{item.speaker | remove: ":"}}: {%else%}{%endif%}{{item.words}}
+{% endfor %}

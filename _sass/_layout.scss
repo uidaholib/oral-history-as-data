@@ -1,0 +1,47 @@
+
+@media print {
+    
+      html, body {
+        height:100%; 
+        margin: 0 !important; 
+        padding: 0 !important;
+        overflow: visible;
+        display:block;
+      }
+
+      .transcript-content{
+          height:auto;
+          min-height:5000px;
+          overflow:visible;
+          display:block;
+      }
+    
+    }
+
+    td{vertical-align: top;padding:15px;}
+
+  .timestamp{font-size:10px;}
+  .grey {
+    color: grey;
+    height: 3px;
+    width: 80%;
+    line-height: 2px;
+    float:left;
+    margin-bottom:1px; 
+    overflow: hidden;
+}
+  .featured{display:block;float:none; clear:both;}
+ .line{display: block; font-size:8px; float:left;}
+ .grey .words, .grey .timestamp, .grey .speaker, .grey .line {
+    display: inline;
+    font-size: 3px;
+    padding: 0px 5px;
+}
+
+.filteroptions, .searchinput{font-size:24px; 
+    @include media-query($on-palm) { font-size:18px;}}
+    
+.notes-container{
+list-style:disc;
+    li{margin:10px 0px;}
+}

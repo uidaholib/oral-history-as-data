@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row">
+            <div class="col-md-12">
+        <h1>Transcripts</h1>
+{% for transcript in site.transcripts %}
+<h3><a href="transcripts/{{transcript.object-id}}.html">{{transcript.first-name}} {{transcript.last-name}}</a></h3>
+{%endfor%}
+    </div>
+</div>

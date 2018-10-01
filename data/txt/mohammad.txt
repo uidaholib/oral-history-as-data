@@ -1,0 +1,21 @@
+---
+object-id: mohammad
+transcript: transcript-mohammad
+first-name: K. Silem
+last-name: Mohammad
+portrait: yes
+date-interviewed: June 16, 2014
+options: video genpoem
+location: Ashland, OR
+url: https://en.wikipedia.org/wiki/K._Silem_Mohammad
+youtube: tgji2thf1og
+---
+{% assign items = site.data.transcripts[page.object-id] %}
+Interview with {{page.first-name}} {{page.last-name}}
+{{page.date-interviewed }}
+{{page.location}}
+Interviewer: Devin Becker
+
+{% for item in items %}
+   {% if item.speaker %}{{item.speaker | remove: ":"}}: {%else%}{%endif%}{{item.words}}
+{% endfor %}

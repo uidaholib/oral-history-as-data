@@ -1,0 +1,20 @@
+---
+object-id: ryan 
+transcript: transcript-ryan   
+first-name: Michael
+last-name: Ryan
+date-interviewed: March 18, 2014
+location: Irvine, CA
+options: video genpoem
+url: https://en.wikipedia.org/wiki/Michael_Ryan_(poet)
+youtube: XlNHKWPm9cc
+---
+{% assign items = site.data.transcripts[page.object-id] %}
+Interview with {{page.first-name}} {{page.last-name}}
+{{page.date-interviewed }}
+{{page.location}}
+Interviewer: Devin Becker
+
+{% for item in items %}
+   {% if item.speaker %}{{item.speaker | remove: ":"}}: {%else%}{%endif%}{{item.words}}
+{% endfor %}

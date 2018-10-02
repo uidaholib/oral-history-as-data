@@ -1,0 +1,20 @@
+
+
+<table>
+{% for transcript in site.data.transcripts %}<tr>{% for item in transcript[1] %}
+{% assign td-width = 1 | divided by: [forloop.length] %}
+<td style="width:{{td-width}}%;background:blue;border:white;"></td> 
+{%endfor%}
+</tr>
+{%endfor%}
+
+
+<svg class="chart" width="100%" height="2500px">
+    <g transform="translate(0,{{forloop.length | times: 60}})">
+    <a class="svg-link" href="{{ '/browse/item.html' | relative_url }}?id={{item.youtube}}"  title="{{item.title}}" alt="{{item.title}}">
+      <rect width="{{item.duration-seconds | divided_by: 50 }}" height="50"></rect>
+      <text x="20" y="30" font-family="sans-serif" font-size="20px" fill="red" >{{item.title}} | {{item.duration}}</text></a>
+      </g>{%endfor%}</svg> 
+<style>
+  .svg-link:hover text{display: block;}
+  </style>

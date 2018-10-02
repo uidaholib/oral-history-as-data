@@ -10,3 +10,11 @@ layout: default
 {%endfor%}
     </div>
 </div>
+<table style="width:100%">
+    {% for transcript in site.data.transcripts %}<tr style="width:100%">{% for item in transcript[1] %}
+            {% capture size %}{{forloop.length}}{%endcapture%}
+    {% assign td-width = 1 | divided by: size %}
+    <td style="width:{{td-width}}%;background:blue;border:white;">{{td-width}}</td> 
+    {%endfor%}
+    </tr>
+    {%endfor%}

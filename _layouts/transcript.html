@@ -18,7 +18,7 @@ layout: default
 {%endif%}
 
   <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-  <div class="container-fluid">
+  <!--<div class="container-fluid">
       <div class="row">
           <div class="col-md-3">
     <img src="{{site.baseurl}}/images/portraits/{{ page.object-id}}.png">
@@ -28,7 +28,10 @@ layout: default
    {% endfor %}
   </ul>
 </div>
-       <div class="col-md-9">
+       <div class="col-md-9">-->
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
        <header><h2 class="poet-name">Interview with {{ page.first-name }} {{ page.last-name }}</h2>
     <p>{{page.location}} on {{page.date-interviewed}} | Interviewer: {{page.interviewer}}</p>
   </header> 
@@ -36,9 +39,15 @@ layout: default
    <h2><select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">
       <option value="#" selected="selected">On All Topics</option>
              {% assign filters = site.data.filters %}
+             {% if page.object-id == 'all' %}
+             {% for filter in filters %}
+             <option value="{{ filter.shortfilter }}" >On {{filter.text}}</option>
+                       {% endfor %}
+             {%else%}
              {% for filter in filters %}
      {%if uniqueSubjects contains filter.shortfilter %}<option value="{{ filter.shortfilter }}" >On {{filter.text}}</option>{%endif%}
                {% endfor %}
+               {%endif%}
               <br/> <hr/><br/>
      <option value="highlight">Interview Highlights</option>
                </select></h2>
@@ -49,12 +58,12 @@ layout: default
 <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
     </form>
     {% if page.object-id == 'all' %}
-    {% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{% if forloop.first == true %}
-    <h4><span class="info2"><span id="numberof">{{ forloop.length }}</span> of {{ forloop.length }} rows</span> (click a missing row to make it appear)</h4>
-{% else %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+    {% capture lines %}{% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{% if forloop.first == true %}{{ forloop.length }};{% else %}{% endif %}{% endfor %}{% endfor %}{%endcapture%}
+    {%assign linestotal = lines | split: ";" %}
+    {%for linetotal in linestotal%}
+    {% assign sum = sum | plus: linetotal %}
+    {%endfor%}
+    <h4><span class="info2"><span id="numberof">{{ sum}}</span> of {{ sum }} rows</span> (click a missing row to make it appear)</h4>
 {% else %}
 <h4><span class="info2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} rows</span> (click a missing row to make it appear)</h4>
 {% endif %}
@@ -65,7 +74,7 @@ layout: default
             {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
             {%capture youtube-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.youtube}}{%endif%}{%endfor%}{% endcapture %}
             {% for item in transcript[1] %}
-            <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{youtube-id}}-{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
+            <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{transcript-name}}-{{ forloop.index }}</td><td class="words"><div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
               <a target="_blank" href="https://youtu.be/{{ youtube-id }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
               {% endfor %}{% endfor %}
             {% else %}

@@ -1,0 +1,5 @@
+---
+---
+timestamp,speaker,words,tags,highlight,timelink{% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{{item.timestamp}},{{item.speaker}},"{{item.words | replace: '"','&quot;'}}",{{item.tags}},{{item.timelink}}
+{%endfor%}
+{%endfor%}

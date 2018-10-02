@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
+{% if page.object-id == 'all' %}
+{% assign transcripts = site.data.transcripts %}
+{%capture youtubes%}{% for y in site.transcripts %}{{ y.youtube | strip }};{% endfor %}
+{% endcapture %}
+{% assign youtube-list = youtubes | split: ";" %}
+{% else %}
 {% assign items = site.data.transcripts[page.object-id] %}
 {% assign notes = site.data.notes[page.object-id] %}
-
 {%- comment -%} find all words used in the subject metadata {%- endcomment -%}
 {%- assign min-count = 1 -%}
 {%- assign raw-subjects = items | map: "tags" | compact | join: ";" | split: ";" -%}
 {%- capture subjects -%}{% for s in raw-subjects %}{% if s != "" %}{{- s | strip | downcase -}};{% endif %}{%- endfor -%}{%- endcapture -%}
 {%- assign subjects = subjects | split: ";" -%}
 {%- assign uniqueSubjects = subjects | uniq | sort -%}
+{%endif%}
 
   <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
   <div class="container-fluid">
@@ -42,13 +48,31 @@ layout: default
   <input class="searchinput mx-2 btn btn-lg btn-success" title="Search" type="submit" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
 <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
     </form>
+    {% if page.object-id == 'all' %}
+    {% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{% if forloop.first == true %}
+    <h4><span class="info2"><span id="numberof">{{ forloop.length }}</span> of {{ forloop.length }} rows</span> (click a missing row to make it appear)</h4>
+{% else %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% else %}
 <h4><span class="info2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} rows</span> (click a missing row to make it appear)</h4>
+{% endif %}
+
 </div>
           <table id="contents-container">
-    {% for item in items %}
-   <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
-      <a target="_blank" href="https://youtu.be/{{ page.youtube }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
+            {% if page.object-id == 'all' %}
+            {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
+            {%assign youtube-id = site.transcripts.armantrout | map: youtube %}
+            {% for item in transcript[1] %}
+            <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{youtube-id}}-{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
+              <a target="_blank" href="https://youtu.be/{{ youtube-id }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
+              {% endfor %}{% endfor %}
+            {% else %}
+  {% for item in items %}
+   <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}<a target="_blank" href="https://youtu.be/{{ page.youtube }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
 {% endfor %}
+{% endif %}
 </table>
 
 <script type="text/javascript">

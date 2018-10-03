@@ -10,11 +10,26 @@ layout: default
 {%endfor%}
     </div>
 </div>
+</div>
+
+<div class="container-fluid">
+        <svg class="chart" width="100%" height="2500px">
+                {% for transcript in site.data.transcripts %}{% for item in transcript[1] %}
+                {% assign my_integer = forloop.length %}
+{% assign my_float = my_integer | times: 1.0 %}
+{% assign rect-width = 1 | divided_by: my_float  %}
+             {%if forloop.first%} <rect x="0" y="0" width="{{rect-width}}%" height="50" style="background:blue;border:yellow solid 1px;"></rect>
+              {%else %} <rect x="{{forloop.index }}" y="0" width="{{rect-width}}%" height="50" style="background:blue;border:yellow solid 1px;"></rect>
+              {%endif%}{%endfor%}{%endfor%}</svg> 
+
+<!--                  
 <table style="width:100%">
     {% for transcript in site.data.transcripts %}<tr style="width:100%">{% for item in transcript[1] %}
-            {% capture size %}{{forloop.length}}{%endcapture%}
-    {% assign td-width = 1 | divided by: size %}
-    <td style="width:{{td-width}}%;background:blue;border:white;">{{td-width}}</td> 
+           
+    {% assign td-width =  forloop.length %}
+    <td style="width:{{td-width}}%;background:blue;border:white;">{{forloop.length}}</td> 
     {%endfor%}
     </tr>
     {%endfor%}
+</table>
+</div>-->

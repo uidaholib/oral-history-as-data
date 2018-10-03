@@ -8,7 +8,6 @@ layout: default
 {% assign youtube-list = youtubes | split: ";" %}
 {% else %}
 {% assign items = site.data.transcripts[page.object-id] %}
-{% assign notes = site.data.notes[page.object-id] %}
 {%- comment -%} find all words used in the subject metadata {%- endcomment -%}
 {%- assign min-count = 1 -%}
 {%- assign raw-subjects = items | map: "tags" | compact | join: ";" | split: ";" -%}
@@ -19,6 +18,8 @@ layout: default
 
   <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
   <!--<div class="container-fluid">
+    
+{% assign notes = site.data.notes[page.object-id] %}
       <div class="row">
           <div class="col-md-3">
     <img src="{{site.baseurl}}/images/portraits/{{ page.object-id}}.png">
@@ -49,14 +50,13 @@ layout: default
                {% endfor %}
                {%endif%}
               <br/> <hr/><br/>
-     <option value="highlight">Interview Highlights</option>
                </select></h2>
 <h3 class="text-center">
-    <form class="form-inline my-2 my-lg-0" >
+    <div class="form-inline my-2 my-lg-0" >
   <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2" > 
-  <input class="searchinput mx-2 btn btn-lg btn-success" title="Search" type="submit" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
+  <input class="searchinput mx-2 btn btn-lg btn-success" title="Search" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
 <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
-    </form>
+    </div>
     {% if page.object-id == 'all' %}
     {% capture lines %}{% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{% if forloop.first == true %}{{ forloop.length }};{% else %}{% endif %}{% endfor %}{% endfor %}{%endcapture%}
     {%assign linestotal = lines | split: ";" %}

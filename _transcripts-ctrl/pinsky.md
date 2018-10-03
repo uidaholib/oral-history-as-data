@@ -1,5 +1,7 @@
 ---
 object-id: pinsky
+collection-type: Filterable Transcript  
+title: Robert Pinsky
 transcript: transcript-pinsky
 first-name: Robert
 last-name: Pinsky

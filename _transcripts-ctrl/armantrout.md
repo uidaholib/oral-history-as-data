@@ -1,5 +1,7 @@
 ---
 object-id: armantrout
+collection-type: Filterable Transcript  
+title: Rae Armantrout
 transcript: transcript-armantrout  
 first-name: Rae
 last-name: Armantrout

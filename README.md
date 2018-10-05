@@ -31,8 +31,6 @@ first-name, last-name. If you can, add: last-name, date-interviewed, location, i
 
 Check out your new site by hitting the link that the enabled GH-Pages Settings sections provides. Should be something like: [GitHub Username].github.io/[Repository Name].
 
-
-
 ### Technologies and Workflows used:
 
 - Git and GitHub basics

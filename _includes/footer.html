@@ -1,54 +1,16 @@
-<footer class="site-footer">
-
-  <div class="container-fluid">
-
-    
-
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="footer-heading pink-neon"><a href="{{ site.baseurl }}/" style="Color:white !important;font-size:23px;">{{ site.title }}</a></h2>
-       <p>{{ site.description }}</p>
-         
-          <p>>Questions: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-       
+<footer class="navbar nav-light border-top mt-3">
+  <div class="container py-3">
+    <div class="row align-items-center pb-3 w-100">
+      <div class="col-md">
+        <a class="h5" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+        <br>
+        <p class="pl-3"><span class="text-muted">{{ site.tagline }}</span>
+        <br>
+        Questions: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       </div>
-
-      <div class="col-md-2">
-        <br class="hide-palm;" /> <br class="hide-palm;" />
-        <ul class="social-media-list">
-         
-          <li>
-            {% include icon-github.html  %}
-          </li>
-       
-         
-        </ul>
-      </div>
-
-      <div class="col-md-4">
-            <br class="hide-palm;" /> <br class="hide-palm;" />
-        <p>Created by: Lib-Static </p>
+      <div class="col-md">
+        <p class="text-right">Created by: <a href="https://github.com/lib-static/lib-static.github.io" target="_blank">Lib-Static</a> {{ site.collection-date }}</p>
       </div>
     </div>
-
   </div>
-
 </footer>
-<!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<!-- load other js -->
-{% if page.layout == "search" %}{% include js/lunr-js.html %}{% endif %}
-<script>
-  $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-</script>

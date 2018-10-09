@@ -1,0 +1,51 @@
+---
+# front matter
+---
+@charset "utf-8";
+
+//Author Colors
+$armantrout: blue;
+$beasley: green;
+$gerstler: gray;
+$gluck: pink;
+$mcmichael: aquamarine;
+$mohammad: gold;
+$pinsky: brown;
+$ryan: purple;
+$strickland: red;
+$vanwinckel: cyan;
+$wrigley: teal;
+
+// base variables
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1500px;
+$on-phone:          550px;
+$on-palm:          800px;
+$on-laptop:        800px;
+$on-regular:        1000px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "layout"
+;

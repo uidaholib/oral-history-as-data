@@ -60,8 +60,7 @@
 
   // get hash from url
   var hashfilter = decodeURIComponent(window.location.hash.substr(1));
-  //.replace(/%20/g, " ");
-  //var hashfilterclass = "." + location.hash.substr(1).replace("%20","-").replace("%20","-").replace("%20","-").replace(" ","-").replace(" ","-").replace(" ","-"); 
+
 
   $(document).ready(function() {
     $("#quicksearch").focus();
@@ -69,7 +68,6 @@
     // code to be executed if a hash is contained in the url
     $('#quicksearch').val($('#quicksearch').val() + hashfilter);
     $('#goButton').click();
-    $(hashfilterclass).addClass('active');
     $imgs.lazyload();
     }
     else{ }

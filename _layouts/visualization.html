@@ -27,8 +27,8 @@ layout: default
                 {% assign my_integer = forloop.length %}
 {% assign my_float = my_integer | times: 1.0 %}
 {% assign rect-width = 100 | divided_by: my_float  %}
-            {%if forloop.first%}<text x="0" y="0"> {{transcript-name | capitalize}}</text> <rect x="{{rect-width}}%" y="20" width="{{rect-width}}%" height="50"  data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}" title="{{ item.words }}" >{{item.words}}</rect>
-            {%else %} <a href="{{ item.words | truncatewords: 5,'' | url_param_escape | prepend: '.html#' | prepend: transcript-name | prepend: '/transcripts/' | relative_url }}"><rect x="{{forloop.index | times: rect-width }}%" y="20" width="{{rect-width}}%" height="50" data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}"  title="{{ item.words }}{% if item.tags %}(Subjects: {{ item.tags | replace: ';', ', ' }}){%endif%}" >{{item.words}}{% if item.tags %}(Subjects: {{item.tags | replace: ';', ', '}}){%endif%}</rect></a>
+            {%if forloop.first%}<text x="0" y="0"> {{transcript-name | capitalize}}</text> <rect x="{{rect-width}}%" y="20" width="{{rect-width}}%" height="50"  data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}" title="{{ item.words }}" ></rect>
+            {%else %} <a href="{{ item.words | truncatewords: 5,'' | url_param_escape | prepend: '.html#' | prepend: transcript-name | prepend: '/transcripts/' | relative_url }}"><rect x="{{forloop.index | times: rect-width }}%" y="20" width="{{rect-width}}%" height="50" data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}"  title="{{ item.words }}{% if item.tags %}(Subjects: {{ item.tags | replace: ';', ', ' }}){%endif%}" ></rect></a>
                         {%endif%}{%endfor%}</svg> 
                         <br/>
                         {%endfor%}

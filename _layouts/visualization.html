@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<!-- list of colors provided by https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/ -->
+<style>
+{% for n in site.data.filters %}
+.{{ n.shortfilter }} { fill:{% cycle '#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff', '#000000' %}; }
+{% endfor %}
+.black{fill:black;}
+</style>
+<div class="container">
+{{ content }}
+ 
+    <div class="row">
+        {%for n in site.data.filters %}
+        <div class="col-md-2 col-4 ">
+        <svg class="legend" width="100%" height="25px" data-id="{{n.shortfilter}}" style="cursor:pointer;"  data-toggle="tooltip" data-placement="left" title="On {{ n.text | escape }}">
+                <rect x="0" y="0" width="20" height="20" class="{{n.shortfilter}}"></rect><text x="22" y="15">{{n.shortfilter}}</text>  </svg>
+        </div>
+        {%endfor%}
+            
+    </div><br/>
+    <br/>
+        {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
+        <svg class="chart" width="100%" height="100px" style="overflow: visible">
+                {% for item in transcript[1] %}
+                {% assign my_integer = forloop.length %}
+{% assign my_float = my_integer | times: 1.0 %}
+{% assign rect-width = 100 | divided_by: my_float  %}
+            {%if forloop.first%}<text x="0" y="0"> {{transcript-name | capitalize}}</text> <rect x="{{rect-width}}%" y="20" width="{{rect-width}}%" height="50"  data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}" title="{{ item.words }}" >{{item.words}}</rect>
+            {%else %} <a href="{{ item.words | truncatewords: 5,'' | url_param_escape | prepend: '.html#' | prepend: transcript-name | prepend: '/transcripts/' | relative_url }}"><rect x="{{forloop.index | times: rect-width }}%" y="20" width="{{rect-width}}%" height="50" data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}"  title="{{ item.words }}{% if item.tags %}(Subjects: {{ item.tags | replace: ';', ', ' }}){%endif%}" >{{item.words}}{% if item.tags %}(Subjects: {{item.tags | replace: ';', ', '}}){%endif%}</rect></a>
+                        {%endif%}{%endfor%}</svg> 
+                        <br/>
+                        {%endfor%}
+
+</div>

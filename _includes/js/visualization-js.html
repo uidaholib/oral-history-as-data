@@ -1,0 +1,12 @@
+<script>
+$(document).ready(function(){
+    $(".legend").click(function(){
+        var $thisColor = $(this).attr("data-id");
+        $("rect").not('.'+$thisColor).toggleClass("black");
+    });
+    // init tooltips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+});
+</script>

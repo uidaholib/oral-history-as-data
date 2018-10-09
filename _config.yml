@@ -1,31 +1,47 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Oral History as Data (OHD) - a Lib-STATIC Tool
+# https://github.com/uidaholib/oral-history-as-data
 
 # Site settings
+
+# title of site appears in banner
 title: Oral History (as) Data
+# tagline appears in banner
+tagline: analyze and publish coded oral history and qualitative interviews
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "Lib-Static Oral History / Qualitative Interview Analysis Tool, Analyze and publish transcriptions with tagged csvs"
+# keywords appear in meta tags
+keywords: "university of idaho, oral history, digital collections, digital humanities"
+# creator of the digital collection, to appear in meta tags
+author: dcnb
+# creator contact email for meta tags
 email: dbecker@uidaho.edu
-description: Lib-Static Oral History / Qualitative Interview Analysis ToolAnalyze and publish transcriptions with tagged csvs
- 
+# collection project date, when did you publish this web site
+collection-date: "2018"
+
+# url is your gh-pages base, following the pattern: username.github.io
+url: https://uidaholib.github.io
+# baseurl is your github repository's name prefixed with a /
 baseurl: /oral-history-as-data
-github_username: uidaholib
+# repository is the github repository's full url
+repository: https://github.com/uidaholib/oral-history-as-data
 
+# google services [optional!]
+# leave these blank or comment out to NOT include google code
+google-tracking-id: "UA-74844011-1"
+# google-cse-id: "002151703305773322890:1pu3smhw1t8"
 
+# Jekyll collections settings
 collections:
   transcripts:
-      output: true
-      permalink: /:collection/:name
-
+    output: true
+    permalink: /:collection/:name
+# defaults
 defaults:
   - scope:
       type: transcripts
     values:
       layout: transcript
-      
-
 
 # Build settings
 markdown: kramdown

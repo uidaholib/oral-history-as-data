@@ -1,18 +1,12 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}">
+<meta http-equiv="Content-Language" content="en-us" >
+{% if page.layout == "page" %}{% include page-meta.html %}{%- endif -%}
+{% if page.layout == "item" %}{% include item-meta.html %}{%- endif -%}
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-</head>
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | absolute_url }}" type="text/css">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | absolute_url }}">
+{% include other-css.html %}
+{% if site.google-tracking-id %}{% include google-analytics.html %}{%- endif -%}

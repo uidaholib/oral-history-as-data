@@ -1,0 +1,122 @@
+<script type="text/javascript">
+    $("select#filters").on('change', function() {
+    var myClass = this.value;
+     $("tr").removeClass("featured"); 
+ 
+    $("tr").addClass("grey"); 
+    $("li").addClass("hidden-all"); 
+      $('tr.'+myClass).removeClass("grey").addClass("featured"); 
+      $('li.'+myClass).removeClass("hidden-all").addClass("featured"); 
+      console.log("filter");
+      $("input#quicksearch").val(""); 
+      var numberofint = $('tr.featured').length;
+     $("#numberof").html(numberofint);
+   });
+     $("button.reset").click(function() {
+    $("tr").removeClass("grey"); 
+    $("li").addClass("hidden-all"); 
+      $("tr").removeClass("featured"); 
+      $("input#quicksearch").val(""); 
+      $("#filters").val($("#filters option:first").val());
+      var numberofint = $('tr').length;
+     $("#numberof").html(numberofint);
+   });
+ 
+ $("tr").click(function() {
+   if ($(this).hasClass('grey')) {
+     $(this).removeClass("grey"); 
+    $(this).addClass("featured"); 
+      console.log("show");}
+      else{}
+   });
+ 
+     </script>
+   <script>
+     function filterItems() {
+       var input, filter, table, tr, td, i;
+       input = document.getElementById("quicksearch");
+       filter = input.value.toUpperCase();
+       itemcontainer = document.getElementById("contents-container");
+       item = itemcontainer.getElementsByTagName("tr");
+       for (i = 0; i < item.length; i++) {
+         itemcontents = item[i].getElementsByTagName("div")[0];
+         if (itemcontents) {
+           if (itemcontents.innerHTML.toUpperCase().indexOf(filter) > -1) {
+             item[i].classList.add("featured");
+             item[i].classList.remove("grey");
+ 
+           } else {
+             item[i].classList.remove("featured");
+             item[i].classList.add("grey");
+           }
+         }       
+       }
+       var numberofint = $('tr.featured').length;
+     $("#numberof").html(numberofint);
+     $("#filters").val($("#filters option:first").val("search filtering"));
+     }
+     function filterNotes() {
+       var input, filter, table, tr, td, i;
+       input = document.getElementById("quicksearch");
+       filter = input.value.toUpperCase();
+       notecontainer = document.getElementById("notes-container");
+       note = notecontainer.getElementsByTagName("li");
+       for (i = 0; i < item.length; i++) {
+         notecontents = note[i].getElementsByTagName("a")[0];
+         if (itemcontents) {
+           if (itemcontents.innerHTML.toUpperCase().indexOf(filter) > -1) {
+             item[i].classList.remove("hidden-all");
+           } else {
+             item[i].classList.add("hidden-all");
+           }
+         }       
+       }
+     }
+     </script>
+ <script>
+ // fiter items by entering value of button or link pushed into quicksearch box
+ var filterit = function() {
+  $('#quicksearch').val('');
+   var filterValue = $(this).attr('data-filter');
+   var filterClass = $(this).attr('data-filter').replace(" ","-").replace(" ","-");
+  $('#quicksearch').val($('#quicksearch').val() + filterValue);
+   $('#goButton').click();
+     window.location.hash = filterValue; 
+    var filterValueclass = "." + filterClass;
+ $(filterValueclass).addClass('active');
+ };
+ // run filterit function when link/button with class filter clicked
+  $('a.filter').click(filterit);
+ 
+    // click goButton to search if return pressed in search box
+    $('#quicksearch').keypress(function(e){
+         if(e.which == 13){//Enter key pressed
+             $('#goButton').click();
+             //Trigger search button click event
+          }
+     });
+ // get hash from url
+ var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, " ");
+ //var hashfilterclass = "." + location.hash.substr(1).replace("%20","-").replace("%20","-").replace("%20","-").replace(" ","-").replace(" ","-").replace(" ","-");
+ 
+ $(document).ready(function() {
+ $("#quicksearch").focus();
+ if(window.location.hash) {
+     // code to be executed if a hash is contained in the url
+  $('#quicksearch').val($('#quicksearch').val() + hashfilter);
+ $('#goButton').click();
+ //$(hashfilterclass).addClass('active');
+ }
+ else{
+ }});
+ 
+ function highlight(text) {
+   var inputText = document.getElementById("spoken");
+   var innerHTML = inputText.innerHTML;
+   var index = innerHTML.indexOf(text);
+   if (index >= 0) { 
+    innerHTML = innerHTML.substring(0,index) + "<span class='hilite'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+    inputText.innerHTML = innerHTML;
+   }
+ }
+ </script>

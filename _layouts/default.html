@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    {% include head.html %}
+  </head>
 
   <body>
-
     {% include site-banner.html %}
     {% include site-nav.html %}
-    <div class="page-content" >
-      <div class="wrapper" id="page">
-        {{ content }}
-      </div>
-    </div>
-    
+    <main role="main">
+      {{ content }}
+    </main>
     {% include footer.html %}
-
+    {% include foot.html %}
   </body>
 
 </html>

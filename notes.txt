@@ -1,5 +1,0 @@
----
----
-poet,detail,tag,quote{% for note in site.data.notes %}{% for item in note[1] %}{{item.poet}},{{item.detail}},"{{item.tag}}","{{item.quote}}"
-{%endfor%}
-{%endfor%}

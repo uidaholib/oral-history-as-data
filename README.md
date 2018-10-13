@@ -19,9 +19,9 @@ A project to generate analyses, discovery and publication tools for oral histori
 
 See [Getting Started Docs](docs/index.md) for detailed information (coming soon!).
 
-### Get Started Way too Quickly
+### Get Started Quickly
 
-1. Fork this repository
+1.  Fork or import this repository
 2. Look at one of the csvs included (CSVs included here are from the CTRL+Shift project <www.ctrl-shift.org>)
 3. Paste your transcript into a google sheet or other spreadsheet software (Excel adds artifacts that can interfere with Jekyll)
 4. Make sure you have these rows at minimum: speaker,words,tags
@@ -53,8 +53,18 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 - Simple [lunr](https://lunrjs.com/) search 
 - Rich markup using [Schema.org](http://schema.org) and [Open Graph protocol](http://ogp.me/) standards.
 
-## Build your Own Oral History Collection! 
+### Technologies and Workflows used:
 
-Check out the [Docs](docs/index.md).
+- Git and GitHub basics
+- [Markdown](https://guides.github.com/features/mastering-markdown/), plaintext writing and content creation
+- HTML, CSS, and JS literacy
+- commandline literacy
+- GitHub collaboration and project management
+- [Jekyll](https://jekyllrb.com/) basics
+- working in the Open, open source and open data
+
+{%include credits.md%} 
+
+
 
 

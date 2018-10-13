@@ -22,14 +22,15 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 ### Get Started Way too Quickly
 
 1. Fork this repository
-2. Create (or copy) an example csv file (you can use your own or take one from the /examples/ folder)
-3. If you haven't added subject coding to your transcript CSV file, do so.
-4. Put the csv file in the _data/transcripts/ directory
-5. Create a Markdown (.md) file, use the example file as a model. The minimum fields to be included at the top: object-id, 
-first-name, last-name. If you can, add: last-name, date-interviewed, location, interviewer. 
-6. If you're working on the web, go to your GitHub repository [Settings](/settings), and enable GitHub Pages
-
-Check out your new site by hitting the link that the enabled GH-Pages Settings sections provides. Should be something like: [GitHub Username].github.io/[Repository Name].
+2. Look at one of the csvs included (CSVs included here are from the CTRL+Shift project <www.ctrl-shift.org>)
+3. Paste your transcript into a google sheet or other spreadsheet software (Excel adds artifacts that can interfere with Jekyll)
+4. Make sure you have these rows at minimum: speaker,words,tags
+5. Revise the _data/filters.csv to include your subjects, including a shorthand for each topic in the 'shortfilter'
+6. If you haven't added subject coding to your transcript CSV file, do so, using the shortfilter words you used in the filters.csv
+7. Download your file as into a CSV format. Add the csv file in the _data/transcripts/ directory.
+8. Create a Markdown (.md) file for each interview CSV file you intend to include. Use the examples currently included as models. The minimum fields to be included at the top are: object-id, first-name, last-name. If you can, add: last-name, date-interviewed, location, interviewer. 
+9. If you're working on the web, go to your GitHub repository [Settings](/settings), and enable GitHub Pages
+10. Check out your new site by hitting the link that the enabled GH-Pages Settings sections provides. Should be something like: [GitHub Username].github.io/[Repository Name].
 
 ### Technologies and Workflows used:
 

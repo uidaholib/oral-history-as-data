@@ -32,19 +32,6 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 9. If you're working on the web, go to your GitHub repository [Settings](/settings), and enable GitHub Pages
 10. Check out your new site by hitting the link that the enabled GH-Pages Settings sections provides. Should be something like: [GitHub Username].github.io/[Repository Name].
 
-### Technologies and Workflows used:
-
-- Git and GitHub basics
-- [Markdown](https://guides.github.com/features/mastering-markdown/), plaintext writing and content creation
-- HTML, CSS, and JS literacy
-- commandline literacy
-- GitHub collaboration and project management
-- [Jekyll](https://jekyllrb.com/) basics
-- working in the Open, open source and open data
-- digital libraries concepts such as "collections as data", minimal computing, data-driven design
-
-> We prefer commonly understood formats (such as CSV spreadsheets over YAML), and convention over configuration (follow the example over learn all the options).
-
 ## Features
 
 - [Jekyll](https://jekyllrb.com/) for GitHub Pages 
@@ -63,7 +50,6 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 - [Jekyll](https://jekyllrb.com/) basics
 - working in the Open, open source and open data
 
-{%include credits.md%} 
 
 
 

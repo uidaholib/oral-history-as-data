@@ -40,15 +40,6 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 - Simple [lunr](https://lunrjs.com/) search 
 - Rich markup using [Schema.org](http://schema.org) and [Open Graph protocol](http://ogp.me/) standards.
 
-### Technologies and Workflows used:
-
-- Git and GitHub basics
-- [Markdown](https://guides.github.com/features/mastering-markdown/), plaintext writing and content creation
-- HTML, CSS, and JS literacy
-- commandline literacy
-- GitHub collaboration and project management
-- [Jekyll](https://jekyllrb.com/) basics
-- working in the Open, open source and open data
 
 
 

@@ -28,7 +28,7 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 ### Get Started Quickly
 
 1. Fork or import this repository
-2. Look at one of the csvs included (CSVs included here are from the CTRL+Shift project <www.ctrl-shift.org>)
+2. Look at one of the csvs included (CSVs included here are from the [CTRL+Shift project](www.ctrl-shift.org)
 3. Paste your transcript into a google sheet or other spreadsheet software (Excel adds artifacts that can interfere with Jekyll)
 4. Make sure you have these rows at minimum: speaker,words,tags
 5. Revise the _data/filters.csv to include your subjects, including a shorthand for each topic in the 'shortfilter'

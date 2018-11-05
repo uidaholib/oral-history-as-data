@@ -15,7 +15,7 @@ Use this site and the demo files included to learn how to use and deploy the cod
 
 # oral-history-as-data
 
-<https://github.com/uidaholibrary/oral-history-as-data>
+<https://github.com/uidaholib/oral-history-as-data>
 
 A project to generate analyses, discovery and publication tools for oral histories and qualitative interviews, given:
 

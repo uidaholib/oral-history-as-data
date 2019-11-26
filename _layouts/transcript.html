@@ -32,8 +32,9 @@ layout: default
           <div class="container">
               <div class="row">
                   <div class="col-md-12">
-       <header><h2 class="poet-name">Interview with {{ page.first-name }} {{ page.last-name }}</h2>
-    <p>{{page.location}} on {{page.date-interviewed}} | Interviewer: {{page.interviewer}}</p>
+       <header><h2 class="poet-name">{{ page.title}}</h2>
+        <p>{%if page.location%}{{page.location}} on {%endif%}{%if page.date-interviewed%}{{page.date-interviewed}}{%endif%} </p>
+        {%if page.interviewer%}<p>Interviewer: {{page.interviewer}}</p>{%endif%}
   </header> 
   <div class="filteroptions">
    <h2><select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">

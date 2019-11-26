@@ -7,6 +7,7 @@ layout: default
 .{{ n.shortfilter }} { fill:{% cycle '#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff', '#000000' %}; }
 {% endfor %}
 .black{fill:black;}
+tr.black, .hidden{display:none;}
 </style>
 <div class="container">
 {{ content }}
@@ -25,15 +26,35 @@ layout: default
     <br/>
     <br/>
         {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
-        <svg class="chart" width="100%" height="100px" style="overflow: visible">
+        <svg class="chart {{transcript-name}}" width="100%" height="100px" style="overflow: visible">
                 {% for item in transcript[1] %}
                 {% assign my_integer = forloop.length %}
 {% assign my_float = my_integer | times: 1.0 %}
 {% assign rect-width = 100 | divided_by: my_float  %}
-            {%if forloop.first%}<text x="0" y="0"> {{transcript-name | capitalize}}</text> <rect x="{{rect-width}}%" y="20" width="{{rect-width}}%" height="50"  data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}" title="{{ item.words }}" ></rect>
+            {%if forloop.first%}<text x="0" y="0" data-id="{{transcript-name}}" style="cursor:pointer;" class="toggle_int"> {{transcript-name | capitalize}}</text> <rect x="{{rect-width}}%" y="20" width="{{rect-width}}%" height="50"  data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}" title="{{ item.words }}" ></rect>
             {%else %} <a href="{{ item.words | truncatewords: 5,'' | url_param_escape | prepend: '.html#' | prepend: transcript-name | prepend: '/transcripts/' | relative_url }}"><rect x="{{forloop.index | times: rect-width }}%" y="20" width="{{rect-width}}%" height="50" data-toggle="tooltip" data-placement="top" class="{{item.tags | replace: ';', ' '}}"  title="{{ item.words }}{% if item.tags %}(Subjects: {{ item.tags | replace: ';', ', ' }}){%endif%}" ></rect></a>
                         {%endif%}{%endfor%}</svg> 
                         <br/>
                         {%endfor%}
+
+</div>
+<br/><hr/><br/>
+<div class="container">
+<h2>Contents</h2>
+
+        
+        {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
+        {%capture youtube-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.youtube}}{%endif%}{%endfor%}{% endcapture %}
+        {% for item in transcript[1] %}
+        {% if forloop.first %}
+        <h3 class="my-4 {{transcript-name}}">{{transcript-name | capitalize}}</h3>
+        <table id="contents-container" class="my-4 border {{transcript-name}} {%cycle 'bg-light','' %}">{%endif%}
+        <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
+          <a target="_blank" href="https://youtu.be/{{ youtube-id }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}<br/>{{item.tags | replace: ";", "<br>"}}</td></tr>
+
+        {% if forloop.last%}</table>{%endif%}
+          {% endfor %}{% endfor %}
+       
+
 
 </div>

@@ -2,12 +2,27 @@
 $(document).ready(function(){
     $(".legend").click(function(){
         $("rect").removeClass("black");
+        $("tr").removeClass("black");
         var $thisColor = $(this).attr("data-id");
         $("rect").not('.'+$thisColor).toggleClass("black");
+        $("tr").not('.'+$thisColor).toggleClass("black");
     });
     $("#reset").click(function(){
         $("rect").removeClass("black");
+        $("tr").removeClass("black");
+        $("table").removeClass("hidden");
+        $("svg").removeClass("hidden");
            });
+
+    $("text.toggle_int").click(function(){
+        $("table").removeClass("hidden");
+        $("svg").removeClass("hidden");
+        var $thisInterview = $(this).attr("data-id");
+        $("table").not('.'+$thisInterview).toggleClass("hidden");
+        $("svg").not('.'+$thisInterview).toggleClass("hidden");
+        $("h3").not('.'+$thisInterview).toggleClass("hidden");
+        $(".legend").removeClass("hidden");
+    });
     // init tooltips
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

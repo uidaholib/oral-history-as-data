@@ -1,5 +1,26 @@
 <script>
 $(document).ready(function(){
+  /* get query id from URL */
+ 
+ 
+var url = window.location; // http://google.com?id=test
+var urlObject = new URL(url);
+var itemfilter = urlObject.searchParams.get('id');
+var datafilter = urlObject.searchParams.get('filter');
+console.log(datafilter + "," + itemfilter);
+
+
+    if (datafilter) {
+        var $thisFilter = datafilter;
+        $("rect").not('.'+$thisFilter).toggleClass("black");
+        $("tr").not('.'+$thisFilter).toggleClass("black");
+    }
+    if (itemfilter) {
+        var $thisItem = itemfilter;
+        $("table").not('.'+$thisItem).toggleClass("hidden");
+        $("svg.chart").not('.'+$thisItem).toggleClass("hidden");
+        $("h3").not('.'+$thisItem).toggleClass("hidden");
+    }
     $(".legend").click(function(){
         $("rect").removeClass("black");
         $("tr").removeClass("black");
@@ -7,22 +28,20 @@ $(document).ready(function(){
         $("rect").not('.'+$thisColor).toggleClass("black");
         $("tr").not('.'+$thisColor).toggleClass("black");
     });
+    $("text.toggle_int").click(function(){
+        $("table").removeClass("hidden");
+        $("svg").removeClass("hidden");
+        var $thisInterview = $(this).attr("data-id");
+        $("table").not('.'+$thisInterview).toggleClass("hidden");
+        $("svg.chart").not('.'+$thisInterview).toggleClass("hidden");
+        $("h3").not('.'+$thisInterview).toggleClass("hidden");
+    });
     $("#reset").click(function(){
         $("rect").removeClass("black");
         $("tr").removeClass("black");
         $("table").removeClass("hidden");
         $("svg").removeClass("hidden");
            });
-
-    $("text.toggle_int").click(function(){
-        $("table").removeClass("hidden");
-        $("svg").removeClass("hidden");
-        var $thisInterview = $(this).attr("data-id");
-        $("table").not('.'+$thisInterview).toggleClass("hidden");
-        $("svg").not('.'+$thisInterview).toggleClass("hidden");
-        $("h3").not('.'+$thisInterview).toggleClass("hidden");
-        $(".legend").removeClass("hidden");
-    });
     // init tooltips
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

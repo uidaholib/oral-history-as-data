@@ -3,6 +3,8 @@ layout: visualization
 title: Visualizations
 order: 2
 object-id: visualizations
+filtersheet: filters
+filter: tags
 ---
 
 ## Visualize by subject

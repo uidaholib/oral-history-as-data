@@ -49,7 +49,7 @@ tr.black, .hidden{display:none;}
         {% if forloop.first %}
         <h3 class="my-4 {{transcript-name}}"><a href="{{transcript-name | prepend: '/transcripts/' | append: '.html' | relative_url }}">{{transcript-name | capitalize}}</a></h3>
         <table id="contents-container" class="my-4 border {{transcript-name}} {%cycle 'bg-light','' %}">{%endif%}
-        <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line"><a href="{{ forloop.index | prepend: transcript-name | prepend: '.html#' | prepend: transcript.object-id | prepend: '/transcripts/' | relative_url }}">{{transcript-name}}-{{ forloop.index }}</a></td><td class="words"><div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
+        <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line"><a href="{{ forloop.index | prepend: transcript-name | prepend: '.html#' | prepend: transcript-name | prepend: '/transcripts/' | relative_url }}">{{transcript-name}}-{{ forloop.index }}</a></td><td class="words"><div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
           <a target="_blank" href="https://youtu.be/{{ youtube-id }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}<br/>{{item.tags | replace: ";", "<br>"}}</td></tr>
 
         {% if forloop.last%}</table>{%endif%}

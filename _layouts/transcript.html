@@ -53,8 +53,8 @@ layout: default
                </select></h2>
 <h3 class="text-center">
     <div class="form-inline my-2 my-lg-0" >
-  <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2" > 
-  <input class="searchinput mx-2 btn btn-lg btn-success" title="Search" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
+  <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2 col-4" > 
+  <input class="searchinput mx-2 btn btn-lg btn-primary col-2" title="Search" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
 <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
     </div>
     {% if page.object-id == 'all' %}
@@ -79,7 +79,7 @@ layout: default
               {% endfor %}{% endfor %}
             {% else %}
   {% for item in items %}
-   <tr id="{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}<a target="_blank" href="https://youtu.be/{{ page.youtube }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
+   <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}<a target="_blank" href="https://youtu.be/{{ page.youtube }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
 {% endfor %}
 {% endif %}
 </table>

@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary border-bottom">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav"
+            aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -11,15 +12,27 @@
                     <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
                 </li>
                 {% endfor %}
+                <li class="nav-item dropdown show {% if page.url contains '/transcripts/'  %}active{%else%}disabled{% endif %}">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Interviews
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        {% for transcript in site.transcripts %}
+                        <a class="dropdown-item"
+                            href="{{ transcript.object-id | prepend: '/transcripts/' | relative_url }}.html">{{transcript.title}}</a>
+                        {%endfor%}
+                    </ul>
+                </li>
             </ul>
             <script>
                 function site_search() {
                     var query = document.getElementById("site-search").value;
-                    window.open("{{ '/search/index.html' | absolute_url }}?q=" + encodeURIComponent(query), "_self" );
+                    window.open("{{ '/search/index.html' | absolute_url }}?q=" + encodeURIComponent(query), "_self");
                 }
             </script>
             <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
-                <input id="site-search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <input id="site-search" class="form-control mr-sm-2" type="text" placeholder="Search"
+                    aria-label="Search">
                 <button class="btn btn-secondary border my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>

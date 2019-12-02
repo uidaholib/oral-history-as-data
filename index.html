@@ -3,10 +3,21 @@ layout: default
 ---
 <div class="container">
     <div class="row">
-            <div class="col-md-12">
+          <div class="col-12">
         <h1>Transcripts</h1>
+          </div>
 {% for transcript in site.transcripts %}
-<h3><a href="transcripts/{{transcript.object-id}}.html">{{transcript.first-name}} {{transcript.last-name}}</a></h3>
+<div class="col-6 col-md-4 mb-3">
+<div class="card" >
+    <div class="card-body">
+      <h3 class="card-title">{{transcript.title}}</h3>
+      {% if transcript.date-interviewed%}<h6 class="card-subtitle mb-2 text-muted">{{transcript.date-interviewed}}</h6>{%endif%}
+    
+      <a href="transcripts/{{transcript.object-id}}.html" class="card-link">Go to interview</a>
+   
+    </div>
+</div>
+</div>
 {%endfor%}
     </div>
 </div>

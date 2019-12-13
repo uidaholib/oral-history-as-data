@@ -126,24 +126,32 @@ $('a.filter').click(filterit);
 //var hashfilterclass = "." + location.hash.substr(1).replace("%20","-").replace("%20","-").replace("%20","-").replace(" ","-").replace(" ","-").replace(" ","-");
 
 $(document).ready(function() {
-let url = new URL(window.location);
+ let url = new URL(window.location);
 let params = url.searchParams;
 var dataFilter = url.searchParams.get('q');
 var codeFilter = url.searchParams.get('filter');
-if(dataFilter) { 
-   // code to be executed if a hash is contained in the url
-$('#quicksearch').val($('#quicksearch').val() + dataFilter);
-$('#goButton').click();
-params.delete('filter'); 
-//$(hashfilterclass).addClass('active');
-}
-else if(codeFilter) { params.delete('q'); 
-   // code to be executed if a filter is contained in the url search parameters
-$('#filters').val(codeFilter).change();
-//$(hashfilterclass).addClass('active');
-}
-else{
-}});
+var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, " ");
+ if(dataFilter) { 
+     // code to be executed if a hash is contained in the url
+  $('#quicksearch').val($('#quicksearch').val() + dataFilter);
+ $('#goButton').click();
+ params.delete('filter'); 
+ //$(hashfilterclass).addClass('active');
+ }
+ else if(codeFilter) { params.delete('q'); 
+     // code to be executed if a filter is contained in the url search parameters
+  $('#filters').val(codeFilter).change();
+ //$(hashfilterclass).addClass('active');
+ }
+ else if(hashfilter) { params.delete('q'); 
+     // code to be executed if an anchor (#) is contained in the url
+  $('#' + hashfilter).css('background','aquamarine');
+
+ }
+ else{
+ }});
+ 
+
 
 function highlight(text) {
  var inputText = document.getElementById("spoken");

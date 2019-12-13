@@ -35,8 +35,11 @@ html{
     margin-bottom:1px; 
     overflow: hidden;
 }
+
+.anchored-highlight{background:aquamarine;}
   .featured{display:block;float:none; clear:both;}
- .line{display: block; font-size:11px; float:left;width:100px;}
+  .line{display: block; font-size:11px; float:left;width:auto;}
+  .words{max-width: 650px;}
  .grey .words, .grey .timestamp, .grey .speaker, .grey .line {
     display: inline;
     font-size: 3px;
@@ -53,3 +56,24 @@ list-style:disc;
 
 .toggle_int:hover{color:pink}
 .toggle_int small{font-size:12px;}
+
+#scroll-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 15%; /* Place the button at the bottom of the page */
+  right: -10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px 23px 5px 10px;
+  border-radius: 10px;
+  font-size: 40px;
+  }
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+#scroll-to-top {
+  @include media-query($on-palm) { font-size:28px;}
+}

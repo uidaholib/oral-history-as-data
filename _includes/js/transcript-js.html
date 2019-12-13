@@ -2,6 +2,7 @@
   $("#filters").on('change', function() {
   var myClass = this.value;
    $("tr").removeClass("featured"); 
+   $('tr').removeClass("anchored-highlight"); 
   $("tr").addClass("grey"); 
   $("li").addClass("hidden-all"); 
     $('tr.'+myClass).removeClass("grey").addClass("featured"); 
@@ -21,6 +22,7 @@ window.history.replaceState({}, '', location.pathname + '?' + p );
  });
    $("button.reset").click(function() {
   $("tr").removeClass("grey"); 
+  $('tr').removeClass("anchored-highlight"); 
   $("li").addClass("hidden-all"); 
     $("tr").removeClass("featured"); 
     $("input#quicksearch").val(""); 
@@ -47,6 +49,7 @@ $("tr").click(function() {
    </script>
  <script>
    function filterItems() {
+    $('tr').removeClass("anchored-highlight"); 
      var input, filter, table, tr, td, i;
      input = document.getElementById("quicksearch");
      let url = new URL(window.location);
@@ -145,7 +148,7 @@ var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, 
  }
  else if(hashfilter) { params.delete('q'); 
      // code to be executed if an anchor (#) is contained in the url
-  $('#' + hashfilter).css('background','aquamarine');
+     $('#' + hashfilter).addClass('anchored-highlight');
 
  }
  else{

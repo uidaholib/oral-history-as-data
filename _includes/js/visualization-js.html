@@ -1,84 +1,73 @@
 <script>
-    $(document).ready(function(){
-     
-    let url = new URL(window.location);
-    let params = url.searchParams;
-    var itemfilter = url.searchParams.get('id');
-    var datafilter = url.searchParams.get('filter');
-    console.log(datafilter + "," + itemfilter);
-    
-    
-    
-        $(".legend").click(function(){ 
-            let url = new URL(window.location);
-            let params = url.searchParams;
-            $("rect").addClass("black");
-            $("circle").addClass("black");
-            $("tr").addClass("black");
-            $("div.contentsdiv").addClass("hidden");
-            $("div.vizdiv").addClass("hidden");
-            var $thisColor = $(this).attr("data-id");
-            $('rect.'+ $thisColor).toggleClass("black");
-            $('circle.'+$thisColor).toggleClass("black");
-            $('tr.'+$thisColor).toggleClass("black");  
-            $("tr").not('.black').closest('div.contentsdiv').removeClass("hidden");
-            $("rect").not('.black').closest('div.vizdiv').removeClass("hidden");
-            {%if page.object-id == 'visualizations-three'%}$("circle.black").closest('div').addClass('hidden');{%endif%} 
-    //Add another parameter. 
-    params.set('filter', $thisColor); 
-    console.log(params.toString());
-    var p = params.toString();
-    window.history.replaceState({}, '', location.pathname + '?' + p );
-    
-        });
-        $("h3.toggle_int").click(function(){
-            let url = new URL(window.location);
-            let params = url.searchParams;
-            $("table").removeClass("hidden");
-            $("svg").removeClass("hidden");
-            var $thisInterview = $(this).attr("data-id");
-            $("table").not('.'+$thisInterview).toggleClass("hidden");
-            $("svg.chart").not('.'+$thisInterview).toggleClass("hidden");
-            $("h3").not('.'+$thisInterview).toggleClass("hidden");  
-    //Add another parameter. 
-    params.set('id', $thisInterview); 
-    console.log(params.toString());
-    var p = params.toString();
-    window.history.replaceState({}, '', location.pathname + '?' + p );
-    
-    
-        });
-        $("#reset").click(function(){
-            $("rect").removeClass("black");
-            $("circle").removeClass("black");
-            $("tr").removeClass("black");
-            $("table").removeClass("hidden");
-            $("svg").removeClass("hidden");
-            $("h3").removeClass("hidden");
-            $("div").removeClass("hidden");
-              params.set('id', ''); 
-            params.set('filter', ''); 
-            window.history.replaceState({}, '', location.pathname );
-    
-               });
-               
-    
-    
-        if (datafilter) {
-            var $thisFilter = datafilter;
-            $("rect").not('.'+$thisFilter).toggleClass("black");
-            $("tr").not('.'+$thisFilter).toggleClass("black");
-        }
-        if (itemfilter) {
-            var $thisItem = itemfilter;
-            $("table").not('.'+$thisItem).toggleClass("hidden");
-            $("svg.chart").not('.'+$thisItem).toggleClass("hidden");
-            $("h3").not('.'+$thisItem).toggleClass("hidden");
-        }
-        // init tooltips
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-    });
-    </script>
-    
+            const url = new URL(window.location);
+            const params = url.searchParams;
+
+    function codeFilter(x) {
+              console.log(x);
+              $("rect").addClass("black");
+              $("circle").addClass("black");
+              $("tr").addClass("black");
+              $("div.contentsdiv").addClass("hidden");
+              $("div.vizdiv").addClass("hidden");
+              $('rect.' + x).toggleClass("black");
+              $('circle.' + x).toggleClass("black");
+              $('tr.' + x).toggleClass("black");
+              $("tr").not('.black').closest('div.contentsdiv').removeClass("hidden");
+              $("rect").not('.black').closest('div.vizdiv').removeClass("hidden");
+              //Add another parameter. 
+              params.set('filter', x);
+              console.log(params.toString());
+              var p = params.toString();
+              window.history.replaceState({}, '', location.pathname + '?' + p);
+          }
+          function interviewFilter(x) { 
+              $("table").removeClass("hidden");
+              $("svg").removeClass("hidden");
+              $("table").not('.' + x).toggleClass("hidden");
+              $("svg.chart").not('.' + x).toggleClass("hidden");
+              $("h3").not('.' + x).toggleClass("hidden");
+              //Add another parameter. 
+              params.set('id', x);
+              console.log(params.toString());
+              var p = params.toString();
+              window.history.replaceState({}, '', location.pathname + '?' + p);
+          }
+  
+          $(".legend").click(function () {
+              var cFilter = $(this).attr("data-id");
+              codeFilter(cFilter);
+          });
+          $("h3.toggle_int").click(function () {
+              var intFilter = $(this).attr("data-id");
+              interviewFilter(intFilter);
+          });
+          $("#reset").click(function () {
+              $("rect").removeClass("black");
+              $("circle").removeClass("black");
+              $("tr").removeClass("black");
+              $("table").removeClass("hidden");
+              $("svg").removeClass("hidden");
+              $("h3").removeClass("hidden");
+              $("div").removeClass("hidden");
+              params.set('id', '');
+              params.set('filter', '');
+              window.history.replaceState({}, '', location.pathname);
+          });
+  
+          $(document).ready(function () {
+          let url = new URL(window.location);
+          let params = url.searchParams;
+          var itemfilter = url.searchParams.get('id');
+          var datafilter = url.searchParams.get('filter');
+          if (datafilter) {
+              codeFilter(datafilter);
+          }
+          if (itemfilter) {
+              interviewFilter(itemfilter);
+          }
+          // init tooltips
+          $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+          });
+      });
+  </script>

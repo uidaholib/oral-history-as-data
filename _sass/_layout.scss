@@ -39,7 +39,8 @@ html{
 .anchored-highlight{background:aquamarine;}
   .featured{display:block;float:none; clear:both;}
   .line{display: block; font-size:11px; float:left;width:auto;}
-  .words{max-width: 650px;}
+  .words{min-width: 650px;
+    @include media-query($on-palm) {min-width: 250px;}}
  .grey .words, .grey .timestamp, .grey .speaker, .grey .line {
     display: inline;
     font-size: 3px;

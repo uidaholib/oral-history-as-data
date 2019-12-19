@@ -12,11 +12,18 @@
         $(".legend").click(function(){ 
             let url = new URL(window.location);
             let params = url.searchParams;
-            $("rect").removeClass("black");
-            $("tr").removeClass("black");
+            $("rect").addClass("black");
+            $("circle").addClass("black");
+            $("tr").addClass("black");
+            $("div.contentsdiv").addClass("hidden");
+            $("div.vizdiv").addClass("hidden");
             var $thisColor = $(this).attr("data-id");
-            $("rect").not('.'+$thisColor).toggleClass("black");
-            $("tr").not('.'+$thisColor).toggleClass("black");  
+            $('rect.'+ $thisColor).toggleClass("black");
+            $('circle.'+$thisColor).toggleClass("black");
+            $('tr.'+$thisColor).toggleClass("black");  
+            $("tr").not('.black').closest('div.contentsdiv').removeClass("hidden");
+            $("rect").not('.black').closest('div.vizdiv').removeClass("hidden");
+            {%if page.object-id == 'visualizations-three'%}$("circle.black").closest('div').addClass('hidden');{%endif%} 
     //Add another parameter. 
     params.set('filter', $thisColor); 
     console.log(params.toString());
@@ -43,11 +50,13 @@
         });
         $("#reset").click(function(){
             $("rect").removeClass("black");
+            $("circle").removeClass("black");
             $("tr").removeClass("black");
             $("table").removeClass("hidden");
             $("svg").removeClass("hidden");
             $("h3").removeClass("hidden");
-            params.set('id', ''); 
+            $("div").removeClass("hidden");
+              params.set('id', ''); 
             params.set('filter', ''); 
             window.history.replaceState({}, '', location.pathname );
     

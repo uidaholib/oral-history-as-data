@@ -23,15 +23,14 @@ A project to generate analyses, discovery and publication tools for oral histori
 - a folder (_transcripts) markdown files for each transcript - MD file example here
 - a CSV list of coded topics, listing shorthand reference and full description - CSV Filters example here
 
-See [Getting Started Docs](docs/index.md) for detailed information (coming soon!).
 
-### Get Started Quickly
+### Get Started 
 
 1. Fork or import this repository
 2. Look at one of the csvs included (CSVs included here are from the [CTRL+Shift project](www.ctrl-shift.org)
 3. Paste your transcript into a google sheet or other spreadsheet software (Excel adds artifacts that can interfere with Jekyll)
 4. Make sure you have these rows at minimum: speaker,words,tags
-5. Revise the _data/filters.csv to include your subjects, including a shorthand for each topic in the 'shortfilter'
+5. Revise the _data/filters.csv to include your subjects/codes, including a shorthand for each topic in the 'shortfilter' column
 6. If you haven't added subject coding to your transcript CSV file, do so, using the shortfilter words you used in the filters.csv
 7. Download your file as into a CSV format. Add the csv file in the _data/transcripts/ directory.
 8. Create a Markdown (.md) file for each interview CSV file you intend to include. Use the examples currently included as models. The minimum fields to be included at the top are: object-id, first-name, last-name. If you can, add: last-name, date-interviewed, location, interviewer. 

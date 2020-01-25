@@ -28,10 +28,14 @@ A project to generate analyses, discovery and publication tools for oral histori
 
 1. Fork or import this repository
 2. Look at one of the csvs included (CSVs included here are from the [CTRL+Shift project](www.ctrl-shift.org)
-3. Paste your transcript into a google sheet or other spreadsheet software (Excel adds artifacts that can interfere with Jekyll)
-4. Make sure you have these rows at minimum: speaker,words,tags
-5. Revise the _data/filters.csv to include your subjects/codes, including a shorthand for each topic in the 'shortfilter' column
-6. If you haven't added subject coding to your transcript CSV file, do so, using the shortfilter words you used in the filters.csv
+3. Paste your transcript into a google sheet or other spreadsheet software (WARNING: Excel sometimes adds artifacts (or changes data fomatting in unfortunate ways)
+4. Make sure your CSV has these three header rows: speaker,words,tags
+    - MAKE SURE THERE IS NO SPACE AFTER THE LAST HEADER FIELD (the tool won't read that field, if that's the case.)
+    - If you don't want the visualization, and just need a searchable transcript online, you don't even need the tags!
+6. If you do want visaulziations, make sure your transcript CSV file is coded, using one-word abbreviations for your subjects
+    - Code each cell within the google sheet. For an example, see this google sheet:  
+5.  Revise the "filters.CSV" file in the _data directory to include your subjects/codes, including a shorthand for each topic in the 'shortfilter' column
+    - For instance, in the example, we use the shorthand "paper" to represent the code we used to detail parts where our authors were talking about how they used paper. That row looks like this: (paper,using paper in the writing proceess)
 7. Download your file as into a CSV format. Add the csv file in the _data/transcripts/ directory.
 8. Create a Markdown (.md) file for each interview CSV file you intend to include. Use the examples currently included as models. The minimum fields to be included at the top are: object-id, first-name, last-name. If you can, add: last-name, date-interviewed, location, interviewer. 
 9. If you're working on the web, go to your GitHub repository [Settings](/settings), and enable GitHub Pages

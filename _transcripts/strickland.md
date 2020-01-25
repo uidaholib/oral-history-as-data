@@ -1,13 +1,8 @@
 ---
 object-id: strickland
-collection-type: Filterable Transcript  
 title: Stephanie Strickland    
-first-name: Stephanie
-last-name: Strickland
 date-interviewed: May 20, 2014
 location: New York, NY
-options: 
-url: http://www.stephaniestrickland.com/
 youtube: VlqyVNoAi2o
 ---
 

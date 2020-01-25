@@ -1,8 +1,6 @@
 ---
 object-id: all
-transcript: transcript-all  
-first-name: all
-last-name: subjects   
+title: All Interviews
 date-interviewed: Various times
 location: Various Locations Across the United States
 ---

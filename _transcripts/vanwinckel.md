@@ -1,14 +1,8 @@
 ---
 object-id: vanwinckel
-collection-type: Filterable Transcript  
 title: Nance Van Winckel    
-transcript: transcript-vanwinckel  
-first-name: Nance
-last-name: Van Winckel
 date-interviewed: October 30, 2013
 location: Liberty Lake, WA
-options: video genpoem
-url: http://www.nancevanwinckel.com/
 youtube: nYnm_gDVa1I
 ---
 

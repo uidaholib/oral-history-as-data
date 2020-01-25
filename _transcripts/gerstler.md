@@ -1,15 +1,8 @@
 ---
 object-id: gerstler
-collection-type: Filterable Transcript  
 title: Amy Gerstler
-transcript: transcript-gerstler
-first-name: Amy
-last-name: Gerstler
-portrait: yes
 date-interviewed: March 20, 2014
 location: Los Angeles, CA
-options: video genpoem
-url: https://en.wikipedia.org/wiki/Amy_Gerstler
 youtube: 2yQnYpQIbNI
 ---
 

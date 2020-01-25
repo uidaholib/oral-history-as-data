@@ -1,14 +1,8 @@
 ---
 object-id: armantrout
-collection-type: Filterable Transcript  
 title: Rae Armantrout
-transcript: transcript-armantrout  
-first-name: Rae
-last-name: Armantrout
 date-interviewed: March 27, 2014
 location: San Diego, CA
-options: video genpoem
-url: https://en.wikipedia.org/wiki/Rae_Armantrout
 youtube: BX_bURONf78
 ---
 

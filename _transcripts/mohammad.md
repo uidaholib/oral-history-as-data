@@ -1,15 +1,8 @@
 ---
 object-id: mohammad
-collection-type: Filterable Transcript  
 title: K. Silem Mohammad
-transcript: transcript-mohammad
-first-name: K. Silem
-last-name: Mohammad
-portrait: yes
 date-interviewed: June 16, 2014
-options: video genpoem
 location: Ashland, OR
-url: https://en.wikipedia.org/wiki/K._Silem_Mohammad
 youtube: tgji2thf1og
 ---
 

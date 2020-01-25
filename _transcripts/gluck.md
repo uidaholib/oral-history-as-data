@@ -1,13 +1,8 @@
 ---
 object-id: gluck
-collection-type: Filterable Transcript  
 title: Louise Glück    
-first-name: Louise
-last-name: Glück
 date-interviewed: May 15, 2014
 location: Cambridge, MA
-options: 
-url: https://en.wikipedia.org/wiki/Louise_Gl%C3%BCck
 youtube: kx0Q_SAaT1E
 ---
 

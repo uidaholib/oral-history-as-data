@@ -1,14 +1,8 @@
 ---
 object-id: mcmichael
-collection-type: Filterable Transcript  
 title: James McMichael    
-transcript: transcript-mcmichael
-first-name: James
-last-name: McMichael
 date-interviewed: March 17, 2014
 location: Long Beach, CA
-options: video genpoem
-url: https://en.wikipedia.org/wiki/James_L._McMichael
 youtube: VpCEAVJOFYc
 ---
 

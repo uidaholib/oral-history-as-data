@@ -1,14 +1,8 @@
 ---
 object-id: beasley
-collection-type: Filterable Transcript  
 title: Bruce Beasley
-transcript: transcript-beasley
-first-name: Bruce
-last-name: Beasley
 date-interviewed: June 20, 2014
 location: Bellingham, WA
-options: video genpoem
-url: https://chss.wwu.edu/english/english-faculty-bruce-beasley
 youtube: a5QwmVjCAEU
 ---
 

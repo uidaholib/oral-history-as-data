@@ -15,7 +15,7 @@ layout: default
 {%- assign subjects = subjects | split: ";" -%}
 {%- assign uniqueSubjects = subjects | uniq | sort -%}
 {%endif%}
-
+{% capture avlink %}timestamp/{{site.av_source}}.html{% endcapture %}
   <!--<div class="container-fluid">
     
 {% assign notes = site.data.notes[page.object-id] %}
@@ -79,7 +79,8 @@ layout: default
               {% endfor %}{% endfor %}
             {% else %}
   {% for item in items %}
-   <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}<a target="_blank" href="https://youtu.be/{{ page.youtube }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
+   <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
+    <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td></tr>
 {% endfor %}
 {% endif %}
 </table>

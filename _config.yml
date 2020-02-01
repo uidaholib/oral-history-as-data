@@ -26,6 +26,10 @@ baseurl: /oral-history-as-data
 # repository is the github repository's full url
 repository: https://github.com/uidaholib/oral-history-as-data
 
+# IF you are hosting your interviews at Vimeo, Soundcloud or Youtube, use this section to detail the service and, if necessary, your userid
+av_source: soundcloud #[options: youtube, soundcloud, or vimeo]
+soundcloud-id: stack-exchange
+
 # google services [optional!]
 # leave these blank or comment out to NOT include google code
 google-tracking-id: "UA-76328753-1"

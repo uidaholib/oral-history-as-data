@@ -21,3 +21,9 @@ Below are a few simple steps to help you properly prepare your transcripts for c
 - Once you have pasted this into the spreadsheet you will see that your timestamps need to be moved over. This will be the most labor intensive part of this process. Just hover your mouse over the timestamp until your cursor turns into a white glove and then pull the timestamp over into the correct column, under the word "timestamp".
 - Now add subjects in the cells under the "tags" column. 
 - Finally, go up to the "file" tab at the top of your sheet and hover over "download" and select "comma-separated values" This will save your file as a .csv file, ready to be imported to your data folder on your Github or your text editor. 
+
+## Step 3: Creating Your "filters.csv" 
+
+- First, go to this blank [spreadsheet](https://docs.google.com/spreadsheets/d/1qPU-7LFZrIWcLiHuTqnlbnRD1869SJalJ5OCL7tGtzE/edit#gid=0){:target="_blank"}. Then you will need to make a copy of it. Like before, click the "file" icon and choose "make a copy." This will open a new spreadsheet in a new tab. 
+- You will see two fields: one says "shortfilter", the other says "text". Under shortfilter you will write out the subjects you wish you include in your transcript's .csv. Then under text you will write out a brief description of the subject tag. 
+- Finally, you create a new .csv by clicking on the "file" icon, hovering above "download", and selecting "comma-seperated values". 

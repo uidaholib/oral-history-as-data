@@ -40,12 +40,19 @@ collections:
   transcripts:
     output: true
     permalink: /:collection/:name
+  howto:
+    output: true
+    permalink: /:collection/:name
 # defaults
 defaults:
   - scope:
       type: transcripts
     values:
       layout: transcript
+  - scope:
+      type: howto
+    values:
+      layout: howto
 
 # Build settings
 markdown: kramdown

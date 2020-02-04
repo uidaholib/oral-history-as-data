@@ -44,7 +44,7 @@ You will then reference that folder in the include explained below.
 We will be adding images by using a [jekyll include](https://jekyllrb.com/docs/includes/). The include looks  like this example: 
 
 {:.pl-4}
-`{%raw%}{% include bootstrap/figure.md img="/howto/ruby/rubyinstaller-download.png" caption="Download Ruby+Devkit 2.6.5-1 (x64)" alt="a screenshot of the first section of the Ruby Installer website" %}{%endraw%}`
+`{%raw%}{% include bootstrap/figure.md img="rubyinstaller-download.png" caption="Download Ruby+Devkit 2.6.5-1 (x64)" alt="a screenshot of the first section of the Ruby Installer website" %}{%endraw%}`
 
 This include pushes your variables -- which in this example are "img", "caption", and "alt" -- into a [Bootstrap figure](https://getbootstrap.com/docs/4.0/content/figures/). 
 

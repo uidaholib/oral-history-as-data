@@ -26,9 +26,12 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 
 ## Step 3: Moving Transcript
 
-- Open up the transcript you turned into a .csv. 
+- Open your transcript  
 - Make sure you open it in a text editor. 
-- Move the transcript to the new GitHub file by opening it in the text editor, select the entire text (ctrl + a), then copy and paste it into the new file open you have created. 
+- Move the transcript to the new GitHub file by opening it in the text editor, select the entire text (ctrl + a), then copy and paste it into the new file open you have created.
+{% include bootstrap/figure.md img="howto/text_editor.png" caption="transcript selected in text editor" alt="" class="w-50" %}
+{% include bootstrap/figure.md img="howto/github_csv.png" caption=".csv after being transferred to GitHub" alt="" class="w-50" %}
+- Commit the change at bottom oof page 
 
 ## Step 4: Moving filters.csv
 
@@ -36,6 +39,8 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 - navigate to the "_data" folder 
 - Open the "_data" folder and click the pencil icon to edit 
 - Copy and paste this filters.csv over over the existing content 
+{% include bootstrap/figure.md img="howto/filters_csv2.png" caption="transcript selected in text editor" alt="" class="w-50" %}
+{% include bootstrap/figure.md img="howto/filters_github.png" caption=".csv after being transferred to GitHub" alt="" class="w-50" %}
 - Commit the change at the bottom of the page 
 
 ## Generate Your Site

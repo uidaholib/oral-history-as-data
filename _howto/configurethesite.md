@@ -21,19 +21,25 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 {% include bootstrap/figure.md img="howto/new_file.png" caption="" alt="" class="w-50" %}
 - Now you need to name your file according to your transcript. 
 {% include bootstrap/figure.md img="howto/name_file.png" caption="" alt="" class="w-50" %}
+
+{:.alert .alert-danger}
+When you name your file be sure to include the type of file after the name you choose. For example, if it is a mark down file, attach ".md" after the file name. 
 - Once you've named the file scroll to the bottom of the page and click "commit new file". 
 {% include bootstrap/figure.md img="howto/commit_file.png" caption="" alt="" class="w-50" %}
 
 ## Step 3: Moving Transcript
 
 - Open your transcript  
-- Make sure you open it in a text editor. 
+
+{:.alert .alert-danger}
+Make sure you open your transcript in a text editor. Here at OHD, we prefer using Visual Studio Code, but a list of other options are available. 
 - Move the transcript to the new GitHub file by opening it in the text editor, select the entire text (ctrl + a), then copy and paste it into the new file open you have created.
 {% include bootstrap/figure.md img="howto/text_editor.png" caption="transcript selected in text editor" alt="" class="w-50" %}
 {% include bootstrap/figure.md img="howto/github_csv.png" caption=".csv after being transferred to GitHub" alt="" class="w-50" %}
-- Commit the change at bottom oof page 
+- Commit the change at bottom of page 
 
-## Step 4: Moving filters.csv
+#### Additional: Moving filters.csv
+OHD offers a way to categorize your transcripts using tags. This is done through two locations: the subject cells in your transcript's .csv and the filters.csv file, which is already provided for you in the structure of OHD. If you are not aware of either of these files, first visit our steps on "How To Prepare Your Data." 
 
 - Open filters.csv you created
 - navigate to the "_data" folder 
@@ -42,6 +48,8 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 {% include bootstrap/figure.md img="howto/filters_csv2.png" caption="transcript selected in text editor" alt="" class="w-50" %}
 {% include bootstrap/figure.md img="howto/filters_github.png" caption=".csv after being transferred to GitHub" alt="" class="w-50" %}
 - Commit the change at the bottom of the page 
+- Your finished visualization will look like this: 
+{% include bootstrap/figure.md img="howto/visualization.png" caption="finished OHD visual" alt="" class="w-50" %}
 
 ## Generate Your Site
 

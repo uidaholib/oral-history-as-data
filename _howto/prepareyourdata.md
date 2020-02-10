@@ -15,7 +15,7 @@ Below are a few simple steps to help you properly prepare your transcripts for c
 - when you copy the text into your spreadsheet be sure to copy it just below the cell titled "speaker".  
 {% include bootstrap/figure.md img="howto/speaker_copy.png" caption="copy text here" alt="a screenshot of the first section of the Ruby Installer website" class="w-50" %}
 
-{:.alert .alert-danger} 
+{:.alert .alert-warning} 
 At this point you may need to use your skills to clean up this data. But if you are having a difficult time feel free to view our video tutorial on cleaning up .csv data. 
 - Now add subjects in the cells under the "tags" column.
 {% include bootstrap/figure.md img="howto/subjects_cell.png" caption="example subjects" alt="a screenshot of the first section of the Ruby Installer website" %}

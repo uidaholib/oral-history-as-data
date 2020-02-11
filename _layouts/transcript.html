@@ -3,9 +3,9 @@ layout: default
 ---
 {% if page.object-id == 'all' %}
 {% assign transcripts = site.data.transcripts %}
-{%capture youtubes%}{% for y in site.transcripts %}{{ y.youtube | strip }};{% endfor %}
+{%capture avlinks%}{% for y in site.transcripts %}{{ y.avlinks }};{% endfor %}
 {% endcapture %}
-{% assign youtube-list = youtubes | split: ";" %}
+{% assign avlinks-list = avlinks | split: ";" %}
 {% else %}
 {% assign items = site.data.transcripts[page.object-id] %}
 {%- comment -%} find all words used in the subject metadata {%- endcomment -%}
@@ -16,7 +16,7 @@ layout: default
 {%- assign uniqueSubjects = subjects | uniq | sort -%}
 {%endif%}
 {% capture avlink %}timestamp/{{site.av_source}}.html{% endcapture %}
-  <!--<div class="container-fluid">
+<!--<div class="container-fluid">
     
 {% assign notes = site.data.notes[page.object-id] %}
       <div class="row">
@@ -29,65 +29,78 @@ layout: default
   </ul>
 </div>
        <div class="col-md-9">-->
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-       <header><h2 class="poet-name">{{ page.title}}</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <header>
+        <h2 class="poet-name">{{ page.title}}</h2>
         <p>{%if page.location%}{{page.location}} on {%endif%}{%if page.date-interviewed%}{{page.date-interviewed}}{%endif%} </p>
         {%if page.interviewer%}<p>Interviewer: {{page.interviewer}}</p>{%endif%}
-  </header> 
-  <div class="filteroptions">
-   <h2><select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">
-      <option value="#" selected="selected">On All Topics</option>
-             {% assign filters = site.data.filters %}
-             {% if page.object-id == 'all' %}
-             {% for filter in filters %}
-             <option value="{{ filter.shortfilter }}" >On {{filter.text}}</option>
-                       {% endfor %}
-             {%else%}
-             {% for filter in filters %}
-     {%if uniqueSubjects contains filter.shortfilter %}<option value="{{ filter.shortfilter }}" >On {{filter.text}}</option>{%endif%}
-               {% endfor %}
-               {%endif%}
-              <br/> <hr/><br/>
-               </select></h2>
-<h3 class="text-center">
-    <div class="form-inline my-2 my-lg-0" >
-  <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2 col-4" > 
-  <input class="searchinput mx-2 btn btn-lg btn-primary col-2" title="Search" value="Go" alt="Search" id="goButton" onclick="filterItems()"> 
-<button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
-    </div>
-    {% if page.object-id == 'all' %}
-    {% capture lines %}{% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{% if forloop.first == true %}{{ forloop.length }};{% else %}{% endif %}{% endfor %}{% endfor %}{%endcapture%}
-    {%assign linestotal = lines | split: ";" %}
-    {%for linetotal in linestotal%}
-    {% assign sum = sum | plus: linetotal %}
-    {%endfor%}
-    <h4><span class="info2"><span id="numberof">{{ sum}}</span> of {{ sum }} rows</span> (click a missing row to make it appear)</h4>
-{% else %}
-<h4><span class="info2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} rows</span> (click a missing row to make it appear)</h4>
-{% endif %}
-
-</div>
-          <table id="contents-container">
+      </header>
+      <div class="filteroptions">
+        <h2><select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">
+            <option value="#" selected="selected">On All Topics</option>
+            {% assign filters = site.data.filters %}
             {% if page.object-id == 'all' %}
-            {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
-            {%capture youtube-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.youtube}}{%endif%}{%endfor%}{% endcapture %}
-            {% for item in transcript[1] %}
-            <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ';', ' '}}"><td class="line">{{transcript-name}}-{{ forloop.index }}</td><td class="words"><div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
-              <a target="_blank" href="https://youtu.be/{{ youtube-id }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}</td></tr>
-              {% endfor %}{% endfor %}
-            {% else %}
-  {% for item in items %}
-   <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}"><td class="line">{{ forloop.index }}</td><td class="words"><div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div></td><td class="timestamp">{%if item.timestamp%}
-    <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td></tr>
-{% endfor %}
-{% endif %}
-</table>
+            {% for filter in filters %}
+            <option value="{{ filter.tag }}">On {{filter.description}}</option>
+            {% endfor %}
+            {%else%}
+            {% for filter in filters %}
+            {%if uniqueSubjects contains filter.tag %}<option value="{{ filter.tag }}">On {{filter.description}}</option>{%endif%}
+            {% endfor %}
+            {%endif%}
+            <br />
+            <hr /><br />
+          </select></h2>
+        <h3 class="text-center">
+          <div class="form-inline my-2 my-lg-0">
+            <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2 col-4">
+            <input class="searchinput mx-2 btn btn-lg btn-primary col-2" title="Search" value="Go" alt="Search" id="goButton" onclick="filterItems()">
+            <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
+          </div>
+          {% if page.object-id == 'all' %}
+          {% capture lines %}{% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{% if forloop.first == true %}{{ forloop.length }};{% else %}{% endif %}{% endfor %}{% endfor %}{%endcapture%}
+          {%assign linestotal = lines | split: ";" %}
+          {%for linetotal in linestotal%}
+          {% assign sum = sum | plus: linetotal %}
+          {%endfor%}
+          <h4><span class="info2"><span id="numberof">{{ sum}}</span> of {{ sum }} rows</span> (click a missing row to make it appear)</h4>
+          {% else %}
+          <h4><span class="info2"><span id="numberof">{{ items | size }}</span> of {{ items | size }} rows</span> (click a missing row to make it appear)</h4>
+          {% endif %}
+
+      </div>
+      <table id="contents-container">
+        {% if page.object-id == 'all' %}
+        {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
+        {%capture audiovideo-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.audiovideo-id}}{%endif%}{%endfor%}{% endcapture %}
+        {% for item in transcript[1] %}
+        <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ';', ' '}}">
+          <td class="line">{{transcript-name}}-{{ forloop.index }}</td>
+          <td class="words">
+            <div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div>
+          </td>
+          <td class="timestamp">{%if item.timestamp%}
+            <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+        </tr>
+        {% endfor %}{% endfor %}
+        {% else %}
+        {% for item in items %}
+        <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ";", " "}}">
+          <td class="line">{{ forloop.index }}</td>
+          <td class="words">
+            <div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div>
+          </td>
+          <td class="timestamp">{%if item.timestamp%}
+            <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+      </table>
 
 
+    </div>
 
-        </div>
-
-</div>
+  </div>
 </div>

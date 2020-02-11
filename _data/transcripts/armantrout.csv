@@ -5,7 +5,7 @@ timestamp,speaker,words,tags
 ,DB,"So that will be kind of a couple of pages, but fairly quick.",
 ,DB,"And then we'll talk kind of more overarchingly about your professional career and about how the processes for you have changed, have not changed with. Some idea, you know, with some sort of focus on how the computer impacted that.",
 ,DB,"Then, we'll talk a little bit about the computer in general, and a little bit about correspondence and teaching, and ask a few plunk questions at the end just to see what you think about computers&#8212;which is such a large question&#8212;but it gets somewhat repetitive at times. So, if you think you've answered already, say, ""Skip it,"" or you know, ""Let's go.""",
-[01:09],RA,About how long will it take?,
+[00:01:09],RA,About how long will it take?,
 ,DB,It'll take about an hour and fifteen minutes.,
 ,RA,OK.,
 ,DB,"And if, you know, need a break at any time, no problem.",
@@ -16,7 +16,7 @@ timestamp,speaker,words,tags
 ,DB,"If you wouldn't mind stating your name, your date of birth, and the location we're at right now.",
 ,RA,"OK. Ray Armantrout (1:29), April 13th, 1947, and we are at my home in Norman Heights, San Diego.",
 ,DB,"Alright. So, I'm going to first ask about how you compose currently. So what genres do you work in?",
-[01:43],RA,Mostly poetry.,
+[00:01:43],RA,Mostly poetry.,
 ,DB,Mostly poetry.,
 ,RA,"Once in a while I write an essay, but mostly poetry.",
 ,DB,OK. And what kind of devices&#8212;what kind of computer devices&#8212;do you own or have access to for your writing?,
@@ -120,7 +120,7 @@ timestamp,speaker,words,tags
 ,RA,Yes,mss;revision;highlight
 ,DB:," &#8212;with the rest that are working, and then once you have what you would&#8212;how do you know when you have a collection, then?",mss;highlight
 ,RA,"Well, it used to be that I had a collection when I had enough poems for a book, but it seems as",mss;highlight
-[10:00],RA,"if I'm writing more now. So, I get to make some more choices&#8212;I get to cut things&#8212;cut a manuscript down, save some things for later. So, I get to make some decisions about how the poems work with each other and it's kind of intuitive",mss;highlight
+[00:10:00],RA,"if I'm writing more now. So, I get to make some more choices&#8212;I get to cut things&#8212;cut a manuscript down, save some things for later. So, I get to make some decisions about how the poems work with each other and it's kind of intuitive",mss;highlight
 ,DB,OK. Have you ever received or sought out information about methods for digitally archiving your work?,
 ,RA,No.,
 ,DB,"No? OK. Those are the short answer. And I think we did cover kind of the ""nuts-and-bolts"" of your current practice, so that's good. So, in this section, we're going to kind of talk about sort of three areas of your writing talk about the different stages",
@@ -135,7 +135,7 @@ timestamp,speaker,words,tags
 ,RA,"I think I had my first poem published in a national magazine shortly after I graduated from college, and then I just continued to publish in magazines. I had my first book was published when I was thirty, and I've been publishing books ever since. And I suppose that now you could say, or&#8212;hmm, when would it&#8212;? If by a professional, you mean somebody who actually makes money and has a reputation, I guess I've been in that category maybe for twenty-five years, or something.",career
 ,DB,"OK, I think I should change the question.",career
 ,RA,For poets.,career
-[12:34],DB,"Yeah. Would you please describe, kind of, the arc of your career? Like where you started? I would say&#8212;",career
+[00:12:34],DB,"Yeah. Would you please describe, kind of, the arc of your career? Like where you started? I would say&#8212;",career
 ,DB,(Phone rings),
 ,DB,"Wait for a second. If you need to answer that, it's fine.",
 ,RA,"Yeah, let me hear who it is.",
@@ -148,17 +148,17 @@ timestamp,speaker,words,tags
 ,RA,"OK, what were you saying?",
 ,DB,"OK. So, if you wouldn't mind describing the arc of your career from when you started sort of seriously writing until now, just sort of a general overview. So, you know, just to start the interview.",career
 ,RA,Alright.,career
-[13:24],,"I was interested in poetry since childhood. My mother read poetry to me. I wrote when I was a little kid, then I kind of stopped for a while. And then I started again in college and I was reading the poet Denise Levertov (13:37).",career
+[00:13:24],,"I was interested in poetry since childhood. My mother read poetry to me. I wrote when I was a little kid, then I kind of stopped for a while. And then I started again in college and I was reading the poet Denise Levertov (13:37).",career
 ,,"Oh, and I&#8212;I grew up here in San Diego, actually, and then I went to San Diego State for two years, and I was reading the poet Denise Levertov. And then I transferred to Berkeley, and she was teaching there. So, I took a class with her, and through that experience, I met my friend Ron Silliman (13:56), who's a poet&#8212;the one I send poems to, who's still a friend of mine. And then I came back here, and then I moved to San Francisco to go to grad school and he was living there. And through him and also through the grad program, I met other poets. And there was&#8212;you know, San Francisco is a good literary town. So, there was quite a community of poets in San Francisco, and I eventually was friends with poets who became&#8212;came to be known as the ""Language Poets"" (scare quotes), the West Coast Language poets anyway, which would include Barret Watten, and Bob Perelman, and Lyn Hejinian, and Kit Robinson, and Ron Silliman and Carla Harryman (14:41), among others.",career
 ,,"And I went to a lot of readings series and participated in small press publications, and had a very active literary life&#8212;like I said, publishing magazines and journals&#8212;and",career
-[15:00],,"my first publisher was someone that we knew there. It was called the Figures Press and his name was Jeff Young. And so, that book came out in an edition of a very small press&#8212;an edition of five hundred copies, which&#8212;I gave a lot of them away to my friends and such.",career
-[15:25],,"And then at the end of the seventies (this was in the seventies) At the end of the seventies, I got pregnant and it just didn't seem like we were going to be able to keep living in San Francisco and raise a kid because, kind of like now&#8212;I guess it's more extreme now&#8212;but there was gentrification and yuppification going on then. And suddenly the rents were getting out of reach for us (especially if we had a kid, because you can't be so hand-to-mouth with a kid). And then my mother lived here and was willing to babysit and also Chuck got an offer of a job here that would have benefits and health insurance and all. So, we ended up back here. I was not very happy to come back here because then (and this is going to get to a topic that you like), then that was really isolating. Because that was before email, right?",career
+[00:15:00],,"my first publisher was someone that we knew there. It was called the Figures Press and his name was Jeff Young. And so, that book came out in an edition of a very small press&#8212;an edition of five hundred copies, which&#8212;I gave a lot of them away to my friends and such.",career
+[00:15:25],,"And then at the end of the seventies (this was in the seventies) At the end of the seventies, I got pregnant and it just didn't seem like we were going to be able to keep living in San Francisco and raise a kid because, kind of like now&#8212;I guess it's more extreme now&#8212;but there was gentrification and yuppification going on then. And suddenly the rents were getting out of reach for us (especially if we had a kid, because you can't be so hand-to-mouth with a kid). And then my mother lived here and was willing to babysit and also Chuck got an offer of a job here that would have benefits and health insurance and all. So, we ended up back here. I was not very happy to come back here because then (and this is going to get to a topic that you like), then that was really isolating. Because that was before email, right?",career
 ,DB,"Yeah, yeah.",career
 ,RA,"That was even before I had a computer. So, it just felt like, you know, kind of falling off a cliff. I mean, there were some poets here and I got to know them gradually&#8212;Jerome Rothenberg, and David Anton (16:22), and Michael Davidson&#8212;but not that many people of my generation really.",career
 ,RA,"So, I had lengthy correspondences actually on paper with the people back in San Francisco&#8212;not all of them but some of them. I can't believe it now, how much time we spent writing long letters out by hand, or typing them on typewriters.",correspondence;careeer
 ,DB,Yeah.,career
 ,RA,"It seems surreal now that everything goes so fast. I mean, who would do that? But we did. And so, some of those letters are in archives now.",career
-[17:03],,"And meanwhile, I kept sending work out to journals. Lyn Hejinian (17:03) in the Bay Area had a small press and she published my second book which was a chap book called The Invention of Hunger.",career
+[00:17:03],,"And meanwhile, I kept sending work out to journals. Lyn Hejinian (17:03) in the Bay Area had a small press and she published my second book which was a chap book called The Invention of Hunger.",career
 ,DB,And what press is that?,career
 ,RA,"It was Tuumba, T-U-U-M-B-A. Kind of, you know, a letterpress. And then, my third book&#8212;which was my second full-length book–-was published by Burning Deck in Providence.",career
 ,DB,Yeah.,career
@@ -175,8 +175,8 @@ timestamp,speaker,words,tags
 ,DB,"And then during that time, were you supporting yourself by teaching, mostly?",career
 ,RA,"Yeah. When we first came down here, Chuck was one of the managers of the bookstore at San Diego State, and I got, about a year after we got here, I got a part-time teaching job at UC San Diego. At first, it was kind of on and off, and then after that, it was regular but adjunct.",career
 ,RA,"I did that for many years. It wasn't until the early 2000s that I got a, you know, ""real"" tenured job at UCSD.",career
-[20:00],DB,"OK. So, I guess, we want to kind of move in to talking about the different ""spots"" of processes for you and how it changed over the course of your career. So, in terms of like when you first started writing seriously and were kind of doing the pre-writing, the generative work for these poems, how did that look? What was the process for that?",change;paper;highlight
-[20:14],RA,"Well, I think, I always used a notebook. You know, I couldn't tell you exactly what the notebooks looked like way back then, but I always wrote by hand. I think I wrote by hand then&#8212;I'm sure I did longer, took me longer to write a poem, and it also stayed in the hand-written phase longer because back then, when you left the hand-written phase, you had to go to a typewriter. You're too young to know about typewriters, but they were enormously irritating because if you made any mistakes, you had to either start over or put whiteout on it, or you know, etcetera. And then, you would make a copy. I mean, you would print it out and if you wanted another copy, you'd have to type it again. I mean, right?",change;paper;highlight
+[00:20:00],DB,"OK. So, I guess, we want to kind of move in to talking about the different ""spots"" of processes for you and how it changed over the course of your career. So, in terms of like when you first started writing seriously and were kind of doing the pre-writing, the generative work for these poems, how did that look? What was the process for that?",change;paper;highlight
+[00:20:14],RA,"Well, I think, I always used a notebook. You know, I couldn't tell you exactly what the notebooks looked like way back then, but I always wrote by hand. I think I wrote by hand then&#8212;I'm sure I did longer, took me longer to write a poem, and it also stayed in the hand-written phase longer because back then, when you left the hand-written phase, you had to go to a typewriter. You're too young to know about typewriters, but they were enormously irritating because if you made any mistakes, you had to either start over or put whiteout on it, or you know, etcetera. And then, you would make a copy. I mean, you would print it out and if you wanted another copy, you'd have to type it again. I mean, right?",change;paper;highlight
 ,DB,Yeah.,
 ,RA,"So, I mean, there's a limit to that.",
 ,RA,"So, you would kind of just do without when you thought you had pretty much finished version. You might be wrong, but you know...",
@@ -204,7 +204,7 @@ timestamp,speaker,words,tags
 ,RA,"Yeah, maybe&#8212;",early
 ,DB,&#8212;later than that?,early
 ,RA,"&#8212;later, maybe. Yeah. I think I got that Selectric in the mid-80's, maybe, you know&#8212;I probably got the computer by the late-80's, and I don't think I got internet until&#8212;there wasn't internet that you could get until the early 90's, probably.",early
-[23:34],DB,Yeah,early
+[00:23:34],DB,Yeah,early
 ,RA,"It's incredible now, to think!",early
 ,DB,Yeah.,early
 ,DB,"How did&#8212;so, how did that first computer come about? I mean, did you know a friend who had a computer and then go after that, or how'd you&#8212;?",early
@@ -215,7 +215,7 @@ timestamp,speaker,words,tags
 ,RA,"What I do have a clear memory of is how the internet changed things. Because then you could send someone something and say, ""What do you think? I don't know about this last line, what do you think?""",change;correspondence;revision
 ,RA,"I mean, you could have that kind of conversation.",change;correspondence;revision
 ,DB,Yeah.,change;correspondence;revision
-[25:00],RA,"And if you do that in a letter&#8212;which I did, but by the time you got the letter back you'd already made up your mind&#8212;",change;correspondence;revision
+[00:25:00],RA,"And if you do that in a letter&#8212;which I did, but by the time you got the letter back you'd already made up your mind&#8212;",change;correspondence;revision
 ,DB,"Right, right. So, in the early part when you were sending these by letters, you did that only a little bit and it didn't&#8212;how did you establish&#8212;?",change;correspondence;revision
 ,RA,"I think I did. I mean, I would type something up and send it, usually to a couple of people&#8212;two or three people&#8212;and I would get responses back. But it certainly&#8212;I mean, now we're so used to kind of this instant dialogue, instant gratification. Sometimes I think that that's, you know, maybe that's why I'm writing faster now. Really, it is the stimulation of that.",change;correspondence;revision;highlight
 ,RA,"Because I'm still not&#8212;I guess, I'm insecure enough that I'm not comfortable in saying something is finished until somebody has said that they at least think it's interesting. I mean, it doesn't always have to be Ron. Sometimes I send it to somebody else, but I have to have, like, somebody's approval&#8212;not a 100% approval but, like, somebody has to think, ""Oh, this is OK""&#8212;before I'll put it in a book. So that's sort of an integral part of the process. So obviously, if you could do that and get an answer in a day or two, well, you know.",change;correspondence;revision;highlight
@@ -229,7 +229,7 @@ timestamp,speaker,words,tags
 ,RA,"I use to send them to more people. Lyn Hejinian, at first, and Bob Perelman, at first, and Lydia Davis, the fiction writer&#8212;she's a friend of mine. And later, Fanny Howe, too.",correspondence;revision
 ,RA,"Now, I mostly just send them to Ron, and once in a while, to Lydia. Very rarely to Lyn Hejinian, but still once in a while, like maybe twice a year.",correspondence;revision
 ,RA,"So, kind of that number of people has sort of shrunk.",correspondence;revision
-[27:05],DB,So you're looking for some sort of affirmation?,correspondence;revision
+[00:27:05],DB,So you're looking for some sort of affirmation?,correspondence;revision
 ,RA,Yeah,correspondence;revision
 ,DB,"Interesting, yeah. Do they give like specific line feedback? Or do they usually just give sort of&#8212;",correspondence;revision
 ,RA,Ron does.,correspondence;revision
@@ -254,14 +254,14 @@ timestamp,speaker,words,tags
 ,DB,&#8212;other computer?,prompt;revision;highlight
 ,RA,Uh-hmm.,prompt;revision;highlight
 ,DB,And so when did you start using the iPad?,prompt;revision;highlight
-[30:00],RA,"Gee, again, I got an iPhone maybe three years ago, and I got the iPad maybe two years ago. I don't know. Time's a blur.",prompt;revision;highlight
+[00:30:00],RA,"Gee, again, I got an iPhone maybe three years ago, and I got the iPad maybe two years ago. I don't know. Time's a blur.",prompt;revision;highlight
 ,DB,Okay. So&#8212;,
 ,RA,"It's an old one, though.",
 ,DB,"So it's been a couple years, two or three years. Did you ever work on the iPhone, too?",
 ,RA,"No, too tiny.",
 ,DB,Too small of a typing format.,
 ,DB,"So then, back to the revision correspondence. Do you think that&#8212;why do you think that Ron Silliman (30:29) has kind of been the constant of all that?",correspondence;revision
-[30:33],RA,"Well, because he's very confident about what he says, first of all, and he's also very specific. He doesn't always say why he thinks what he thinks, which drives me crazy, but he gives me something to bounce off.",correspondence;revision
+[00:30:33],RA,"Well, because he's very confident about what he says, first of all, and he's also very specific. He doesn't always say why he thinks what he thinks, which drives me crazy, but he gives me something to bounce off.",correspondence;revision
 ,DB,"Yeah, and is he very prompt in responding?",correspondence;revision
 ,RA,"Often. Not always. Sometimes it's right away, sometimes it's not for days, depends on how busy he is.",correspondence;revision
 ,DB,"Yeah, and does he reciprocate? Does he send you things over?",correspondence;revision
@@ -276,7 +276,7 @@ timestamp,speaker,words,tags
 ,RA,"Well, I bet there have, but you know, I was as much of a stranger to my twenty-four year-old self as you are, almost.",change;revision
 ,DB,"Well, you did mention, though, that with the internet and with email becoming more&#8212;giving more easily available correspondence&#8212;you did start to speed up in the work. And do you think that's the only reason, or do you think it also has something to do with maybe moving onto more of a national scene?",change;revision
 ,RA,"It could be that. It could be knowing that I have a supporting publisher. It could be just practice, you know, just that I have a better idea of what works now, you know&#8212;what works for me.",change;revision
-[33:00],DB,Yeah.,change;revision
+[00:33:00],DB,Yeah.,change;revision
 ,DB,"And I know you don't&#8212;I think in one of your other interviews you said you don't really have, like, any intentions in revising your work, but are there primary things for different pieces that you're driven by? Like, are some driven more by sound, some driven more by meaning, some driven more by connecting the parts to the whole or disconnecting the parts to the whole?",change;revision
 ,RA,"All of those things equally, you know. I mean, I am very interested in sound, and sounds&#8212;certain sounds can really bother me, or I could get stuck on one certain sound. So yeah, meaning is important to me, too. In terms of connecting parts because, as you know, if you've looked at my work, it often&#8212;",change;revision
 ,DB,&#8212;in sections?,change;revision
@@ -286,7 +286,7 @@ timestamp,speaker,words,tags
 ,DB,"Has that sort of looking for that surprising turn, or idea, been a constant throughout? I mean, has that been something that's been driving you since you started writing?",change;revision;higlight
 ,RA,"I've probably become more conscious of it, but I think so, yeah.",change;revision;higlight
 ,DB,"And how do&#8212;so, could you talk a little bit about how, as you say, a lot of your poems are in sections and how those sections kind of come to be a whole? I mean, could there be several different days, and then in between those different sections become different poems?",change;revision;higlight
-[35:00],RA,"Sometimes that happens, yeah. I mean&#8212;",change;revision;higlight
+[00:35:00],RA,"Sometimes that happens, yeah. I mean&#8212;",change;revision;higlight
 ,DB,Is it just a&#8212;do you just start to see connections? Does it&#8212;?,change;revision;higlight
 ,RA,"Yeah, and sometimes I have an idea of what I want vaguely, but I don't know exactly where I'm going to get it or what the specifics are. But I&#8212;sometimes I have just a gut feeling about the direction that I want to go, and other times I don't, and then I just have to be surprised and just know that I want something and should keep my eyes open for it.",change;revision;higlight
 ,DB,"And do you&#8212;I mean, there's a certain point where you say within the emails that you get some sort of affirmation. But then personally, when do you feel like a sense of, ""Oh! That's surprising!"" Is there like an ""Aha!"" moment?",change;revision;higlight
@@ -302,7 +302,7 @@ timestamp,speaker,words,tags
 ,RA,"Well, I wouldn't say it's off limits, but I don't usually revise them, but I have. I mean it has happened that I've suddenly seen how something could be better and, you know, gone away from it, gone back to it and went, ""Oh that could be better.""",revision;mss
 ,RA,"But I would say that's, you know, maybe one time in twenty.",
 ,DB,So they're more rare.,
-[36:58],RA,Yeah.,
+[00:36:58],RA,Yeah.,
 ,DB,And when did you start using the thesis binders?,early;paper;mss
 ,RA,"Long time ago&#8212;maybe twenty, twenty-five years ago. They used to be easy to find, but now, like I said, they're antique&#8212;old school.",early;paper;mss
 ,DB,"Yeah, and before, when you were first putting your first collections together, how did that work? How was that looking?",early;paper;mss
@@ -319,7 +319,7 @@ timestamp,speaker,words,tags
 ,RA,In thesis binders.,
 ,DB,&#8212;and how would you communicate with your publisher with those?,
 ,RA,"I suppose we had to communicate by snail mail, how else was there?",
-[38:38],DB,"Right, and so you would collect those all&#8212;would you make a copy of it before you send it off?",
+[00:38:38],DB,"Right, and so you would collect those all&#8212;would you make a copy of it before you send it off?",
 ,RA,"Oh, yeah. I probably Xeroxed it. I mean, there were Xerox machines.",
 ,DB,"Yeah, OK.",
 ,DB,"And once things were published, and things, did you start to kind of keep an archive&#8212;and archive of your work at that point? I mean, did you have boxes with your papers in it even at the beginning, or did that start to come more gradually?",
@@ -328,7 +328,7 @@ timestamp,speaker,words,tags
 ,RA,"It took seeing some of my friend&#8212;the way some of my friends took it seriously, like Lyn Hejinian (39:27), and organized things, and treated it as if it was all worthwhile.",future
 ,DB,Yeah.,future
 ,RA,"But I didn't, you know, I didn't come from an intellectual family or background, and so it wasn't natural really for me, and I had to learn it.",future
-[40:00],DB,"I'm interested in that, and like how did&#8212;so, the lessons were just from watching them do that, or were they from the conversations? I mean, did you just sort of notice that Lyn Hejinian (40:00) sort of had, like, kept things better?",future;highlight
+[00:40:00],DB,"I'm interested in that, and like how did&#8212;so, the lessons were just from watching them do that, or were they from the conversations? I mean, did you just sort of notice that Lyn Hejinian (40:00) sort of had, like, kept things better?",future;highlight
 ,RA,"Well, I think at some point she sold her papers and I went, ""Oh, people sell their papers and they get money."" And also I would notice that she wrote letters as if she was writing for an archive. I mean, she would kind of give you the back story that you already knew, and I'm going, ""What? Who is she talking to?"" The archive!",future;highlight
 ,DB,"I never thought of that as being one of the correspondents, but that's a good point.",future;highlight
 ,DB,"Yeah, and so, I guess&#8212;",future;highlight
@@ -352,7 +352,7 @@ timestamp,speaker,words,tags
 ,DB,"Yeah, yeah.",
 ,DB,"Do you remember your first email? Or any of that sort of thing? Sort of nostalgic, but&#8212;?",
 ,RA,"I don't remember my first email. I remember that Ron said that I had ""ramped up quickly."" That was flattering, so I remember it.",
-[42:31],DB,Were you first given an email because of your work&#8212;because of UCSD? Was that your first?,
+[00:42:31],DB,Were you first given an email because of your work&#8212;because of UCSD? Was that your first?,
 ,RA,"No, I got it on my own and when my son was still living here, and he helped me set everything up. I mean, you know, he was probably fourteen or something. So that's why I have a really stupid&#8212;I mean, my university address&#8212;I guess you wrote me at my university address? Or did you write me&#8212;?",
 ,DB,"Yeah, I think both. You gave me the other one because you were traveling.",
 ,RA,"Which is really stupid because it's ""RAEA100900."" I shouldn't say that anything my son said was stupid, but he was only about fourteen and I guess he thought that was&#8212;I feel like I'm James Bond or something with that email address, but whatever.",
@@ -372,7 +372,7 @@ timestamp,speaker,words,tags
 ,DB,"What does the revision, if it's just you on your upstairs computer, what does that revision look like? I mean, are you moving things around a lot or are you&#8212;is it more just sort of reading and then deleting and inserting new words?",revision
 ,RA,"Yeah, that would be it.",revision
 ,DB,Mostly. Do you read them out loud to yourself?,revision
-[45:00],RA,"Yeah, always.",revision
+[00:45:00],RA,"Yeah, always.",revision
 ,DB,OK.,revision
 ,DB,When do you start doing that?,revision
 ,RA,In the notebook.,revision
@@ -384,7 +384,7 @@ timestamp,speaker,words,tags
 ,RA,"Yeah, right.",
 ,RA,I don't know what to do here because the things that I start out writing change so much.,
 ,RA,Let's see.,
-[46:00],,"I can get to a poem that's finished, and I can read a little bit from my journal that were the beginning of it, I guess.",
+[00:46:00],,"I can get to a poem that's finished, and I can read a little bit from my journal that were the beginning of it, I guess.",
 ,DB,"OK, yeah, that'd be great.",
 ,RA,"OK, although the beginning is going to be very bad&#8212;",
 ,DB,Give the rest of us hope!,
@@ -410,13 +410,13 @@ timestamp,speaker,words,tags
 ,RA,"&#8212;""its extended internal structure, if any are irrelevant, let's dispense with these properties of matter.""",highlight;prompt;revision
 ,RA,"So anyway, here I'm starting to get in to that. ""These properties and mass charge spin are like the clothes that ghosts wear."" Well, that gets in to here, except there's no simile. It just goes:",highlight;prompt;revision
 ,RA,Let's dispense with these properties of matter. Such anachronistic clothes as ghosts wear. Let's be mirrors facing mirrors.,highlight;prompt;revision
-[49:28],RA,You can see how some of that worked into that.,highlight;prompt;revision
+[00:49:28],RA,You can see how some of that worked into that.,highlight;prompt;revision
 ,DB,"Yeah, absolutely! And then&#8212;so, it kind of moves, not quite chronologically, but sequentially, and it's not even a winnowing; it's an addition and subtraction, and addition&#8212;",highlight;prompt;revision
 ,RA,Now this is stuff not even Ron Silliman sees because I wouldn't send anything that inchoate to anyone.,highlight;prompt;revision
 ,DB,OK.,highlight;prompt;revision
 ,RA,"So, now, you're seeing something, you're hearing something, that nobody has&#8212;",highlight;prompt;revision
 ,DB,"Yeah. No, it's fascinating. And then so, at a certain point when you move to that, does that sort of stop in the journal, in the notebook?",highlight;prompt;revision
-[50:00],RA,Yeah.,highlight;prompt;revision
+[00:50:00],RA,Yeah.,highlight;prompt;revision
 ,DB,"I mean, in the next poem?",highlight;prompt;revision
 ,RA,"Once I move to this, then I seldom go back to the notebook.",highlight;prompt;revision
 ,DB,"OK. But then the next page, then, would be the next poem that you work on, essentially?",highlight;prompt;revision
@@ -435,7 +435,7 @@ timestamp,speaker,words,tags
 ,DB,"So, it's almost like an ease of place, almost.",
 ,RA,Yeah.,
 ,DB,More than anything else.,
-[51:24],RA,"Absolutely, because I'm just comfortable in this room and I would just stay there with my coffee playing around here for quite a while. So, I think that's just, you know, habit.",
+[00:51:24],RA,"Absolutely, because I'm just comfortable in this room and I would just stay there with my coffee playing around here for quite a while. So, I think that's just, you know, habit.",
 ,DB,"Yeah, yeah.",
 ,DB,"Do you use the&#8212;when you're connected up there, is the internet always connected as well? Are you always connected to the internet?",
 ,RA,Yeah.,
@@ -466,7 +466,7 @@ timestamp,speaker,words,tags
 ,RA,"I think&#8212;the first time I did anything with particle physics was really when it first became popularized, like when The Tao of Physics came out in the 80's. And at first I thought it was just kind of absurd, all the particles, and I thought it was just like, ""How many angels can stamd on the head of a pin?"" or whatever. But I was still reading it and sort of interested in it, and then I guess starting with my book Up To Speed in 2004, I've taken a more sustained interest in it.",
 ,DB,What's this class going to look like overall? Do you have like a shape to it?,
 ,RA,"Yeah. I mean, I've never team-taught before, but some days I'll be talking&#8212;I've chosen poems that either have something to do with cosmology or physics in some way, or that have to do with objectivity and subjectivity and theories of mind. Or then, in a different way, going off of kind of Chaos Theory where complexity can be&#8212;can grow from the iteration of simple rules. I'm using some poets like,",
-[55:00],,"well, like Ron Silliman, and like Jackson Macklow (55:01), and like Christian Bök, that (Indiscernible, 55:05) poet who use constraints, or rules, to generate poems and have math in their poems, you know, not as a subject but as a generative principle.",
+[00:55:00],,"well, like Ron Silliman, and like Jackson Macklow (55:01), and like Christian Bök, that (Indiscernible, 55:05) poet who use constraints, or rules, to generate poems and have math in their poems, you know, not as a subject but as a generative principle.",
 ,DB,Right.,
 ,RA,So I'm doing some of that.,
 ,RA,"And Brian is, you know, he likes poetry but he's not exactly up to the avant-garde, shall we say? He likes sonnets and such, so we have a bit of that.",

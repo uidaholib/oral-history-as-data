@@ -55,7 +55,7 @@ OHD offers a way to categorize your transcripts using tags. This is done through
 - Open the "_data" folder and click the pencil icon to edit the file
 - Copy and paste the filters.csv you created in the Prepare Your Data tutorial over into the existing content. 
 - Alternatively, you can simply edit the CSV file here. (Below is how the file looks when opened with the pencil icon.)
-{% include bootstrap/figure.md img="howto/filters_csv2.png" caption="transcript selected in text editor" alt="" class="w-50" %}
+{% include bootstrap/figure.md img="howto/filters_csv2.png" caption="Filters.csv as it looks in a text editor" alt="" class="w-50" %}
 - Commit the change at the bottom of the page by clicking the commit button (you can write a message for the commit if you'd like to remember what you've done)
 {% include bootstrap/figure.md img="howto/commit_file.png" caption="" alt="" class="w-50" %}
 - However you edited it, the finished CSV should look like the below (with your new tags and descriptions) in GitHub

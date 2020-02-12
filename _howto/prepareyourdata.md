@@ -13,22 +13,22 @@ Below are a few simple steps to help you properly prepare your transcripts for c
 - Copy and paste the text into the top window, press clean, and then copy the text from the bottom window. 
 {% include bootstrap/figure.md img="howto/text_cleaner_2.png" caption="" alt="a screenshot of the first section of the Ruby Installer website" class="w-50" %}
 - Paste the text into the "copy" of the starter transcript spreadsheet you made above. Be sure to paste it just below the cell titled "speaker".  
-{% include bootstrap/figure.md img="howto/speaker_copy.png" caption="copy text here" alt="a screenshot of the first section of the Ruby Installer website" class="w-50" %}
+{% include bootstrap/figure.md img="howto/speaker_copy.png" caption="copy text here" alt="picture of correct cell placement for pasting transcript" class="w-50" %}
 
 {:.alert .alert-warning} 
 At this point you may need to use your skills to clean up this data. The main thing to focus on is getting the actual transcript into the "words" column. The tool will work even if that's the only column filled. Also, feel free to view our video tutorial on cleaning up .csv data for some helpful tips.
 - Now you will need to "code" your transcript. This can be done by adding "tags"--which should be shorthand descriptions of larger thematic subjects that pertain to this and other transcripts--in the cells under the "tags" column.
-{% include bootstrap/figure.md img="howto/subjects_cell.png" caption="example subjects" alt="a screenshot of the first section of the Ruby Installer website" %}
+{% include bootstrap/figure.md img="howto/subjects_cell.png" caption="example subjects" alt="picture of the subjects cells" %}
 - Note, if you have multiple subjects in a cell you will need to separate them using a semi-colon with no space (as pictured above). 
 - You can also hover over the bottom right of a cell (pictured below) and then drag the tags you entered across sections of the transcript. This helps a good deal, as usually sections of the oral history are all pertaining to the same tags/subjects. 
-{% include bootstrap/figure.md img="howto/bottom-right-corner.png" caption="Click here, hold, and drag the cursor down to pull down the tags across a section " alt="image of arrow pointing at bottom right of a cell in google sheets." %}
+{% include bootstrap/figure.md img="howto/bottom-right-corner.png" caption="Click here, hold, and drag the cursor down to pull down the tags across a section " alt="image of example subjects in cells" %}
 
 
 ## Step 2: Transforming Your Transcript Into a .CSV
 
 - Once you've edited the Google Sheet and gotten everything in order, go to the "file" tab at the top of your sheet and hover over "download"
 - Select "comma-separated values"  to save your file as a .csv file
-{% include bootstrap/figure.md img="howto/creating_csv_final.png" caption="" alt="a screenshot of the first section of the Ruby Installer website" class="w-50" %}
+{% include bootstrap/figure.md img="howto/creating_csv_final.png" caption="" alt="picture of the dropdown option for creating a csv sheet" class="w-50" %}
 
 ## Step 3: Creating Your "filters.csv" 
 

@@ -69,6 +69,7 @@ NOTE: If the CSV has a problem, GitHub will show you an error message that will 
 {:.alert .alert-warning .mb-4}
 NOTE: change the "object-id" field so that it is the same as the name of your file (and the CSV you created earlier)
 
+- Write a brief description of the changes you made and then commit them at the bottom 
 - Once you are done, navigate to your new file, it should look like the example below
 {% include bootstrap/figure.md img="howto/mdfinal.png" caption="" alt="the newly created md file" class="w-50" %}
 

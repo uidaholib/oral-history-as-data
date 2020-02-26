@@ -37,28 +37,28 @@ layout: default
         <p>{%if page.location%}{{page.location}} on {%endif%}{%if page.date-interviewed%}{{page.date-interviewed}}{%endif%} </p>
         {%if page.interviewer%}<p>Interviewer: {{page.interviewer}}</p>{%endif%}
       </header>
-      <div class="filteroptions">
-        <h2><select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">
+      <div class="filteroptions mx-2 bg-light p-4 mb-4">
+        <h3 class="text-center">
+          <div class="form-inline my-2 my-lg-0 ">
+            <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2 col-4">
+            <input class="searchinput mx-2 btn btn-lg btn-primary col-2" title="Search" value="Go" alt="Search" id="goButton" onclick="filterItems()">
+            <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
+          </div>
+          <h2><span class="h5">Filter by topic:</span> <select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">
             <option value="#" selected="selected">On All Topics</option>
             {% assign filters = site.data.filters %}
             {% if page.object-id == 'all' %}
             {% for filter in filters %}
-            <option value="{{ filter.tag }}">On {{filter.description}}</option>
+            <option value="{{ filter.tag }}">{{filter.description | capitalize}}</option>
             {% endfor %}
             {%else%}
             {% for filter in filters %}
-            {%if uniqueSubjects contains filter.tag %}<option value="{{ filter.tag }}">On {{filter.description}}</option>{%endif%}
+            {%if uniqueSubjects contains filter.tag %}<option value="{{ filter.tag }}">{{filter.description | capitalize}}</option>{%endif%}
             {% endfor %}
             {%endif%}
             <br />
             <hr /><br />
           </select></h2>
-        <h3 class="text-center">
-          <div class="form-inline my-2 my-lg-0">
-            <input type="text" id="quicksearch" placeholder="Search ... " class="searchinput form-control mr-2 col-4">
-            <input class="searchinput mx-2 btn btn-lg btn-primary col-2" title="Search" value="Go" alt="Search" id="goButton" onclick="filterItems()">
-            <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
-          </div>
           {% if page.object-id == 'all' %}
           {% capture lines %}{% for transcript in site.data.transcripts %}{% for item in transcript[1] %}{% if forloop.first == true %}{{ forloop.length }};{% else %}{% endif %}{% endfor %}{% endfor %}{%endcapture%}
           {%assign linestotal = lines | split: ";" %}
@@ -71,9 +71,10 @@ layout: default
           {% endif %}
 
       </div>
+      <div class="col-md-8 ml-md-3">
       <table id="contents-container">
         {% if page.object-id == 'all' %}
-        {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
+        {% for transcript in site.data.transcrpts %}{%assign transcript-name = transcript[0] %}
         {%capture audiovideo-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.audiovideo-id}}{%endif%}{%endfor%}{% endcapture %}
         {% for item in transcript[1] %}
         <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ';', ' '}}">
@@ -98,6 +99,7 @@ layout: default
         {% endfor %}
         {% endif %}
       </table>
+    </div>
 
 
     </div>

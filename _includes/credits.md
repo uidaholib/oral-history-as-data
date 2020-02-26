@@ -12,10 +12,8 @@ It uses the open source static site generator [Jekyll](https://jekyllrb.com/) bu
 - Layout using [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
 - [jQuery](https://jquery.com/)
 - Visualizations using [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
-- Simple [lunr](https://lunrjs.com/) search 
 
-
-Questions can be directed to **libstatic.uidaho@gmail.com**
+Questions can be directed to **dbecker@uidaho.edu**
 
 Get the [Source code]({{ site.repository }}) for this site!
 

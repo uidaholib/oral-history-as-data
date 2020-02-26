@@ -12,7 +12,7 @@
                     <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
                 </li>
                 {% endfor %}
-                <li class="nav-item dropdown show {% if page.url contains '/transcripts/'  %}active{%else%}disabled{% endif %}">
+                <li class="nav-item dropdown {% if page.url contains '/transcripts/'  %}active{%else%}disabled{% endif %}">
                     <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Interviews
                     </a>

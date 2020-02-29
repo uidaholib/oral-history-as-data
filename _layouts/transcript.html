@@ -74,7 +74,7 @@ layout: default
       <div class="col-md-8 ml-md-3">
       <table id="contents-container">
         {% if page.object-id == 'all' %}
-        {% for transcript in site.data.transcrpts %}{%assign transcript-name = transcript[0] %}
+        {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
         {%capture audiovideo-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.audiovideo-id}}{%endif%}{%endfor%}{% endcapture %}
         {% for item in transcript[1] %}
         <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ';', ' '}}">

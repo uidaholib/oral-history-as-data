@@ -31,7 +31,9 @@ description: "Lib-Static Oral History / Qualitative Interview Analysis Tool, Ana
 # IF you are hosting your interviews at Vimeo, Soundcloud or Youtube, use this section to detail the service and, if necessary, your userid
 av_source: youtube #[options: youtube, soundcloud, or vimeo]
 # only fill this in if you are using soundcloud (and entered 'soundcloud' above)
-soundcloud-id: # Enter your Soundcloud ID here
+soundcloud-id: # Enter your Soundcloud ID here. 
+# You can find your Soundcloud id in URLs to your audio files. 
+# https://soundcloud.com/[SOUNDCLOUD-ID]/[recording-id]
 
 
 ####### Leave the Below As Is ########

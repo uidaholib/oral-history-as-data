@@ -1,24 +1,10 @@
 # Oral History as Data (OHD) - a Lib-STATIC Tool
 # https://github.com/uidaholib/oral-history-as-data
 
-# Site settings
 
-# title of site appears in banner
-title: Oral History (as) Data
-# tagline appears in banner
-tagline: analyze and publish coded oral history and qualitative interviews
-# description appears in meta tags and other locations
-# this description might appear in search result lists, keep around 160 characters max
-description: "Lib-Static Oral History / Qualitative Interview Analysis Tool, Analyze and publish transcriptions with tagged csvs"
-# keywords appear in meta tags
-keywords: "university of idaho, oral history, digital collections, digital humanities"
-# creator of the digital collection, to appear in meta tags
-author: dcnb
-# creator contact email for meta tags
-email: dbecker@uidaho.edu
-# collection project date, when did you publish this web site
-collection-date: "2018"
-
+##########
+# URL settings 
+#
 # url is your gh-pages base, following the pattern: username.github.io
 url: https://uidaholib.github.io
 # baseurl is your github repository's name prefixed with a /
@@ -26,14 +12,29 @@ baseurl: /oral-history-as-data
 # repository is the github repository's full url
 repository: https://github.com/uidaholib/oral-history-as-data
 
+
+##########
+# Site settings
+#
+# title of site appears in banner
+title: Oral History (as) Data
+# tagline appears in banner
+tagline: analyze and publish coded oral history and qualitative interviews
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "Lib-Static Oral History / Qualitative Interview Analysis Tool, Analyze and publish transcriptions with tagged csvs"
+
+
+##########
+# AV settings 
+#
 # IF you are hosting your interviews at Vimeo, Soundcloud or Youtube, use this section to detail the service and, if necessary, your userid
 av_source: youtube #[options: youtube, soundcloud, or vimeo]
-soundcloud-id: # only fill this in if you are using soundcloud (and entered 'soundcloud' above)
+# only fill this in if you are using soundcloud (and entered 'soundcloud' above)
+soundcloud-id: # Enter your Soundcloud ID here
 
-# google services [optional!]
-# leave these blank or comment out to NOT include google code
-google-tracking-id: "UA-76328753-1"
-# google-cse-id: "002151703305773322890:1pu3smhw1t8"
+
+####### Leave the Below As Is ########
 
 # Jekyll collections settings
 collections:
@@ -56,3 +57,4 @@ defaults:
 
 # Build settings
 markdown: kramdown
+

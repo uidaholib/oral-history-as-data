@@ -107,3 +107,34 @@ OHD offers a way to categorize your transcripts using tags. This is done through
 - This will let you easily access the generated site whenever you come to edit the page. 
 - Check out your new site by clicking on the link. Refresh if nothing shows up. Congratulations on setting up your own oral history site!
 
+## Additional Information: Editing your *_config.yml* 
+
+{:.alert .alert-info}
+When you design your website you'll need to utilize the *_config.yml* folder to help establish the working parameters of your page, the basic information that inhabits it, and the general layout your visitors will interact with. 
+
+{:.alert .alert-warning .mb-4}
+NOTE: when you are navigating through this folder, you will notice hashtags which denote useful information about how various lines effect your page. 
+
+### Step 1: Get into the *_config.yml folder* 
+- First we're going to find the *_config.yml* folder. You'll find this on the main page of your site's repository. Click on this folder and open it up.  
+{% include bootstrap/figure.md img="howto/configscreen.png" caption="image of _config.yml folder found on main page of repository" alt="image of config folder" class="w-50" %}
+
+- Once you open up the folder, you'll need to enable editing. You're going to see a pencil icon at the top, right corner of the page. Click on this to enable editing. 
+{% include bootstrap/figure.md img="howto/edit_pencil.png" caption="" alt="image of config folder" class="w-50" %}
+
+### Step 2: Editing your *url, baseurl*, and *repository* 
+
+- First, you'll need to change your url. To do this, delete "uidaholib" from the *url* line, and replace it with your GitHub username. 
+{% include bootstrap/figure.md img="howto/beforename.png" caption="url before edit" alt="url line in config folder before being edited" class="w-50" %}
+
+{% include bootstrap/figure.md img="howto/aftername.png" caption="url after edit" alt="url line after editing" class="w-50" %}
+
+- Now you'll need to edit your *baseurl*. After the forward slash you'll delete "oral-history-as-data" and type the name of your repository. 
+{% include bootstrap/figure.md img="howto/basebefore.png" caption="baseurl line before edit" alt="image of baseurl line before edit" class="w-50" %}
+{% include bootstrap/figure.md img="howto/baseafter.png" caption="baseurl line after edit" alt="image of baseurl line after edit" class="w-50" %}
+
+- Finally, we'll edit your *repository* line. You're going to erase the text that reads "uidaholib" and replace it with your username. Then you're going to take the final piece of the line that reads "oral-history-as-data" and replace it with your repository name. 
+
+{% include bootstrap/figure.md img="howto/beforerepos.png" caption="repository before edit" alt="repository line before editing" class="w-50" %}
+{% include bootstrap/figure.md img="howto/afterrepos.png" caption="repository after edit" alt="repository line after editing" class="w-50" %}
+

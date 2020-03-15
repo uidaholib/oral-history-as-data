@@ -1,6 +1,6 @@
 ---
 layout: howto
-title: How To Edit Your *_config.yml* Folder
+title: How To Edit Your _config.yml Folder
 ---
 
 When you design your website you'll need to utilize the *_config.yml* folder to help establish the working parameters of your page, the basic information that inhabits it, and the general layout your visitors interact with. 

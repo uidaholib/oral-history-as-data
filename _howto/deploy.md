@@ -43,6 +43,22 @@ NOTE: when you are navigating through this folder, you will notice hashtags whic
 
 {% include bootstrap/figure.md img="howto/aftertag.png" caption=" tagline after edit" alt="title line after editing" class="w-50" %}
 
+## Step 4: Generate Your Site
+
+- Go to the settings button at the top right of your repository page
+{% include bootstrap/figure.md img="howto/settings_button.png" caption="" alt="settings button homepage of repository" %}
+- Scroll down to the "GitHub Pages" section
+- Change source dropdown button from "none" to "master" and copy the URL they give you. 
+{% include bootstrap/figure.md img="howto/source_button.png" caption="" alt="picture of source drop down menu" class="w-50" %}
+- It will take several minutes for the new website to build, while your waiting go back to the main page and click the "edit" button on your repository page
+{% include bootstrap/figure.md img="howto/edit_button.png" caption="" alt="picture of the edit button above your repository" class="w-50" %}
+- Add the copied url to the website section and click "save" 
+{% include bootstrap/figure.md img="howto/url.png" caption="" alt="picture of save button" class="w-50" %}
+- This will let you easily access the generated site whenever you come to edit the page. 
+- Check out your new site by clicking on the link. Refresh if nothing shows up. Congratulations on setting up your own oral history site!
+
+
+
 ### Optional: AV settings 
 
 {:.alert .alert-info}

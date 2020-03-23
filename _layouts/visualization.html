@@ -56,7 +56,8 @@ layout: default
 
 
   {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
-  {%capture youtube-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.youtube}}{%endif%}{%endfor%}{% endcapture %}
+  {%capture audiovideo-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.audiovideo-id}}{%endif%}{%endfor%}{% endcapture %}
+  {%capture avlink %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}timestamp/{{item.av_source}}.html{%endif%}{%endfor%}{% endcapture %}
   {% for item in transcript[1] %}
   {% if forloop.first %}
   <div class="contentsdiv">
@@ -68,7 +69,7 @@ layout: default
           <div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div>
         </td>
         <td class="timestamp">{%if item.timestamp%}
-          <a target="_blank" href="https://youtu.be/{{ youtube-id }}?t={{item.timelink}}&cc_load_policy=1">{{item.timestamp}}</a>{% endif %}<br />{{item.tags | replace: ";", "<br>"}}</td>
+          <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}<br />{{item.tags | replace: ";", "<br>"}}</td>
       </tr>
 
       {% if forloop.last%}</table>

@@ -3,6 +3,7 @@ object-id: wrigley
 title: Robert Wrigley
 date-interviewed: November 21, 2013
 location: Moscow, ID
+av_source: youtube
 audiovideo-id: 2_gk14ZSjcI
 ---
 

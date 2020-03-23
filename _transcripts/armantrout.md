@@ -3,6 +3,7 @@ object-id: armantrout
 title: Rae Armantrout
 date-interviewed: March 27, 2014
 location: San Diego, CA
+av_source: youtube
 audiovideo-id: BX_bURONf78
 ---
 

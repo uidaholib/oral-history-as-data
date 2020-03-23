@@ -3,6 +3,7 @@ object-id: gluck
 title: Louise Glück    
 date-interviewed: May 15, 2014
 location: Cambridge, MA
+av_source: youtube
 audiovideo-id: kx0Q_SAaT1E
 ---
 

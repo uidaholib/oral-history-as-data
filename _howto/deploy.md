@@ -58,7 +58,7 @@ NOTE: when you are navigating through this folder, you will notice hashtags whic
 - Check out your new site by clicking on the link. Refresh if nothing shows up. Congratulations on setting up your own oral history site!
 
 
-
+<!--
 ### Optional: AV settings 
 
 {:.alert .alert-info}
@@ -73,3 +73,4 @@ OHD has the option of linking an audio or video file to your transcript, to enha
 
 {% include bootstrap/figure.md img="howto/soundcloud2.png" caption="example text indicating where to place Soundcloud ID" alt="title line after editing" class="w-50" %}
 
+-->

@@ -6,11 +6,11 @@ title: How To Edit Your _config.yml Folder
 When you design your website you'll need to utilize the *_config.yml* folder to help establish the working parameters of your page, the basic information that inhabits it, and the general layout your visitors interact with. 
 
 {:.alert .alert-warning .mb-4}
-NOTE: when you are navigating through this folder, you will notice hashtags which denote useful information about how various lines effect your page. 
+NOTE: when you are navigating through the _config.yml file, you will notice lines that being with hashtags. These are "[comments](https://www.cs.utah.edu/~germain/PPS/Topics/commenting.html)" that provide useful information about how various lines effect your page. 
 
 ### Step 1: Get into the *_config.yml folder* 
-- First, we're going to find the *_config.yml* folder. You'll find this on the main page of your site's repository. Click on this folder and open it up.  
-{% include bootstrap/figure.md img="howto/configscreen.png" caption="image of _config.yml folder found on main page of repository" alt="image of config folder" class="w-50" %}
+- First, find the *_config.yml* file. This is in your base directory, the one that opens when you first open the repository in github.  
+{% include bootstrap/figure.md img="howto/configscreen.png" caption="image of _config.yml file found on main page of repository" alt="image of config folder" class="w-50" %}
 
 - Once you open up the folder, you'll need to enable editing. You're going to see a pencil icon at the top, right corner of the page. Click on this to enable editing. 
 {% include bootstrap/figure.md img="howto/edit_pencil.png" caption="" alt="image of config folder" class="w-50" %}

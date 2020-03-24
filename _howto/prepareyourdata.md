@@ -7,11 +7,13 @@ Below are a few simple steps to help you properly prepare your transcripts for c
 
 ## Step 1: Setting up Your Spreadsheet
 
-- Here is a [template](https://docs.google.com/spreadsheets/d/1uWrPMItiP-XOSkm7gyC8b9bl3tpSQRj9zLzS5y8QnW0/edit?usp=sharing){:target="_blank"} to help you get started. 
-- Before you copy and paste your text into the spreadsheet, you'll need to make a copy of it. Go to the "file" tab at the top and select "make a copy". 
+For OHD to work with your transcripts, you will need to transform your transcripts into CSV files. The below will detail how you do that. 
+
+- Use this [template](https://docs.google.com/spreadsheets/d/1uWrPMItiP-XOSkm7gyC8b9bl3tpSQRj9zLzS5y8QnW0/edit?usp=sharing){:target="_blank"} to get started. 
+- Make a copy of the template by going to the "file" tab at the top and selecting "make a copy". 
 - Now take the text from your transcript (be that in a Word file, a PDF or some other format) and run it through this [text cleaner provided by Jonathan Hedley](https://jhy.io/tools/convert-word-to-plain-text){:target="_blank"}  
 - Copy and paste the text into the top window, press clean, and then copy the text from the bottom window. 
-{% include bootstrap/figure.md img="howto/text_cleaner_2.png" caption="" alt="a screenshot of the first section of the Ruby Installer website" class="w-50" %}
+{% include bootstrap/figure.md img="howto/text_cleaner_2.png" caption="" alt="a screenshot of the first section of the text cleaner web page" class="w-50" %}
 - Paste the text into the "copy" of the starter transcript spreadsheet you made above. Be sure to paste it just below the cell titled "speaker".  
 {% include bootstrap/figure.md img="howto/speaker_copy.png" caption="copy text here" alt="picture of correct cell placement for pasting transcript" class="w-50" %}
 

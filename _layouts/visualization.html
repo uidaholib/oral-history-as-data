@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign transcripts = site.data.transcripts | sort %}
 <!-- list of colors provided by https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/ -->
 <style>
   {% for n in site.data.filters %}
@@ -33,7 +34,7 @@ layout: default
   <button id="reset" class="btn btn-lg btn-secondary float-right">Reset</button>
   <br />
   <br />
-  {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
+  {% for transcript in transcripts %}{%assign transcript-name = transcript[0] %}
   <div class="vizdiv">
     <h3 x="0" y="0" data-id="{{transcript-name}}" style="cursor:pointer;" class="mt-4 toggle_int {{transcript-name}}">{{transcript-name | capitalize}} <i class="fas fa-filter"></i> <small>Click to filter</small></h3>
     <svg class="chart {{transcript-name}}" width="100%" height="100px" style="overflow: visible">

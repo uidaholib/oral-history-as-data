@@ -61,9 +61,9 @@ NOTE: If the CSV has a problem, GitHub will show you an error message that will 
 - Name this file what you named your transcript file, but be sure to put .md rather than .csv, as this is a markdown file you are creating. 
 {% include bootstrap/figure.md img="howto/mdname.png" caption="" alt="name field in new markdown file" class="w-50" %}
 - Then paste the text you copied from the raw file into this new file
-{% include bootstrap/figure.md img="howto/before.png" caption="Pasted text before editing" alt="pasted text in new .md file" class="w-50" %}
+{% include bootstrap/figure.md img="howto/beforemd1.png" caption="Pasted text before editing" alt="pasted text in new .md file" class="w-50" %}
 - Edit the text to fit your data 
-{% include bootstrap/figure.md img="howto/after.png" caption="File after being edited for new file" alt="new .md file text after being edited for new file" class="w-50" %}
+{% include bootstrap/figure.md img="howto/aftermd2.png" caption="File after being edited for new file" alt="new .md file text after being edited for new file" class="w-50" %}
 
 
 {:.alert .alert-warning .mb-4}

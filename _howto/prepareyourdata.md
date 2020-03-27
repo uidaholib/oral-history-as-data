@@ -51,20 +51,18 @@ At this point you may need to use your skills to clean up this data. The main th
 - Select "comma-separated values"  to save your file as a .csv file
 {% include bootstrap/figure.md img="howto/creating_csv_final.png" caption="" alt="picture of the dropdown option for creating a csv sheet" class="w-50" %}
 
-{% include youtube/embed.html  video-id="FJn_a5TSJtw " title="Make a Filters.csv from Template" display="d-none d-md-block" %}
 
 ## Step 6: Create Your Filters.CSV 
+{% include youtube/embed.html  video-id="FJn_a5TSJtw " title="Make a Filters.csv from Template" display="d-none d-md-block" %}
 
-The filters.csv will communicate with the tags you enter into the your transcript's .csv. The result will be an interactive element of OHD, comprised of a visualization and the ability to broaden and limit user focus when reading provided transcripts. Below is an image of a completed OHD visualization and a list of quick steps to help you set up your own "transcripts.csv". 
+The filters.csv file will communicate with the tags you enter into the the `tags` field of your transcript's CSV to create an interactive visualization of the codes used in your transcripts.  Below is an image of a list of quick steps to help you set up your own "transcripts.csv" and a completed OHD [visualization]({{ '/visualizations.html?id=wrigley' | relative_url }}). 
 
 - First, go to this blank [spreadsheet](https://docs.google.com/spreadsheets/d/1qPU-7LFZrIWcLiHuTqnlbnRD1869SJalJ5OCL7tGtzE/edit#gid=0){:target="_blank"}. 
 - Click the "file" icon and choose "make a copy." 
-
-{% include youtube/embed.html  video-id="CQH9XsqLJXM " title="Filling out your Filters.CSV " display="d-none d-md-block" %}
 - In the "tag" column write out the tags you wish to include in the transcript.
 - In the "description" column write out a brief description of that tag. 
-
-{% include youtube/embed.html  video-id="xYiytXFyhHM " title="Download Filters as a CSV" display="d-none d-md-block" %}
-
 - Finally, you create a new .csv by clicking on the "file" icon, hovering above "download", and selecting "comma-separated values". 
+
+{:.clearfix}
+{% include bootstrap/figure.md img="howto/wrigley-viz.png" caption="" alt="A visualization of Robert Wrigley's transcript, as enabled by the Filters.CSV" class="border-0" %}
 

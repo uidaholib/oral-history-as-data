@@ -19,7 +19,9 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 - Now you'll need to go into you "data" folder and then into the "transcripts" folder in your repository. 
 - Once in transcripts click on "create new file".  
 {% include bootstrap/figure.md img="howto/new_file.png" caption="" alt="picture of the create new file button in the newly created repository" class="w-50" %}
-- Now you need to name your file according to your transcript. ***THIS 
+- Now you need to name your file according to your transcript. This will need to match the Markdown file you'll create later in this how-to. 
+    - We recommend using the last name, or first and last name of the subject, in all lowercase letters with no spaces or unusual characters. 
+    - Be sure to add ".csv" to the end of the filename as well. So, for the Strickland file, we would name it, "strickland.csv."
 {% include bootstrap/figure.md img="howto/name_file.png" caption="picture of the required field for naming your new file" alt="" class="w-50" %}
 
 {:.alert .alert-warning}

@@ -1,6 +1,6 @@
 ---
 layout: howto
-title: How To Set Up the Website
+title: How To Configure Your Website
 ---
 
 Below are a few quick steps to help you begin configuring your GitHub site for use with Oral Histories as Data (OHD). 

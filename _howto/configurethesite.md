@@ -1,6 +1,6 @@
 ---
 layout: howto
-title: How To Set Up the Website
+title: How To Configure Your Website
 ---
 
 Below are a few quick steps to help you begin configuring your GitHub site for use with Oral Histories as Data (OHD). 
@@ -19,19 +19,21 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 - Now you'll need to go into you "data" folder and then into the "transcripts" folder in your repository. 
 - Once in transcripts click on "create new file".  
 {% include bootstrap/figure.md img="howto/new_file.png" caption="" alt="picture of the create new file button in the newly created repository" class="w-50" %}
-- Now you need to name your file according to your transcript. ***THIS 
+- Now you need to name your file according to your transcript. This will need to match the Markdown file you'll create later in this how-to. 
+    - We recommend using the last name, or first and last name of the subject, in all lowercase letters with no spaces or unusual characters. 
+    - Be sure to add ".csv" to the end of the filename as well. So, for the a subject named John Smith, we would name it, "smith.csv" or "john_smith.csv."
 {% include bootstrap/figure.md img="howto/name_file.png" caption="picture of the required field for naming your new file" alt="" class="w-50" %}
+- Leave the file open on the page. We'll be adding to it via the next step.
 
 {:.alert .alert-warning}
-When you name your file be sure to include the type of file after the name you choose. For example, if it is a mark down file, attach ".md" after the file name. In our case, you'll want to add a ".csv" to the end of the filename. (robert.csv)
-- Leave the file open on the page. We'll be adding to it via the next step.
+When you name your file be sure to include the type of file after the name you choose. In our case, you'll want to add a ".csv" to the end of the filename. (robert.csv) For example, if it is a markdown file, attach ".md" after the file name. For a markdown file, like the one we'll create below, you'll add a ".md" after the file name.
 
 ## Step 3: Moving the Transcript to a new GitHub file
 
-- Open your transcript  
+- Open your transcript **in a text editor**.
 
 {:.alert .alert-danger}
-Make sure you open your transcript in a text editor. DO NOT OPEN UP THE CSV IN EXCEL!!! Excel might reformat your timestamps. Here at OHD, we prefer using [Visual Studio Code](https://code.visualstudio.com/), but notepad or textedit (the default text editors on Windows and Mac machines, respectively) will also work. 
+Make sure you open your transcript in a text editor. DO NOT OPEN UP THE CSV IN EXCEL!!! Excel might reformat your timestamps. We recommend using [Visual Studio Code](https://code.visualstudio.com/), but notepad or textedit (the default text editors on Windows and Mac machines, respectively) will also work. 
 - Open the transcript in a text editor. 
 - Select the entire text (ctrl + a) 
 {% include bootstrap/figure.md img="howto/text_editor.png" caption="transcript selected in text editor" alt="" class="w-50" %}

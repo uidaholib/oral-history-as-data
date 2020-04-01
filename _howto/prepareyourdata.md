@@ -4,9 +4,7 @@ title: How To Prepare Your Data
 ---
 {% include youtube/playlist.html playlist-id="PL_71zYZtmyTsCNq2jnacVmCf0L2Gt-YyC" title="Prepare your Data Playlist of All Included Videos" display="d-block d-sm-none" %}
 
-For OHD to work with your transcripts, you will need to transform your transcripts into CSV files.
-<<<<<<< HEAD
-Below are a few simple steps to help you properly prepare your transcripts for compatible use with Oral Histories As 
+For OHD to work with your transcripts, you will need to transform your transcripts into CSV files. Below are a few simple steps to help you properly prepare your transcripts for compatible use with Oral Histories As 
 Data.  
 
 {% include youtube/embed.html video-id="0LLE_FXKs64" title="Make a Copy of the Template Spreadsheet" display="d-none d-md-block" %}

@@ -20,7 +20,7 @@ NOTE: when you are navigating through the _config.yml file, you will notice line
 {:.alert .alert-info}
 The URL settings control how the site generator (Jekyll!) builds the urls on your web pages. These are extremely important, especially if you're going to serve this up using GitHub Pages. If you're using GitHub Pages, you'll just want to use your GitHub username and your repository's name to fill in this information.
 
-{% include youtube/embed.html  video-id="gTJpfunqapQ" title="Editing Site Settings" display="d-none d-md-block" %}
+{% include youtube/embed.html  video-id="OAl_pcWjBwk" title="Editing URL Settings" display="d-none d-md-block" %}
 
 - First, you'll need to change your url. To do this, delete "uidaholib" from the *url* line, and replace it with your GitHub username. 
 {% include bootstrap/figure.md img="howto/beforename.png" caption="url before edit" alt="url line in config folder before being edited" class="w-50" %}
@@ -41,7 +41,7 @@ The URL settings control how the site generator (Jekyll!) builds the urls on you
 {:.alert .alert-info}
 The site settings control what appears in the website's banner, both the bit title of the site and the tagline underneath it.  The description is put in the code of each page to enable people to find your site on Google or other search engines. 
 
-{% include youtube/embed.html  video-id="OAl_pcWjBwk" title="Editing URL Settings" display="d-none d-md-block" %}
+{% include youtube/embed.html  video-id="gTJpfunqapQ" title="Editing Site Settings" display="d-none d-md-block" %}
 
 - Now scroll down to the next section in this folder titled *site settings*. Go to the first line called *title* and change "Oral History (as) Data" to what ever you would like to call your site. 
 {% include bootstrap/figure.md img="howto/beforetitle.png" caption="title before edit" alt="title line before editing" class="w-50" %} 

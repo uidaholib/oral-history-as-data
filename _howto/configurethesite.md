@@ -48,7 +48,7 @@ Make sure you open your transcript in a text editor. DO NOT OPEN UP THE CSV IN E
 {:.alert .alert-warning .mb-4}
 NOTE: If the CSV has a problem, GitHub will show you an error message that will say: "We can make this file beautiful and searchable if this error is corrected:" After that phrase, they will also point out a line number that is causing the problem. Open the file up by clicking on the pencil icon in the top right of the file area. Go to the line indicated and see if there's an obvious error. If you can't get it fixed, go back to your Google Sheet and see if there's anything to clean up. Even if there is nothing wrong, re-download the file as a CSV, open it in a text editor, then copy and paste it back into the problematic file on GitHub. Hopefully one of these steps clears up the problem. 
 
-{% include youtube/embed.html  video-id="T4C98kQekGo" title="Creating a Markdown File" display="d-none d-md-block" %}
+{% include youtube/embed.html  video-id="kfDeEfjl6nQ" title="Creating a .MD File" display="d-none d-md-block" %}
 ## Step 4: Creating a Markdown File
 
 - Navigate back to the main page of your repository

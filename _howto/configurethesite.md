@@ -56,7 +56,7 @@ NOTE: If the CSV has a problem, GitHub will show you an error message that will 
 - Navigate to the button that says "raw" and click it
 {% include bootstrap/figure.md img="howto/raw.png" caption="" alt="raw file button" class="w-50" %}
 - Copy the text inside of this file
-{% include bootstrap/figure.md img="howto/rawfile.png" caption="" alt="raw file text" class="w-50" %}
+{% include bootstrap/figure.md img="howto/newcopyandpaste.png" caption="" alt="raw file text" class="w-50" %}
 - Go back to the page with the example .md files
 - Click the "Create New File" button
 {% include bootstrap/figure.md img="howto/createnewmd.png" caption="" alt="create new file button" class="w-50" %}
@@ -75,6 +75,28 @@ NOTE: change the "object-id" field so that it is the same as the name of your fi
 - Once you are done, navigate to your new file, it should look like the example below
 {% include bootstrap/figure.md img="howto/mdfinal.png" caption="" alt="the newly created md file" class="w-50" %}
 
+### Optional: adding an audio or video file using av_source
+
+{:.alert .alert-info}
+You may want to include an auditory or visual component to your transcript. You'll need to incorporate some simple information in the header of your markdown file. By including a video or audio file, you can correspond recorded dialogue to your written transcript. 
+
+- Look in the header of your markdown file. You'll see that there is a space for av_source. Here you have three options, using OHD: vimeo, youtube, or soundcloud. Using all lowercase letters, type the platform's name where your file is uploaded. 
+{% include bootstrap/figure.md img="howto/avid1.png" caption="" alt="opened file, ready for editing" class="w-50" %}
+- Below av_source, you'll see a space for your file's audiovideo-id. Fill in this information. 
+{% include bootstrap/figure.md img="howto/avid2.png" caption="" alt="opened file, ready for editing" class="w-50" %}
+- Below are pictures indicating the location of various audiovideo-id locations on different platforms. 
+{% include bootstrap/figure.md img="howto/youtubeid.png" caption="location of your youtube audiovideo-id" alt="opened file, ready for editing" class="w-50" %}
+{% include bootstrap/figure.md img="howto/vimeoid2.png" caption="location of your vimeo audiovideo-id" alt="opened file, ready for editing" class="w-50" %}
+{% include bootstrap/figure.md img="howto/soundcloudid2.png" caption="location of your soundcloud audiovideo-id" alt="opened file, ready for editing" class="w-50" %}
+
+
+{:.alert .alert-warning .mb-4}
+NOTE: if you use Soundcloud as your platform, you will actually need two pieces of information: your audiovideo-id and your soundcloud-id.  
+
+- To find your soundcloud-id, begin on your homepage. Then click on the three dots in the right-hand corner. Select settings and then you will find what Soundcloud calls the "rss feed". The picture below indicates which part of that line of text is your soundcloud-id.  
+{% include bootstrap/figure.md img="howto/soundcloudid.png" caption="location of your soundcloud id" alt="opened file, ready for editing" class="w-50" %}
+- Now you will need to add an additional line of text, as pictured below, that says `soundcloud-id` followed by the number itself. 
+{% include bootstrap/figure.md img="howto/soundcloudid4.png" caption="" alt="opened file, ready for editing" class="w-50" %}
 
 
 ## Step 5: Setting up the visualization(s)

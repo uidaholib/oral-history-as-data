@@ -5,6 +5,7 @@ title: How To Configure Your Website
 
 Below are a few quick steps to help you begin configuring your GitHub site for use with Oral Histories as Data (OHD). 
 
+{% include youtube/embed.html  video-id="lJ9b0VNJIMw" title="Making a Filter" display="d-none d-md-block" %}
 ## Step 1: Make a Template of OHD
 
 - Go to the OHD homepage and click on the "Template" button toward the top right of the page. 
@@ -47,6 +48,7 @@ Make sure you open your transcript in a text editor. DO NOT OPEN UP THE CSV IN E
 {:.alert .alert-warning .mb-4}
 NOTE: If the CSV has a problem, GitHub will show you an error message that will say: "We can make this file beautiful and searchable if this error is corrected:" After that phrase, they will also point out a line number that is causing the problem. Open the file up by clicking on the pencil icon in the top right of the file area. Go to the line indicated and see if there's an obvious error. If you can't get it fixed, go back to your Google Sheet and see if there's anything to clean up. Even if there is nothing wrong, re-download the file as a CSV, open it in a text editor, then copy and paste it back into the problematic file on GitHub. Hopefully one of these steps clears up the problem. 
 
+{% include youtube/embed.html  video-id="T4C98kQekGo" title="Creating a Markdown File" display="d-none d-md-block" %}
 ## Step 4: Creating a Markdown File
 
 - Navigate back to the main page of your repository
@@ -98,12 +100,13 @@ NOTE: if you use Soundcloud as your platform, you will actually need two pieces 
 - Now you will need to add an additional line of text, as pictured below, that says `soundcloud-id` followed by the number itself. 
 {% include bootstrap/figure.md img="howto/soundcloudid4.png" caption="" alt="opened file, ready for editing" class="w-50" %}
 
-
 ## Step 5: Setting up the visualization(s)
 
 {:.alert .alert-info}
 OHD offers a way to categorize your transcripts using tags. This is done through two locations: the "tag" column cells in your transcript's CSV and the filters.csv file, which is already provided for you in the structure of OHD. If you are not aware of either of these files, first visit our steps on "[How To Prepare Your Data](prepareyourdata.html)." 
 
+
+{% include youtube/embed.html  video-id="esUuJbhXKW4" title="Creating Filters" display="d-none d-md-block" %}
 - Open the filters.csv file you created
 - Navigate to the "_data" folder 
 - Open the "_data" folder and click the pencil icon to edit the file

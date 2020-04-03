@@ -112,12 +112,13 @@ OHD offers a way to categorize your transcripts using tags. This is done through
 - Open the "_data" folder and click the pencil icon to edit the file
 - Copy and paste the filters.csv you created in the Prepare Your Data tutorial over into the existing content. 
 - Alternatively, you can simply edit the CSV file here. (Below is how the file looks when opened with the pencil icon.)
-{% include bootstrap/figure.md img="howto/filters_csv2.png" caption="Filters.csv as it looks in a text editor" alt="opened file, ready for editing" class="w-50" %}
+{% include bootstrap/figure.md img="howto/texteditorfile.png" caption="Filters.csv as it looks in a text editor" alt="opened file, ready for editing" class="w-50" %}
+{% include bootstrap/figure.md img="howto/githubfile.png" caption="filters.csv copied into GitHub" alt="filters.csv copied into GitHub" class="w-50" %}
 - Commit the change at the bottom of the page by clicking the commit button (you can write a message for the commit if you'd like to remember what you've done)
 {% include bootstrap/figure.md img="howto/commit_file.png" caption="" alt="picture of the commit button at bottom of page" class="w-50" %}
 - However you edited it, the finished CSV should look like the below (with your new tags and descriptions) in GitHub
-{% include bootstrap/figure.md img="howto/filters_github.png" caption="CSV after being transferred to GitHub" alt="finished csv after being transferred to github" class="w-50" %}
-- Once you generate the website with your next step, your finished visualization will look something like this: 
+{% include bootstrap/figure.md img="howto/githubfilefinal.png" caption="CSV after being transferred to GitHub" alt="finished csv after being transferred to github" class="w-50" %}
+- Below is a slightly more robust example of what your visualization will look like. 
 {% include bootstrap/figure.md img="howto/visualization.png" caption="finished OHD visual" alt="picture of finished visualization" class="w-50" %}
 
 

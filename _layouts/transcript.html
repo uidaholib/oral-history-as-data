@@ -37,6 +37,60 @@ layout: default
         <p>{%if page.location%}{{page.location}} on {%endif%}{%if page.date-interviewed%}{{page.date-interviewed}}{%endif%} </p>
         {%if page.interviewer%}<p>Interviewer: {{page.interviewer}}</p>{%endif%}
       </header>
+       <div id="player" class="m-4 float-right"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '{{page.audiovideo-id}}',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var ytSeconds = 0;
+      function onPlayerStateChange(e)
+{
+  if (e.data == 1 && ytSeconds > 0) {
+    e.target.seekTo(ytSeconds);
+    ytSeconds = 0;
+  }
+}
+
+function seekTo(seconds)
+{
+  if (player.getPlayerState() == 1) {
+    player.seekTo(seconds);
+  }
+  else {
+    ytSeconds = seconds;
+    player.playVideo();
+  }
+}
+    </script>
+
       <div class="filteroptions mx-2 bg-light p-4 mb-4">
         <h3 class="text-center">
           <div class="form-inline my-2 my-lg-0 ">
@@ -84,7 +138,7 @@ layout: default
             <div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div>
           </td>
           <td class="timestamp">{%if item.timestamp%}
-            <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+            <a  href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
         </tr>
         {% endfor %}{% endfor %}
         {% else %}
@@ -96,7 +150,7 @@ layout: default
           </td>
           <td class="timestamp">{%if item.timestamp%}
 {% capture avlink %}timestamp/{{page.av_source}}.html{% endcapture %}
-            <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+            <a  href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
         </tr>
         {% endfor %}
         {% endif %}

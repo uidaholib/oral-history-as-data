@@ -29,7 +29,7 @@ At this point you may need to use your skills to clean up this data. The main th
 - Paste the clean text you made in Step 1 into the "copy"of the starter transcript spreadsheet you made above. Be sure to paste it just below the cell titled "speaker".  
 
 {% include bootstrap/figure.md img="howto/speaker_copy.png" caption="copy text here" alt="picture of correct cell placement for pasting transcript" class="w-50" %}
-- Now you will need to "code" your transcript. This can be done by adding "tags"--which should be shorthand descriptions of larger thematic subjects that pertain to this and other transcripts--in the cells under the "tags" column.
+- Now you will need to "code" your transcript. This can be done by adding "tags"-- which should be shorthand descriptions of larger thematic subjects that pertain to this and other transcripts-- in the cells under the "tags" column.
 {% include bootstrap/figure.md img="howto/subjects_cell.png" caption="example subjects" alt="picture of the subjects cells" %}
 - Note, if you have multiple subjects in a cell you will need to separate them using a semi-colon with no space (as pictured above). 
 - You can also hover over the bottom right of a cell (pictured below) and then drag the tags you entered across sections of the transcript. This helps a good deal, as usually sections of the oral history are all pertaining to the same tags/subjects. 

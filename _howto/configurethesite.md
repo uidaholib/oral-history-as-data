@@ -10,9 +10,9 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 
 - Go to the OHD homepage and click on the "Template" button toward the top right of the page. 
 {% include bootstrap/figure.md img="howto/ohd_template.png" caption="" alt="picture of the button that enables user to create a new template in github" class="w-50" %}
-- You'll need to then name your repository.
+- Then you'll need to name your repository.
 {% include bootstrap/figure.md img="howto/name_repository.png" caption="" alt="image of the field users must fill out in order to create a name for their new template" class="w-50" %}
-- Once you've named your repository you'll need to click the "Create Repository From Template" button. 
+- Once you've named your repository, you'll need to click the "Create Repository From Template" button. 
 {% include bootstrap/figure.md img="howto/create_repository_button.png" caption="" alt="picture of the create repository button located at the bottom of the page" class="w-50" %}
 
 ## Step 2: Create a New File
@@ -22,7 +22,7 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 {% include bootstrap/figure.md img="howto/new_file.png" caption="" alt="picture of the create new file button in the newly created repository" class="w-50" %}
 - Now you need to name your file according to your transcript. This will need to match the Markdown file you'll create later in this how-to. 
     - We recommend using the last name, or first and last name of the subject, in all lowercase letters with no spaces or unusual characters. 
-    - Be sure to add ".csv" to the end of the filename as well. So, for the a subject named John Smith, we would name it, "smith.csv" or "john_smith.csv."
+    - Be sure to add ".csv" to the end of the filename as well. For example, a subject named John Smith would be named  "smith.csv" or "john_smith.csv."
 {% include bootstrap/figure.md img="howto/name_file.png" caption="picture of the required field for naming your new file" alt="" class="w-50" %}
 - Leave the file open on the page. We'll be adding to it via the next step.
 
@@ -75,7 +75,7 @@ NOTE: change the "object-id" field so that it is the same as the name of your fi
 
 - Write a brief description of the changes you made and then commit them at the bottom 
 - Once you are done, navigate to your new file, it should look like the example below
-{% include bootstrap/figure.md img="howto/mdfinal.png" caption="" alt="the newly created md file" class="w-50" %}
+{% include bootstrap/figure.md img="howto/comletemd.png" caption="" alt="the newly created md file" class="w-50" %}
 
 ### Optional: adding an audio or video file using av_source
 
@@ -114,9 +114,9 @@ OHD offers a way to categorize your transcripts using tags. This is done through
 - Alternatively, you can simply edit the CSV file here. (Below is how the file looks when opened with the pencil icon.)
 {% include bootstrap/figure.md img="howto/texteditorfile.png" caption="Filters.csv as it looks in a text editor" alt="opened file, ready for editing" class="w-50" %}
 {% include bootstrap/figure.md img="howto/githubfile.png" caption="filters.csv copied into GitHub" alt="filters.csv copied into GitHub" class="w-50" %}
-- Commit the change at the bottom of the page by clicking the commit button (you can write a message for the commit if you'd like to remember what you've done)
+- Commit the change at the bottom of the page by clicking the commit button (be sure to write a commit message so you can track your changes)
 {% include bootstrap/figure.md img="howto/commit_file.png" caption="" alt="picture of the commit button at bottom of page" class="w-50" %}
-- However you edited it, the finished CSV should look like the below (with your new tags and descriptions) in GitHub
+- However you edited it, the finished CSV should look like the example below (with your new tags and descriptions) in GitHub
 {% include bootstrap/figure.md img="howto/githubfilefinal.png" caption="CSV after being transferred to GitHub" alt="finished csv after being transferred to github" class="w-50" %}
 - Below is a slightly more robust example of what your visualization will look like. 
 {% include bootstrap/figure.md img="howto/visualization.png" caption="finished OHD visual" alt="picture of finished visualization" class="w-50" %}

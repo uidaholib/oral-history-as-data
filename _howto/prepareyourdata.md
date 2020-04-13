@@ -13,6 +13,7 @@ Data.
 - Use this [template](https://docs.google.com/spreadsheets/d/1uWrPMItiP-XOSkm7gyC8b9bl3tpSQRj9zLzS5y8QnW0/edit?usp=sharing){:target="_blank"} to get started. 
 
 - Make a copy of the template by going to the "file" tab at the top and selecting "make a copy". 
+- Be sure to give your transcript a name. A good rule of thumb might be to label the spreadsheet after the last name of the interviewee followed by the word transcript. If your interviewee was named John Doe, you would label it "doe_transcript" 
 
 {:.alert .alert-warning .col-md-8} 
 At this point you may need to use your skills to clean up this data. The main thing to focus on is getting the actual transcript into the "words" column. The tool will work even if that's the only column filled. 
@@ -42,6 +43,9 @@ At this point you may need to use your skills to clean up this data. The main th
 - Select "comma-separated values"  to save your file as a .csv file
 {% include bootstrap/figure.md img="howto/creating_csv_final.png" caption="" alt="picture of the dropdown option for creating a csv sheet" class="w-50" %}
 
+{:.alert .alert-warning .col-md-8} 
+NOTE: you should move the file to a location that will be easy to find later. 
+
 {% include youtube/embed.html  video-id="emeMzhGP5mQ" title="Edit Filters csv" display="d-none d-md-block" %}
 ## Step 4: Create Your Filters.CSV 
 The filters.csv file will communicate with the tags you enter into the the `tags` field of your transcript's CSV to create an interactive visualization of the codes used in your transcripts.  Below is an image of a list of quick steps to help you set up your own "transcripts.csv" and a completed OHD [visualization]({{ '/visualizations.html?id=wrigley' | relative_url }}). 
@@ -51,6 +55,10 @@ The filters.csv file will communicate with the tags you enter into the the `tags
 - In the "tag" column write out the tags you wish to include in the transcript.
 - In the "description" column write out a brief description of that tag. 
 - Finally, you create a new .csv by clicking on the "file" icon, hovering above "download", and selecting "comma-separated values". 
+
+{:.alert .alert-warning .col-md-8} 
+NOTE: you should move the downloaded .csv file to the same location you put your transcripts.csv
+
 
 {:.clearfix}
 {% include bootstrap/figure.md img="howto/wrigley-viz.png" caption="Picture of visualization created through filters.csv" alt="A visualization of Robert Wrigley's transcript, as enabled by the Filters.CSV" class="border-0" %}

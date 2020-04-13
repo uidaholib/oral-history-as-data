@@ -107,7 +107,7 @@ OHD offers a way to categorize your transcripts using tags. This is done through
 
 
 {% include youtube/embed.html  video-id="esUuJbhXKW4" title="Creating Filters" display="d-none d-md-block" %}
-- Open the filters.csv file you created
+- Open the filters.csv file you created in your text editor. 
 - Navigate to the "_data" folder 
 - Open the "_data" folder and click the pencil icon to edit the file
 - Copy and paste the filters.csv you created in the Prepare Your Data tutorial over into the existing content. 

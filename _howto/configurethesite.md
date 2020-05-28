@@ -89,16 +89,19 @@ You may want to include an auditory or visual component to your transcript. You'
 - Below are pictures indicating the location of various audiovideo-id locations on different platforms. 
 {% include bootstrap/figure.md img="howto/youtubeid.png" caption="location of your youtube audiovideo-id" alt="opened file, ready for editing" class="w-50" %}
 {% include bootstrap/figure.md img="howto/vimeoid2.png" caption="location of your vimeo audiovideo-id" alt="opened file, ready for editing" class="w-50" %}
-{% include bootstrap/figure.md img="howto/soundcloudid2.png" caption="location of your soundcloud audiovideo-id" alt="opened file, ready for editing" class="w-50" %}
+{% include bootstrap/figure.md img="howto/soundcloud_path_copy.png" caption="location of your the URL path" alt="opened file, ready for editing" class="w-50" %}
 
 
 {:.alert .alert-warning .mb-4}
-NOTE: if you use Soundcloud as your platform, you will actually need two pieces of information: your audiovideo-id and your soundcloud-id.  
+NOTE: if you want to utilize an mp3 file, you can create also create a webpage to house your file and link the URL, in quotation marks, in the audiovideo-id. You will also need to change av_source to "mp3". Follow the visualizations below for instruction. 
 
-- To find your soundcloud-id, begin on your homepage. Then click on the three dots in the right-hand corner. Select settings and then you will find what Soundcloud calls the "rss feed". The picture below indicates which part of that line of text is your soundcloud-id.  
-{% include bootstrap/figure.md img="howto/soundcloudid.png" caption="location of your soundcloud id" alt="opened file, ready for editing" class="w-50" %}
-- Now you will need to add an additional line of text, as pictured below, that says `soundcloud-id` followed by the number itself. 
-{% include bootstrap/figure.md img="howto/soundcloudid4.png" caption="" alt="opened file, ready for editing" class="w-50" %}
+- If you have a page for your mp3 file copy the URL. 
+
+- Copy and paste it with quotation marks included. 
+
+- Change *av_source* to "mp3". 
+
+
 
 ## Step 5: Setting up the visualization(s)
 

@@ -97,9 +97,15 @@ NOTE: if you want to utilize an mp3 file, you can create also create a webpage t
 
 - If you have a page for your mp3 file copy the URL. 
 
-- Copy and paste it with quotation marks included. 
+{% include bootstrap/figure.md img="howto/url_mp3_final.png" caption="example subjects" alt="mp3 page URL" %}
+
+- Copy and paste URL with quotation marks included. 
+
+{% include bootstrap/figure.md img="howto/final_source.png" caption="example subjects" alt="Included URL for mp3 feature" %}
 
 - Change *av_source* to "mp3". 
+
+{% include bootstrap/figure.md img="howto/url_mp3_final.png" caption="example subjects" alt="av_source edited to include mp3 file" %}
 
 
 

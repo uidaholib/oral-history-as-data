@@ -32,11 +32,14 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      
+      
       <header>
-        <h2 class="poet-name">{{ page.title}}</h2>
+        <h2 class="poet-name my-2">{{ page.title}}</h2>
         <p>{%if page.location%}{{page.location}} on {%endif%}{%if page.date-interviewed%}{{page.date-interviewed}}{%endif%} </p>
         {%if page.interviewer%}<p>Interviewer: {{page.interviewer}}</p>{%endif%}
       </header>
+      {% if page.av_source contains 'mp3' %}{% include player/mp3.html %}{% elsif page.av_source contains 'youtube' %}{% include player/youtube.html %}{% elsif page.av_source contains 'soundcloud' %}{% include player/soundcloud.html %}{% endif %}
       <div class="filteroptions mx-2 bg-light p-4 mb-4">
         <h3 class="text-center">
           <div class="form-inline my-2 my-lg-0 ">
@@ -84,7 +87,7 @@ layout: default
             <div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div>
           </td>
           <td class="timestamp">{%if item.timestamp%}
-            <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+            <a  href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
         </tr>
         {% endfor %}{% endfor %}
         {% else %}
@@ -96,7 +99,7 @@ layout: default
           </td>
           <td class="timestamp">{%if item.timestamp%}
 {% capture avlink %}timestamp/{{page.av_source}}.html{% endcapture %}
-            <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+            <a  href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
         </tr>
         {% endfor %}
         {% endif %}

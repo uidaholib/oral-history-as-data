@@ -82,7 +82,9 @@ NOTE: change the "object-id" field so that it is the same as the name of your fi
 {:.alert .alert-info}
 You may want to include an auditory or visual component to your transcript. You'll need to incorporate some simple information in the header of your markdown file. By including a video or audio file, you can correspond recorded dialogue to your written transcript. 
 
-- Look in the header of your markdown file. You'll see that there is a space for av_source. Here you have three options, using OHD: vimeo, youtube, or soundcloud. Using all lowercase letters, type the platform's name where your file is uploaded. 
+- Look in the header of your markdown file. You'll see that there is a space for av_source. Here you have four options, using OHD: `mp3, youtube,  soundcloud, or vimeo`. 
+
+Using all lowercase letters, type the platform's name where your file is uploaded. 
 {% include bootstrap/figure.md img="howto/avid1.png" caption="" alt="opened file, ready for editing" class="w-50" %}
 - Below av_source, you'll see a space for your file's audiovideo-id. Fill in this information. 
 {% include bootstrap/figure.md img="howto/avid2.png" caption="" alt="opened file, ready for editing" class="w-50" %}
@@ -93,7 +95,7 @@ You may want to include an auditory or visual component to your transcript. You'
 
 
 {:.alert .alert-warning .mb-4}
-NOTE: if you want to utilize an mp3 file, you can create also create a webpage to house your file and link the URL, in quotation marks, in the audiovideo-id. You will also need to change av_source to "mp3". Follow the visualizations below for instruction. 
+NOTE: if you want to utilize an mp3 file, you can create also create a webpage to house your file and link the URL, in quotation marks, in the audiovideo-id. You can store mp3s in your GitHub repository, but be aware that GitHub only allows a small amount of space to each repository. It's probably best practice to link them from elsewhere. You will also need to change av_source to "mp3". Follow the visualizations below for instruction. 
 
 - If you have a page for your mp3 file copy the URL. 
 

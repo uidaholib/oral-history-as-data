@@ -4,10 +4,8 @@
    $("tr").removeClass("featured"); 
    $('tr').removeClass("anchored-highlight"); 
   $("tr").addClass("grey"); 
-  $("li").addClass("hidden-all"); 
     $('tr.'+myClass).removeClass("grey").addClass("featured"); 
     $('li.'+myClass).removeClass("hidden-all").addClass("featured"); 
-    console.log("filter");
     $("input#quicksearch").val(""); 
     var numberofint = $('tr.featured').length;
    $("#numberof").html(numberofint);
@@ -16,14 +14,13 @@
 let params = url.searchParams;
 params.set('filter', myClass); 
 params.delete('q'); 
-console.log(params.toString() + 'kiaa');
  var p = params.toString();
 window.history.replaceState({}, '', location.pathname + '?' + p );
  });
+
    $("button.reset").click(function() {
   $("tr").removeClass("grey"); 
   $('tr').removeClass("anchored-highlight"); 
-  $("li").addClass("hidden-all"); 
     $("tr").removeClass("featured"); 
     $("input#quicksearch").val(""); 
     $("#filters").val($("#filters option:first").val());
@@ -55,18 +52,21 @@ $("tr").click(function() {
      let url = new URL(window.location);
 let params = url.searchParams;
 params.set('q', input.value); 
-console.log(params.toString() + 'kiaa');
  var p = params.toString();
 window.history.replaceState({}, '', location.pathname + '?' + p );
-     filter = input.value.toUpperCase();
+    filterplain = input.value; 
+    filter = input.value.toUpperCase();
      itemcontainer = document.getElementById("contents-container");
      item = itemcontainer.getElementsByTagName("tr");
      for (i = 0; i < item.length; i++) {
        itemcontents = item[i].getElementsByTagName("div")[0];
+       var index = itemcontents.innerHTML.indexOf(filterplain);
+       console.log(filter + index)
        if (itemcontents) {
          if (itemcontents.innerHTML.toUpperCase().indexOf(filter) > -1) {
            item[i].classList.add("featured");
            item[i].classList.remove("grey");
+        itemcontents.innerHTML = itemcontents.innerHTML.replace(filterplain,"<span class='text-danger'>"+ filterplain +"</span>");
 
          } else {
            item[i].classList.remove("featured");
@@ -108,7 +108,6 @@ $('#quicksearch').val('');
 $('#quicksearch').val($('#quicksearch').val() + filterValue);
  $('#goButton').click();
  params.set('filter', filterValue); 
-console.log(params.toString() + 'kiaa');
  var p = params.toString();
 window.history.replaceState({}, '', location.pathname + '?' + p );
   var filterValueclass = "." + filterClass;
@@ -154,15 +153,4 @@ var hashfilter = decodeURIComponent(location.hash.substr(1));//.replace(/%20/g, 
  else{
  }});
  
-
-
-function highlight(text) {
- var inputText = document.getElementById("spoken");
- var innerHTML = inputText.innerHTML;
- var index = innerHTML.indexOf(text);
- if (index >= 0) { 
-  innerHTML = innerHTML.substring(0,index) + "<span class='hilite'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
-  inputText.innerHTML = innerHTML;
- }
-}
 </script>

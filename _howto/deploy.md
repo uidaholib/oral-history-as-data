@@ -6,16 +6,21 @@ title: How To Edit Your _config.yml Folder
 When you design your website you'll need to utilize the *_config.yml* folder to help establish the working parameters of your page, the basic information that inhabits it, and the general layout your visitors interact with. 
 
 {:.alert .alert-warning .mb-4}
-NOTE: when you are navigating through this folder, you will notice hashtags which denote useful information about how various lines effect your page. 
+NOTE: when you are navigating through the _config.yml file, you will notice lines that being with hashtags. These are "[comments](https://www.cs.utah.edu/~germain/PPS/Topics/commenting.html)" that provide useful information about how various lines effect your page. 
 
 ### Step 1: Get into the *_config.yml folder* 
-- First, we're going to find the *_config.yml* folder. You'll find this on the main page of your site's repository. Click on this folder and open it up.  
-{% include bootstrap/figure.md img="howto/configscreen.png" caption="image of _config.yml folder found on main page of repository" alt="image of config folder" class="w-50" %}
+- First, find the *_config.yml* file. This is in your base directory, the one that opens when you first open the repository in github.  
+{% include bootstrap/figure.md img="howto/configscreen.png" caption="image of _config.yml file found on main page of repository" alt="image of config folder" class="w-50" %}
 
 - Once you open up the folder, you'll need to enable editing. You're going to see a pencil icon at the top, right corner of the page. Click on this to enable editing. 
 {% include bootstrap/figure.md img="howto/edit_pencil.png" caption="" alt="image of config folder" class="w-50" %}
 
 ### Step 2: Editing your *url, baseurl*, and *repository* (URL settings)
+
+{:.alert .alert-info}
+The URL settings control how the site generator (Jekyll!) builds the urls on your web pages. These are extremely important, especially if you're going to serve this up using GitHub Pages. If you're using GitHub Pages, you'll just want to use your GitHub username and your repository's name to fill in this information.
+
+{% include youtube/embed.html  video-id="OAl_pcWjBwk" title="Editing URL Settings" display="d-none d-md-block" %}
 
 - First, you'll need to change your url. To do this, delete "uidaholib" from the *url* line, and replace it with your GitHub username. 
 {% include bootstrap/figure.md img="howto/beforename.png" caption="url before edit" alt="url line in config folder before being edited" class="w-50" %}
@@ -33,6 +38,11 @@ NOTE: when you are navigating through this folder, you will notice hashtags whic
 
 ### Step 3: Editing *title, tagline,* *and description* (site settings)
 
+{:.alert .alert-info}
+The site settings control what appears in the website's banner, both the bit title of the site and the tagline underneath it.  The description is put in the code of each page to enable people to find your site on Google or other search engines. 
+
+{% include youtube/embed.html  video-id="gTJpfunqapQ" title="Editing Site Settings" display="d-none d-md-block" %}
+
 - Now scroll down to the next section in this folder titled *site settings*. Go to the first line called *title* and change "Oral History (as) Data" to what ever you would like to call your site. 
 {% include bootstrap/figure.md img="howto/beforetitle.png" caption="title before edit" alt="title line before editing" class="w-50" %} 
 
@@ -43,7 +53,10 @@ NOTE: when you are navigating through this folder, you will notice hashtags whic
 
 {% include bootstrap/figure.md img="howto/aftertag.png" caption=" tagline after edit" alt="title line after editing" class="w-50" %}
 
+
 ## Step 4: Generate Your Site
+
+{% include youtube/embed.html  video-id="ioubbjzQ9EY" title="Generate Your Site" display="d-none d-md-block" %}
 
 - Go to the settings button at the top right of your repository page
 {% include bootstrap/figure.md img="howto/settings_button.png" caption="" alt="settings button homepage of repository" %}
@@ -58,7 +71,7 @@ NOTE: when you are navigating through this folder, you will notice hashtags whic
 - Check out your new site by clicking on the link. Refresh if nothing shows up. Congratulations on setting up your own oral history site!
 
 
-
+<!--
 ### Optional: AV settings 
 
 {:.alert .alert-info}
@@ -73,3 +86,4 @@ OHD has the option of linking an audio or video file to your transcript, to enha
 
 {% include bootstrap/figure.md img="howto/soundcloud2.png" caption="example text indicating where to place Soundcloud ID" alt="title line after editing" class="w-50" %}
 
+-->

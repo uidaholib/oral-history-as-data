@@ -1,6 +1,6 @@
 ---
 object-id: armantrout
-title: Rae Armantrout
+title: Rae Armantrout (youtube)
 date-interviewed: March 27, 2014
 location: San Diego, CA
 av_source: youtube

@@ -19,7 +19,7 @@ repository: https://github.com/uidaholib/oral-history-as-data
 # title of site appears in banner
 title: Oral History (as) Data
 # tagline appears in banner
-tagline: analyze and publish coded oral history and qualitative interviews
+tagline: Analyze and publish coded oral history and qualitative interviews
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 description: "Lib-Static Oral History / Qualitative Interview Analysis Tool, Analyze and publish transcriptions with tagged csvs"

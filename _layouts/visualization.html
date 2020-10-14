@@ -70,7 +70,7 @@ layout: default
           <div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div>
         </td>
         <td class="timestamp">{%if item.timestamp%}
-          <a target="_blank" href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}<br />{{item.tags | replace: ";", "<br>"}}</td>
+          <a target="_blank" href="{{ forloop.index | prepend: transcript-name | prepend: '.html#' | prepend: transcript-name | prepend: '/transcripts/' | relative_url }}">{{item.timestamp}}</a>{% endif %}<br />{{item.tags | replace: ";", "<br>"}}</td>
       </tr>
 
       {% if forloop.last%}</table>

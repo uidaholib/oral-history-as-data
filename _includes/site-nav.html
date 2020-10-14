@@ -1,9 +1,15 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light mb-3">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav"
             aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <span class="d-lg-none text-right col-4">
+            <a href="{{ site.organization-link }}" target="_blank" rel="noopener">
+                <img class="img-fluid" id="mobile-nav-image" src="{{ site.organization-logo-nav | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} home" >
+            </a>
+        </span>
 
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav mr-auto h6">
@@ -33,7 +39,8 @@
             <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
                 <input id="site-search" class="form-control mr-sm-2" type="text" placeholder="Search"
                     aria-label="Search">
-                <button class="btn btn-outline-primary border my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-dark text-white border my-2 my-sm-0" type="submit">{% include icons/search.html %}
+                </button>
             </form>
         </div>
     </div>

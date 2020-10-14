@@ -78,8 +78,6 @@ layout: default
       <table id="contents-container">
         {% if page.object-id == 'all' %}
         {% for transcript in site.data.transcripts %}{%assign transcript-name = transcript[0] %}
-        {%capture audiovideo-id %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}{{item.audiovideo-id}}{%endif%}{%endfor%}{% endcapture %}
-        {%capture avlink %}{%for item in site.transcripts%}{%if item.object-id == transcript-name %}timestamp/{{item.av_source}}.html{%endif%}{%endfor%}{% endcapture %}
         {% for item in transcript[1] %}
         <tr id="{{page.object-id}}{{ forloop.index }}" class="{{item.tags | replace: ';', ' '}}">
           <td class="line">{{transcript-name}}-{{ forloop.index }}</td>
@@ -87,7 +85,7 @@ layout: default
             <div id="spoken">{%if item.speaker%}{{item.speaker | remove: ":"}}: {%endif%}{{item.words}}</div>
           </td>
           <td class="timestamp">{%if item.timestamp%}
-            <a  href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+            <a href="{{ forloop.index | prepend: transcript-name | prepend: '.html#' | prepend: transcript-name | prepend: '/transcripts/' | relative_url }}">{{item.timestamp}}</a>{% endif %}</td>
         </tr>
         {% endfor %}{% endfor %}
         {% else %}
@@ -97,9 +95,9 @@ layout: default
           <td class="words">
             <div id="spoken">{{item.speaker | remove: ":"}}: {{item.words}}</div>
           </td>
-          <td class="timestamp">{%if item.timestamp%}
+          <td class="timestamp">{%if item.timestamp%}{% if page.av_source %}
 {% capture avlink %}timestamp/{{page.av_source}}.html{% endcapture %}
-            <a  href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% endif %}</td>
+            <a  href="{% include {{avlink}} %}">{{item.timestamp}}</a>{% else %}{{item.timestamp}}{% endif %}{% endif %}</td>
         </tr>
         {% endfor %}
         {% endif %}

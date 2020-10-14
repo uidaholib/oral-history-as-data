@@ -1,10 +1,13 @@
 <div class="container">
-    <div class="row mt-2">
-        <div class="col-md-12">
-            <h1 class="h3">
-                <a href="{{ '/' | absolute_url }}" >{{ site.title }}</a>
-                <small class="text-muted">| {{ site.tagline }}</small>
-            </h1>
+    <div class="row mt-4">
+        <div class="col-md-9">
+            <h1 class="h1 text-dark w-auto" ><a  class="text-dark" href="{{ '/' | absolute_url }}" >{{ site.title }}</a></h1> <p class="h5 text-muted border-bottom  pb-1 mb-3 "> {% if site.tagline %} {{site.tagline}} {% endif %} </p>
+               </h1>
+        </div>
+        <div class="col-md-3 d-none d-lg-block text-right">
+            <a class="btn btn-outline-light" href="{{ site.organization-link }}" target="_blank" rel="noopener">
+                <img class="img-fluid" src="{{ site.organization-logo-banner | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} home" >
+            </a>
         </div>
     </div>
 </div>

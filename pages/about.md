@@ -35,6 +35,11 @@ OHD will generate analyses, discovery and publication tools for oral histories a
 
 The tool uses the static website generator Jekyll with these components to then generate a website using GitHub Pages. 
 
+It's helpful to look at examples as models and to start with blank starter files. These are available in a Google Drive Folder. 
+
+<a target="_blank" href="https://drive.google.com/drive/folders/1Vkn6tWRow5-0z4ENJIf3vHWS-UDIQ5Z2?usp=sharing" class='btn btn-outline-primary m-2'>See Examples and Starter Files </a>
+
+
 ### Quick Start Instructions
 These instructions assume you will be doing most of the uploading through GitHub's web interface. If you'd like to do this on your computer, using Jekyll's built in development server, you'll need to install Jekyll (which requires Ruby). Instructions for installations can be found on the [CollectionBuilder Software page](https://collectionbuilder.github.io/docs/software.html) or on the [Lib-STATIC How-to pages](https://lib-static.github.io/howto/).
 

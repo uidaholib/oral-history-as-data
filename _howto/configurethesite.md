@@ -45,7 +45,7 @@ NOTE: If the CSV has a problem, GitHub will show you an error message that will 
 
 {% include youtube/embed.html  video-id="kfDeEfjl6nQ" title="Creating a .MD File" display="d-none d-md-block" %}
 
-## Step 4: Creating a Markdown File
+## Step 3: Creating a Markdown File
 
 ##### Go to the `_transcripts/` directory: 
 
@@ -88,7 +88,7 @@ NOTE: if the "object-id" field is different than the name of your transcript CSV
 - Once you are done, navigate to your new file, it should look like the example below
 {% include bootstrap/figure.md img="howto/comletemd.png" caption="" alt="the newly created md file" class="w-50" %}
 
-## Optional: Connect the transcript to an audio or video file using `av_source`
+### Optional: Connect the transcript to an audio or video file using `av_source`
 
 {:.alert .alert-info .mt-3}
 You may want to connect transcript to a audio or video recording. The tool has built in connections to YouTube, Vimeo, Soundcloud, and plain mp3 files.  You'll need to incorporate some simple information in the header of your markdown file to make these connections possible. To provide users navigation to certain moments in the recording, you'll also need to provide timestamps in the data file. 
@@ -122,7 +122,7 @@ NOTE: if you want to utilize an mp3 file, you can create also create a webpage t
 
 
 
-## Step 5: Setting up the visualization(s)
+## Step 4: Setting up the visualization(s)
 
 {:.alert .alert-info}
 OHD offers a way to categorize your transcripts using tags. This is done through two locations: the "tag" column cells in your transcript's CSV and the filters.csv file, which is already provided for you in the structure of OHD. If you are not aware of either of these files, first visit our steps on "[How To Prepare Your Data](prepareyourdata.html)." 

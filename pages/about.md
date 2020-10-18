@@ -13,9 +13,9 @@ Use this site and the demo files included to learn how to use and deploy the cod
 <libstatic.uidaho@gmail.com>
 
 Detailed How To instructions can be found here: 
-{% include bootstrap/button.md text="Prepare Your Data" link="howto/prepareyourdata.html" color="outline-success mb-2 text-left" %} 
-{% include bootstrap/button.md text="Configure Your Site" link="howto/configurethesite.html" color="outline-success mb-2 text-left" %}
-{% include bootstrap/button.md text="Deploy Your Site" link="howto/deploy.html" color="outline-success mb-2 text-left" %}
+{% include bootstrap/button.md text="Prepare Your Data" link="howto/prepareyourdata.html" color="outline-primary mb-2 text-left" %} 
+{% include bootstrap/button.md text="Configure Your Site" link="howto/configurethesite.html" color="outline-primary mb-2 text-left" %}
+{% include bootstrap/button.md text="Deploy Your Site" link="howto/deploy.html" color="outline-primary mb-2 text-left" %}
 
 
 ---

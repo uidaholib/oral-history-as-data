@@ -45,7 +45,16 @@ NOTE: If the CSV has a problem, GitHub will show you an error message that will 
 
 {% include youtube/embed.html  video-id="kfDeEfjl6nQ" title="Creating a .MD File" display="d-none d-md-block" %}
 
-## Step 3: Creating a Markdown File
+## Step 3: Upload Your Filters.CSV file
+
+Much like the step before, you will: 
+
+- Go to the `_data` folder. 
+- Upload your `filters.csv` file into the folder by dragging it onto the webpage
+    - This will replace the file that is currently there. 
+- Commit your changes. 
+
+## Step 4: Creating a Markdown File
 
 ##### Go to the `_transcripts/` directory: 
 

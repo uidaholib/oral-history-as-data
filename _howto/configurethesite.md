@@ -8,72 +8,64 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 {% include youtube/embed.html  video-id="lJ9b0VNJIMw" title="Making a Filter" display="d-none d-md-block" %}
 ## Step 1: Make a Template of OHD
 
-- Go to the OHD homepage and click on the "Template" button toward the top right of the page. 
+- Go to the OHD homepage and click on the green "Use this template" button toward the top right of the page. 
+
 {% include bootstrap/figure.md img="howto/ohd_template.png" caption="" alt="picture of the button that enables user to create a new template in github" class="w-50" %}
-- Then you'll need to name your repository.
+
+- Name your repository.
 {% include bootstrap/figure.md img="howto/name_repository.png" caption="" alt="image of the field users must fill out in order to create a name for their new template" class="w-50" %}
-- Once you've named your repository, you'll need to click the "Create Repository From Template" button. 
+
+- Click the "Create Repository From Template" button -- this will copy all the files (but not the history!) of the Oral History as Data repository into your own repository. 
 {% include bootstrap/figure.md img="howto/create_repository_button.png" caption="" alt="picture of the create repository button located at the bottom of the page" class="w-50" %}
 
-## Step 2: Create a New File
+## Step 2: Upload Your Transcript
 
-- Now you'll need to go into you "data" folder and then into the "transcripts" folder in your repository. 
-- Once in transcripts click on "create new file".  
-{% include bootstrap/figure.md img="howto/new_file.png" caption="" alt="picture of the create new file button in the newly created repository" class="w-50" %}
-- Now you need to name your file according to your transcript. This will need to match the Markdown file you'll create later in this how-to. 
-    - We recommend using the last name, or first and last name of the subject, in all lowercase letters with no spaces or unusual characters. 
-    - Be sure to add ".csv" to the end of the filename as well. For example, a subject named John Smith would be named  "smith.csv" or "john_smith.csv."
-{% include bootstrap/figure.md img="howto/name_file.png" caption="picture of the required field for naming your new file" alt="" class="w-50" %}
-- Leave the file open on the page. We'll be adding to it via the next step.
-
-{:.alert .alert-warning}
-When you name your file be sure to include the type of file after the name you choose. In our case, you'll want to add a ".csv" to the end of the filename. (robert.csv) For example, if it is a markdown file, attach ".md" after the file name. For a markdown file, like the one we'll create below, you'll add a ".md" after the file name.
-
-## Step 3: Moving the Transcript to a new GitHub file
-
-- Open your transcript **in a text editor**.
-
-{:.alert .alert-danger}
-Make sure you open your transcript in a text editor. DO NOT OPEN UP THE CSV IN EXCEL!!! Excel might reformat your timestamps. We recommend using [Visual Studio Code](https://code.visualstudio.com/), but notepad or textedit (the default text editors on Windows and Mac machines, respectively) will also work. 
-- Open the transcript in a text editor. 
-- Select the entire text (ctrl + a) 
-{% include bootstrap/figure.md img="howto/text_editor.png" caption="transcript selected in text editor" alt="" class="w-50" %}
-- Copy and paste it into the new file open you created in step 2. 
-{% include bootstrap/figure.md img="howto/github_pasted-transcript.png" caption="completed .csv file" alt="" class="w-50" %}
-- Commit the change at bottom of page by scrolling to the bottom of the page and click "commit new file". 
+- Click on the `_data` folder, which will take you to a new page. 
+- Then click into the `transcripts` folder.   
+- Once you're in the transcripts folder, find the transcript spreadsheet/CSV file or files you've created in your Finder or File Explorer. 
+    - Make sure the transcript CSV is titled something simple, and that it's all lowercase and has no spaces or special characters. E.G. `doe_john.csv` (And make sure it has a `.csv` extension!)
+- Drag the file or files onto the web page -- the page will change when you drag it onto the webpage to say "Drop to Upload Your Files". Drop the file to upload it!
+    - Alternatively, you can push the "Add File" dropdown button at the top right of your screen, and then select the file(s) you'd like to upload.
+- Once it's uploaded, you'll need to commit your change to make it permanent. Commit your upload at bottom of page by scrolling to the bottom of the page and clicking "commit new file". 
 {% include bootstrap/figure.md img="howto/commit_file.png" caption="" alt="" class="w-50" %}
-- Below is what the CSV should look like after you've committed it on the GitHub webpage. 
+- Below is what the CSV should look like after you've committed it into your GitHub repository. 
 {% include bootstrap/figure.md img="howto/github_csv.png" caption="This is how the CSV should look after you paste it into the new file and commit it." alt="complete and committed csv in github" class="w-50" %}
 
+
 {:.alert .alert-warning .mb-4}
-NOTE: If the CSV has a problem, GitHub will show you an error message that will say: "We can make this file beautiful and searchable if this error is corrected:" After that phrase, they will also point out a line number that is causing the problem. Open the file up by clicking on the pencil icon in the top right of the file area. Go to the line indicated and see if there's an obvious error. If you can't get it fixed, go back to your Google Sheet and see if there's anything to clean up. Even if there is nothing wrong, re-download the file as a CSV, open it in a text editor, then copy and paste it back into the problematic file on GitHub. Hopefully one of these steps clears up the problem. 
+NOTE: If the CSV has a problem, GitHub will show you an error message that will say: "We can make this file beautiful and searchable if this error is corrected:" After that phrase, they will also point out a line number that is causing the problem. Open the file up by clicking on the pencil icon in the top right of the file area. Go to the line indicated and see if there's an obvious error. If you can't get it fixed, go back to your Google Sheet and see if there's anything to clean up. Even if there is nothing wrong, re-download the file as a CSV, rename it to the new title, then drag it back to the page as you did above. Hopefully one of these steps clears up the problem. 
 
 {% include youtube/embed.html  video-id="kfDeEfjl6nQ" title="Creating a .MD File" display="d-none d-md-block" %}
 ## Step 4: Creating a Markdown File
 
-- Navigate back to the main page of your repository
+- Navigate back to the root of your repository by clicking on `<> Code ` at the top left of the page.
 - Click on the folder that says "_transcripts" 
 {% include bootstrap/figure.md img="howto/transcripts.png" caption="" alt="_transcipts button" class="w-50" %}
 - Open up any of the .md file examples that are in this folder
 - Navigate to the button that says "raw" and click it
 {% include bootstrap/figure.md img="howto/raw.png" caption="" alt="raw file button" class="w-50" %}
-- Copy the text inside of this file
+- Copy the text inside of the file you opened
 {% include bootstrap/figure.md img="howto/newcopyandpaste.png" caption="" alt="raw file text" class="w-50" %}
-- Go back to the page with the example .md files
+- Go back to your _transcripts directory by clicking back two pages in your browser.
 - Click the "Create New File" button
 {% include bootstrap/figure.md img="howto/createnewmd.png" caption="" alt="create new file button" class="w-50" %}
-- Name this file what you named your transcript file, but be sure to put .md rather than .csv, as this is a markdown file you are creating. 
+- Name this file the same name you named your transcript file, but be sure to put `.md `rather than `.csv`, as it's extension.  
+
 {% include bootstrap/figure.md img="howto/mdname.png" caption="" alt="name field in new markdown file" class="w-50" %}
-- Then paste the text you copied from the raw file into this new file
+
+{:.alert .alert-info .mb-4}
+You are creating a markdown file; [more on Markdown here](https://www.markdownguide.org/). 
+Jekyll uses the markdown file as the basis for creating web pages. All the information stored between the two `---` at the top and then down a bit is called frontmatter. This frontmatter is written in a language called YAML, which is a [a human-readable language for writing/storing data variables](https://en.wikipedia.org/wiki/YAML). (You'll work with some `.yml` files later as well)
+
+- Paste the text you copied from the raw file you opened earlier into this new file.
 {% include bootstrap/figure.md img="howto/beforemd1.png" caption="Pasted text before editing" alt="pasted text in new .md file" class="w-50" %}
-- Edit the text to fit your data 
+- Edit the variables in the frontmatter between the `---` lines ) to fit your data -- be sure that the object-id option is the same as the filename (without the extension) of your transcript. 
 {% include bootstrap/figure.md img="howto/aftermd2.png" caption="File after being edited for new file" alt="new .md file text after being edited for new file" class="w-50" %}
 
-
 {:.alert .alert-warning .mb-4}
-NOTE: change the "object-id" field so that it is the same as the name of your file (and the CSV you created earlier)
+NOTE: if the "object-id" field is different than the name of your transcript CSV file in the _data/transcripts folder, the tool will not work. The transcript file will have an extension (.csv) but the object-id should not have an extension. So if the transcript is called `doe_john.csv`, then the object-id for the corresponding Markdown file should be `doe_john`.
 
-- Write a brief description of the changes you made and then commit them at the bottom 
+- Write a commit message, briefly describing the changes you made and then commit them at the bottom.
 - Once you are done, navigate to your new file, it should look like the example below
 {% include bootstrap/figure.md img="howto/comletemd.png" caption="" alt="the newly created md file" class="w-50" %}
 

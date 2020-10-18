@@ -20,12 +20,20 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 
 ## Step 2: Upload Your Transcript
 
+##### Go to the `_data/transcripts/` directory: 
+
 - Click on the `_data` folder, which will take you to a new page. 
-- Then click into the `transcripts` folder.   
-- Once you're in the transcripts folder, find the transcript spreadsheet/CSV file or files you've created in your Finder or File Explorer. 
+- Then click into the `transcripts` folder. 
+
+##### Drag your transcript(s) onto the webpage to upload them:
+
+- Find the transcript spreadsheet/CSV file or files you created and downloaded in the [Prepare Your Data Section]({{ 'howto/prepareyourdata.html' | relative_url }}). 
     - Make sure the transcript CSV is titled something simple, and that it's all lowercase and has no spaces or special characters. E.G. `doe_john.csv` (And make sure it has a `.csv` extension!)
 - Drag the file or files onto the web page -- the page will change when you drag it onto the webpage to say "Drop to Upload Your Files". Drop the file to upload it!
     - Alternatively, you can push the "Add File" dropdown button at the top right of your screen, and then select the file(s) you'd like to upload.
+
+##### Commit your upload/changes to add the file(s):
+
 - Once it's uploaded, you'll need to commit your change to make it permanent. Commit your upload at bottom of page by scrolling to the bottom of the page and clicking "commit new file". 
 {% include bootstrap/figure.md img="howto/commit_file.png" caption="" alt="" class="w-50" %}
 - Below is what the CSV should look like after you've committed it into your GitHub repository. 
@@ -36,16 +44,25 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 NOTE: If the CSV has a problem, GitHub will show you an error message that will say: "We can make this file beautiful and searchable if this error is corrected:" After that phrase, they will also point out a line number that is causing the problem. Open the file up by clicking on the pencil icon in the top right of the file area. Go to the line indicated and see if there's an obvious error. If you can't get it fixed, go back to your Google Sheet and see if there's anything to clean up. Even if there is nothing wrong, re-download the file as a CSV, rename it to the new title, then drag it back to the page as you did above. Hopefully one of these steps clears up the problem. 
 
 {% include youtube/embed.html  video-id="kfDeEfjl6nQ" title="Creating a .MD File" display="d-none d-md-block" %}
+
 ## Step 4: Creating a Markdown File
+
+##### Go to the `_transcripts/` directory: 
 
 - Navigate back to the root of your repository by clicking on `<> Code ` at the top left of the page.
 - Click on the folder that says "_transcripts" 
 {% include bootstrap/figure.md img="howto/transcripts.png" caption="" alt="_transcipts button" class="w-50" %}
+
+##### Make a copy of one of the Markdown files in the directory: 
+
 - Open up any of the .md file examples that are in this folder
 - Navigate to the button that says "raw" and click it
 {% include bootstrap/figure.md img="howto/raw.png" caption="" alt="raw file button" class="w-50" %}
 - Copy the text inside of the file you opened
 {% include bootstrap/figure.md img="howto/newcopyandpaste.png" caption="" alt="raw file text" class="w-50" %}
+
+##### Create a new Markdown file for your transcript by pasting and then editing your copied text:  
+
 - Go back to your _transcripts directory by clicking back two pages in your browser.
 - Click the "Create New File" button
 {% include bootstrap/figure.md img="howto/createnewmd.png" caption="" alt="create new file button" class="w-50" %}
@@ -65,14 +82,16 @@ Jekyll uses the markdown file as the basis for creating web pages. All the infor
 {:.alert .alert-warning .mb-4}
 NOTE: if the "object-id" field is different than the name of your transcript CSV file in the _data/transcripts folder, the tool will not work. The transcript file will have an extension (.csv) but the object-id should not have an extension. So if the transcript is called `doe_john.csv`, then the object-id for the corresponding Markdown file should be `doe_john`.
 
+##### Commit your changes:
+
 - Write a commit message, briefly describing the changes you made and then commit them at the bottom.
 - Once you are done, navigate to your new file, it should look like the example below
 {% include bootstrap/figure.md img="howto/comletemd.png" caption="" alt="the newly created md file" class="w-50" %}
 
-### Optional: adding an audio or video file using av_source
+## Optional: Connect the transcript to an audio or video file using `av_source`
 
-{:.alert .alert-info}
-You may want to include an auditory or visual component to your transcript. You'll need to incorporate some simple information in the header of your markdown file. By including a video or audio file, you can correspond recorded dialogue to your written transcript. 
+{:.alert .alert-info .mt-3}
+You may want to connect transcript to a audio or video recording. The tool has built in connections to YouTube, Vimeo, Soundcloud, and plain mp3 files.  You'll need to incorporate some simple information in the header of your markdown file to make these connections possible. To provide users navigation to certain moments in the recording, you'll also need to provide timestamps in the data file. 
 
 - Look in the header of your markdown file. You'll see that there is a space for av_source. Here you have four options, using OHD: `mp3, youtube,  soundcloud, or vimeo`. 
 
@@ -125,5 +144,8 @@ OHD offers a way to categorize your transcripts using tags. This is done through
 {% include bootstrap/figure.md img="howto/visualization.png" caption="finished OHD visual" alt="picture of finished visualization" class="w-50" %}
 
 
+<a href="{{ 'howto/deploy.html' | relative_url }}" class='btn btn-lg btn-outline-primary m-2'>Next Step - Deploy your site</a>
+
+<a href="{{ 'howto/prepareyourdata.html' | relative_url }}" class='btn btn-lg btn-outline-secondary m-2'>Previous Step: Prepare Your Data</a>
 
 

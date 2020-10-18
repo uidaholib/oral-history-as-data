@@ -71,20 +71,6 @@ The site settings control what appears in the website's banner, both the bit tit
 - This will let you easily access the generated site whenever you come to edit the page. 
 - Check out your new site by clicking on the link. Refresh if nothing shows up. Congratulations on setting up your own oral history site!
 
+<a href="{{ 'howto/configurethesite.html' | relative_url }}" class='btn btn-lg btn-outline-primary m-2'>Previous Step: Configure your site</a>
 
-<!--
-### Optional: AV settings 
-
-{:.alert .alert-info}
-OHD has the option of linking an audio or video file to your transcript, to enhance the experience for the user. It is compatible with YouTube, Vimeo, and Soundcloud. 
-
-- First, you'll need to look at the *av_source* line. You'll see that there are a list of options: "YouTube, Vimeo, Soundcloud". OHD has YouTube set as the default option. But if you wish to choose a different option you can easily change it by erasing YouTube and writing either Soundcloud or Vimeo.
-{% include bootstrap/figure.md img="howto/youtube.png" caption=" av_source line with default YouTube selection" alt="picture of the av_source line in folder" class="w-50" %}
-
-
-- If you are using Soundcloud, you will need to include your Soundcloud ID, which can be found in the url of your Soundcloud files.  
-{% include bootstrap/figure.md img="howto/soundcloud_copy.png" caption=" unedited soundcloud-id section with circle indicating where to find soundcloud id" alt="picture of soundcloud-id line with circle indicating where to find a soundcloud id on soundcloud's website" class="w-50" %}
-
-{% include bootstrap/figure.md img="howto/soundcloud2.png" caption="example text indicating where to place Soundcloud ID" alt="title line after editing" class="w-50" %}
-
--->
+<a href="{{ 'howto/prepareyourdata.html' | relative_url }}" class='btn btn-lg btn-outline-secondary m-2'>First Step: Prepare Your Data</a>

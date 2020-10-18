@@ -71,8 +71,9 @@ The filters.csv file will communicate with the tags you enter into the the `tags
 - In the "tag" column write out the tags you wish to include in the transcript.
 - In the "description" column write out a brief description of that tag. 
 - When you're finished create a new .csv by clicking on the "file" icon, hovering above "download", and selecting "comma-separated values". 
-- Rename this file: `filters.csv`
+- Rename this file: `filters.csv` and upload it into your GitHub repository's `_data` folder. (Instructions in our next step.)
+    - Note that you will want to continue to edit this file as you add more transcripts and more codes 
 
 
-
+<a href="{{ 'howto/configurethesite.html' | relative_url }}" class='btn btn-lg btn-outline-primary m-2'>Next Step: Configure your site</a>
 

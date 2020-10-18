@@ -8,7 +8,7 @@ Below are a few quick steps to help you begin configuring your GitHub site for u
 {% include youtube/embed.html  video-id="lJ9b0VNJIMw" title="Making a Filter" display="d-none d-md-block" %}
 ## Step 1: Make a Template of OHD
 
-- Go to the OHD homepage and click on the green "Use this template" button toward the top right of the page. 
+- Go to the [Oral History as Data GitHub Repository]({{site.repository}}){:target="_blank"} and click on the green "Use this template" button toward the top right of the page. 
 
 {% include bootstrap/figure.md img="howto/ohd_template.png" caption="" alt="picture of the button that enables user to create a new template in github" class="w-50" %}
 

@@ -12,11 +12,13 @@ The Oral History as Data (OHD) tool is a static website generator that allows us
 Use this site and the demo files included to learn how to use and deploy the code. Direct any questions here: 
 <libstatic.uidaho@gmail.com>
 
-Detailed How To instructions can be found here: 
+Detailed How-To instructions can be found here: 
 {% include bootstrap/button.md text="Prepare Your Data" link="howto/prepareyourdata.html" color="outline-primary mb-2 text-left" %} 
 {% include bootstrap/button.md text="Configure Your Site" link="howto/configurethesite.html" color="outline-primary mb-2 text-left" %}
 {% include bootstrap/button.md text="Deploy Your Site" link="howto/deploy.html" color="outline-primary mb-2 text-left" %}
 
+{:.my-3}
+*The how-to instructions and corresponding videos for this site were developed by Michael Decker (MA English, University of Idaho) as part of a graduate assistantship with the CDIL in 2019-2020.*
 
 ---
 

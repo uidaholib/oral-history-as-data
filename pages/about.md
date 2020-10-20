@@ -23,7 +23,7 @@ Detailed How-To instructions can be found here:
 ---
 
 {:.mt-4}
-## Overview and Quick Start Instrucions
+## Overview and Quick Start Instructions
 
 OHD will generate analyses, discovery and publication tools for oral histories and qualitative interviews, given three components:
 

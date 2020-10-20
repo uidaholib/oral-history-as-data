@@ -17,6 +17,13 @@ Detailed How-To instructions can be found here:
 {% include bootstrap/button.md text="Configure Your Site" link="howto/configurethesite.html" color="outline-primary mb-2 text-left" %}
 {% include bootstrap/button.md text="Deploy Your Site" link="howto/deploy.html" color="outline-primary mb-2 text-left" %}
 
+
+{% include bootstrap/button.md text="Common Issues" link="commonissues.html" color="outline-secondary mb-2 text-left" %}
+
+{% include bootstrap/button.md text="Advanced Topics" link="advancedtopics.html" color="outline-secondary mb-2 text-left" %}
+
+
+
 {:.my-3}
 *The how-to instructions and corresponding videos for this site were developed by Michael Decker (MA English, University of Idaho) as part of a graduate assistantship with the CDIL in 2019-2020.*
 

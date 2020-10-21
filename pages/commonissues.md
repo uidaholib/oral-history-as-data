@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: howto
 title: Common Issues
 object-id: notes
 permalink: /commonissues.html

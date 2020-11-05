@@ -11,7 +11,7 @@ layout: default
 {%- comment -%} find all words used in the subject metadata {%- endcomment -%}
 {%- assign min-count = 1 -%}
 {%- assign raw-subjects = items | map: "tags" | compact | join: ";" | split: ";" -%}
-{%- capture subjects -%}{% for s in raw-subjects %}{% if s != "" %}{{- s | strip | downcase -}};{% endif %}{%- endfor -%}{%- endcapture -%}
+{%- capture subjects -%}{% for s in raw-subjects %}{% if s != "" %}{{- s | strip -}};{% endif %}{%- endfor -%}{%- endcapture -%}
 {%- assign subjects = subjects | split: ";" -%}
 {%- assign uniqueSubjects = subjects | uniq | sort -%}
 {%endif%}

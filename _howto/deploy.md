@@ -1,9 +1,9 @@
 ---
 layout: howto
-title: How To Edit Your _config.yml File
+title: How To Deploy Your Site on GitHub Pages
 ---
 
-When you design your website you'll need to utilize the *_config.yml* folder to help establish the working parameters of your page, the basic information that inhabits it, and the general layout your visitors interact with. 
+When you design your website you'll need to edit the *_config.yml* file to help establish the working parameters of your page, the basic information that inhabits it, and the general layout your visitors interact with. 
 
 {:.alert .alert-warning .mb-4}
 NOTE: when you are navigating through the _config.yml file, you will notice lines that being with hashtags. These are "[comments](https://www.cs.utah.edu/~germain/PPS/Topics/commenting.html)" that provide useful information about how various lines effect your page. 
@@ -71,10 +71,12 @@ Below is more on what these variables control
 - `organization-logo-banner` --> This is what logo will appear in the banner on larger screen widths. The image will appear on a white background. 
 - `organization-logo-nav` --> This is what logo will appear on the navigation bar on screens with smaller widths (i.e. phones). The image will appear on a black background. 
 
+{% include youtube/embed.html  video-id="ioubbjzQ9EY" title="Generate Your Site" display="d-none d-md-block" %}
 
 ## Step 4: Generate Your Site
 
-{% include youtube/embed.html  video-id="ioubbjzQ9EY" title="Generate Your Site" display="d-none d-md-block" %}
+These steps will help you generate your website on GitHub Pages. If you'd like to serve the site from your own server, use the tool offline, or serve it on GitHub but point to a custom domain, check out our [advanced topics page]({{ 'advancedtopics.html' | relative_url }})
+
 
 - Go to the settings button at the top right of your repository page
 {% include bootstrap/figure.md img="howto/settings_button.png" caption="" alt="settings button homepage of repository" %}
@@ -89,6 +91,23 @@ Below is more on what these variables control
 - Check out your new site by clicking on the link. Refresh if nothing shows up. Sometimes the GitHub service takes longer than others. 
 
 ***Congratulations on setting up your own oral history site!***
+
+### If you're having problems ... 
+
+Check out our [Common Issues Page]({{ 'commonissues.html' | relative_url }})
+
+### If you'd like to learn more ... 
+
+#### [Advanced Topics]({{ 'advancedtopics.html' | relative_url }})
+
+- [Using the tool offline]({{ 'advancedtopics.html#using-the-tool-offline' | relative_url }})
+- [Customizing the Site]({{ 'advancedtopics.html#customizing-the-site' | relative_url }})
+- [Serve the site from another location]({{ 'advancedtopics.html#serve-the-site-from-another-location-not-github-pages' | relative_url }})
+  - [Serving on another web server]({{ 'advancedtopics.html#building-the-flat-files-and-copying-to-a-server' | relative_url }})
+  - [Serving a customized domain from GitHub]({{ 'advancedtopics.html#using-dns-records-to-serve-the-github-repository-at-another-url' | relative_url }})
+
+
+### Previous Steps
 
 <a href="{{ 'howto/configurethesite.html' | relative_url }}" class='btn btn-lg btn-outline-primary m-2'>Previous Step: Configure your site</a>
 

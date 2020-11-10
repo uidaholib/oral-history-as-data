@@ -26,7 +26,7 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 1. Fork or import this repository
 
 2. Look at one of the csvs included in the _data directory of the repository
-    - The CSVs included here are from the [CTRL+Shift project](www.ctrl-shift.org)
+    - The CSVs included here are from the [CTRL+Shift project](https://www.ctrl-shift.org)
     - You can view them as Google Sheets as well: https://drive.google.com/drive/folders/1Vkn6tWRow5-0z4ENJIf3vHWS-UDIQ5Z2?usp=sharing
 
 3. Make your transcript look like one of the examples
@@ -53,7 +53,7 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 
 8. Create a Markdown (.md) file for each interview CSV file you intend to include. Use the examples currently included as models. The minimum fields to be included at the top are: object-id  and title. You can also add 'date-interviewed', 'location', and 'interviewer'. 
 
-9. If you're working on the web, go to your GitHub repository [Settings](/settings), and enable GitHub Pages.
+9. If you're working on the web, go to your GitHub repository **Settings**, and enable GitHub Pages.
 
 10. Check out your new site by hitting the link that the enabled GH-Pages Settings sections provides. Should be something like: [GitHub Username].github.io/[Repository Name].
 

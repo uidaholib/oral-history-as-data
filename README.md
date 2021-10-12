@@ -62,7 +62,6 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 - [Jekyll](https://jekyllrb.com/) for GitHub Pages 
 - Layout using [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
 - [jQuery](https://jquery.com/)
-- Simple [lunr](https://lunrjs.com/) search (this isn't really working right now ...)
 - Rich markup using [Schema.org](http://schema.org) and [Open Graph protocol](http://ogp.me/) standards.
 
 

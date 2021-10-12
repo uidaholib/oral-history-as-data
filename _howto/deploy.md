@@ -61,8 +61,9 @@ The site settings control what appears in the website's banner, both the bit tit
 
 - Go to the settings button at the top right of your repository page
 {% include bootstrap/figure.md img="howto/settings_button.png" caption="" alt="settings button homepage of repository" %}
-- Scroll down to the "GitHub Pages" section
-- Change source dropdown button from "none" to "master" and copy the URL they give you. 
+- Scroll down to the "Pages" section, which is the second-to-last option on the left hand navigation menu. 
+- Click "Pages" to go to the GitHub Pages options screen.
+- Change source dropdown button from "none" to "main" and copy the URL they give you. 
 {% include bootstrap/figure.md img="howto/source_button.png" caption="" alt="picture of source drop down menu" class="w-50" %}
 - It will take several minutes for the new website to build, while your waiting go back to the main page and click the "edit" button on your repository page
 {% include bootstrap/figure.md img="howto/edit_button.png" caption="" alt="picture of the edit button above your repository" class="w-50" %}

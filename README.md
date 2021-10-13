@@ -17,7 +17,7 @@ A project to generate analyses, discovery and publication tools for oral histori
 - a folder (_transcripts) markdown files for each transcript - MD file example here
 - a CSV list of coded topics, listing shorthand reference and full description - CSV Filters example here
 
-See [Getting Started Docs](docs/index.md) for detailed information (coming soon!).
+See [Documentation](https://uidaholib.github.io/oral-history-as-data/howto/prepareyourdata.html) for detailed information (coming soon!).
 
 ### Get Started Quickly
 

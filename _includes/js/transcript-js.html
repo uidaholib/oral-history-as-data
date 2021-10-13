@@ -1,6 +1,10 @@
 <script type="text/javascript">
   $("#filters").on('change', function() {
   var myClass = this.value;
+  if (myClass == "all"){
+    $("button.reset").click();
+  }
+  else{
    $("tr").removeClass("featured"); 
    $('tr').removeClass("anchored-highlight"); 
   $("tr").addClass("grey"); 
@@ -16,6 +20,7 @@ params.set('filter', myClass);
 params.delete('q'); 
  var p = params.toString();
 window.history.replaceState({}, '', location.pathname + '?' + p );
+  }
  });
 
    $("button.reset").click(function() {

@@ -6,5 +6,18 @@ layout: default
     <div class="col-md-9">
     {{content}}
     </div>
+    {% if page.url contains 'about'%}
+    <div class="col-md-3">
+      <h4>OHD in Production</h4>
+      <div class="col-12 my-2">
+      <a href="https://ctrl-shift.org/" target="_blank"><img src="https://cdil.lib.uidaho.edu/images/ctrl-shift.jpg" class="img-fluid"></a>
+      <p class="mt-1 text-center"><a href="https://ctrl-shift.org/" target="_blank">CTRL+Shift</a></p>
+      </div>
+      <div class="col-12 my-2">
+      <a href="https://www.voicesofgayrodeo.com/" target="_blank"><img src="https://cdil.lib.uidaho.edu/images/voices.jpg" class="img-fluid" alt="Voices of Gay Rodeo background image"></a>
+      <p class="mt-1 text-center"><a href="https://www.voicesofgayrodeo.com/" target="_blank">Voices of Gay Rodeo</a></p>
+      </div>
+      </div>
+    {% endif %}
     </div>
 </div>

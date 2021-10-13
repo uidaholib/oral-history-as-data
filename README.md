@@ -26,8 +26,7 @@ See [Getting Started Docs](docs/index.md) for detailed information (coming soon!
 1. Fork or import this repository
 
 2. Look at one of the csvs included in the _data directory of the repository
-
-    - The CSVs included here are from the [CTRL+Shift project](https://ctrl-shift.org)
+    - The CSVs included here are from the [CTRL+Shift project](https://www.ctrl-shift.org)
     - You can view them as Google Sheets as well: https://drive.google.com/drive/folders/1Vkn6tWRow5-0z4ENJIf3vHWS-UDIQ5Z2?usp=sharing
 
 3. Make your transcript look like one of the examples

@@ -48,7 +48,7 @@ layout: default
             <button class="reset btn btn-secondary ml-2" href="#" data-filter="" class="filter">Reset Filters</button>
           </div>
           <h2><span class="h5">Filter by topic:</span> <select id="filters" title="Jump to a year" class="filteroptions" style="max-width: 100%;">
-            <option value="all" selected="selected">On All Topics</option>
+            <option value="#" selected="selected">On All Topics</option>
             {% assign filters = site.data.filters %}
             {% if page.object-id == 'all' %}
             {% for filter in filters %}

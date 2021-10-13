@@ -7,20 +7,16 @@ permalink: /about.html
 ---
 # About {{site.title}}
 
-The Oral History as Data (OHD) tool is a static website generator that allows users to analyze and publish coded oral history or qualitative interview files. By turning transcriptions into tagged/coded CSV files, adding a list of filters, and creating a simple markdown file for each interview (to be included in the _transcripts collection), OHD will provide filterable transcripts and a color coded visualization for all transcripts included. 
+The Oral History as Data (OHD) tool is a static website generator that allows users to analyze and publish coded oral history or qualitative interview files. By turning transcriptions into tagged/coded CSV files, adding a list of filters, and creating a simple markdown file for each interview (to be included in the _transcipt collection), OHD will provide filterable transcripts and a color coded visualization for all transcripts included. 
 
-Use this template site and the demo files included as examples for your own data/transcripts and then delete them. You can then delete this text and write your own about page for your project, using markdown 
-
-
-Detailed How To instructions can be found on [the project website](https://uidaholib.github.io/oral-history-as-data/). 
+Use this site and the demo files included to learn how to use and deploy the code. Direct any questions here: 
+<libstatic.uidaho@gmail.com>
 
 Detailed How-To instructions can be found here: 
 {% include bootstrap/button.md text="Prepare Your Data" link="howto/prepareyourdata.html" color="outline-primary mb-2 text-left" %} 
 {% include bootstrap/button.md text="Configure Your Site" link="howto/configurethesite.html" color="outline-primary mb-2 text-left" %}
 {% include bootstrap/button.md text="Deploy Your Site" link="howto/deploy.html" color="outline-primary mb-2 text-left" %}
 
-
-Please feel free to contact me with any questions. I'm happy to help. <dbecker@uidaho.edu>
 
 {% include bootstrap/button.md text="Common Issues" link="commonissues.html" color="outline-secondary mb-2 text-left" %}
 
@@ -87,8 +83,6 @@ These instructions assume you will be doing most of the uploading through GitHub
 
 {%include credits.md%} 
 
-
- 
 
 
 

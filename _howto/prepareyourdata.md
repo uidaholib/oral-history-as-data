@@ -45,7 +45,7 @@ If you'd like to enable subject-based browsing and color-coded visualizations fo
 {% include bootstrap/figure.md img="howto/bottom-right-corner.png" caption="Click here, hold, and drag the cursor down to pull down the tags across a section " alt="image of example subjects in cells" %}
 
 {:.alert .alert-info .col-md-8} 
-**See a finished transcript:** You can check out what a finished transcript look like in this [Sample Google Sheet](https://docs.google.com/spreadsheets/d/1PjPOTsLjGdfFyIn1S4UyzAWkSHjajCxE7kdxP6asQoE/edit?usp=sharing){:target="_blank"}
+**See a finished transcript:** You can check out what a finished transcript looks like in this [Sample Google Sheet](https://docs.google.com/spreadsheets/d/1PjPOTsLjGdfFyIn1S4UyzAWkSHjajCxE7kdxP6asQoE/edit?usp=sharing){:target="_blank"}
 
 ## Step 4: Download Your Transcript Spreadsheet as a CSV
 

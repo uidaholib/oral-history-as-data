@@ -3,17 +3,6 @@
 
 
 ##########
-# URL settings 
-#
-# url is your gh-pages base, following the pattern: username.github.io
-url: https://uidaholib.github.io
-# baseurl is your github repository's name prefixed with a /
-baseurl: /oral-history-as-data
-# repository is the github repository's full url
-repository: https://github.com/uidaholib/oral-history-as-data
-
-
-##########
 # Site settings
 #
 # title of site appears in banner
@@ -28,6 +17,22 @@ organization-name: "Center for Digital Inquiry and Learning, University of Idaho
 organization-link: https://cdil.lib.uidaho.edu/
 organization-logo-banner: https://cdil.lib.uidaho.edu/images/cdil-blacktransparent-logo.png
 organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+
+
+
+##########
+# URL settings 
+#
+# url is your gh-pages base, following the pattern: username.github.io
+# Leave this commented out unless you'd like to built the site somewhere other than GitHub pages. 
+# In the latter case, see documentation here --> https://uidaholib.github.io/oral-history-as-data/advancedtopics.html#serve-the-site-from-another-location-not-github-pages
+# url: 
+# baseurl is your github repository's name prefixed with a /
+# baseurl: 
+# repository is the github repository's full url
+repository: https://github.com/uidaholib/oral-history-as-data
+
+
 
 
 ####### Leave the Below As Is ########

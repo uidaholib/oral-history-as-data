@@ -16,28 +16,7 @@ NOTE: when you are navigating through the _config.yml file, you will notice line
 - Once you open up the folder, you'll need to edit the file. Click on the pencil icon at the top right corner of the page to edit the file. 
 {% include bootstrap/figure.md img="howto/edit_pencil.png" caption="" alt="image of config folder" class="w-50" %}
 
-## Step 2: Edit your URL Settings (*url, baseurl*, and *repository*)
-
-{:.alert .alert-info}
-The URL settings control how the site generator (Jekyll!) builds the urls on your web pages. These are extremely important, whether you're going to serve this up using GitHub Pages or publish the site on another server. We demonstrate below how to set up the site to be served via [GitHub Pages](https://pages.github.com/).
-
-{% include youtube/embed.html  video-id="OAl_pcWjBwk" title="Editing URL Settings" display="d-none d-md-block" %}
-
-- First, you'll need to change your url. To do this, delete "uidaholib" from the `url` line, and replace it with your GitHub username. 
-{% include bootstrap/figure.md img="howto/beforename.png" caption="url before edit" alt="url line in config folder before being edited" class="w-50" %}
-
-{% include bootstrap/figure.md img="howto/aftername.png" caption="url after edit" alt="url line after editing" class="w-50" %}
-
-- Now you'll need to edit your `baseurl`. After the forward slash you'll delete "oral-history-as-data" and type the name of your repository. 
-{% include bootstrap/figure.md img="howto/basebefore.png" caption="baseurl line before edit" alt="image of baseurl line before edit" class="w-50" %}
-{% include bootstrap/figure.md img="howto/baseafter.png" caption="baseurl line after edit" alt="image of baseurl line after edit" class="w-50" %}
-
-- Finally, we'll edit your `repository` line, which will provide a link back to your code from the footer of your site. Erase the text that reads "uidaholib" and replace it with your username. Then erase the string that reads "oral-history-as-data" and replace it with your repository name. 
-
-{% include bootstrap/figure.md img="howto/beforerepos.png" caption="repository before edit" alt="repository line before editing" class="w-50" %}
-{% include bootstrap/figure.md img="howto/afterrepos.png" caption="repository after edit" alt="repository line after editing" class="w-50" %}
-
-## Step 3: Editing Site settings
+## Step 2: Editing Site settings
 
 {:.alert .alert-info}
 The site settings control what appears in the website's banner, both the bit title of the site and the tagline underneath it.  The description is put in the code of each page to enable people to find your site on Google or other search engines. 

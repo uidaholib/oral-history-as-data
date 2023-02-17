@@ -1,6 +1,6 @@
 # Oral History as Data (OHD) - a Lib-STATIC Tool
 
-> **work in progress!**
+> This is an older version of Oral History as Data. It will still work! But if you’d like to try the [new iteration](https://github.com/oralhistoryasdata), you can see the new look on our [new demo site](https://oralhistoryasdata.github.io/) or use the [new github template repository](https://github.com/oralhistoryasdata/oralhistoryasdata.github.io) as a template for your project.
 
 The Oral History as Data (OHD) tool is a static website generator that allows users to analyze and publish coded oral history or qualitative interview files. By turning transcriptions into tagged/coded CSV files, adding a list of filters, and creating a simple markdown file for each interview (to be included in the _transcipt collection), OHD will provide filterable transcripts and a color coded visualization for all transcripts included. 
 
